@@ -4,6 +4,21 @@ import concurrent.futures
 import time
 import re
 
+def assign_category(extinf, url):
+    full_text = (extinf + " " + url).lower()
+    kw_sports = ["sports", "espn", "nba", "nfl", "mlb", "nhl", "golf", "tennis", "deportes", "bein", "wwe"]
+    kw_movies = ["movies", "cine", "hbo", "starz", "showtime", "cinemax", "amc", "tcm", "paramount", "fx", "hallmark", "action", "comedy", "drama", "thriller", "epix"]
+    kw_news = ["news", "noticias", "weather"]
+    
+    if any(kw in full_text for kw in kw_sports):
+        return "🏆 Deportes"
+    elif any(kw in full_text for kw in kw_movies):
+        return "🎬 Películas"
+    elif any(kw in full_text for kw in kw_news):
+        return "📰 Noticias"
+    else:
+        return "🌎 Canales Generales"
+
 m3u_file = "mi_lista_personal.m3u"
 txt_file = "canales_disponibles.txt"
 
@@ -49,6 +64,12 @@ print(f"Completado en {time.time()-start:.2f}s. Canales activos: {len(working_ch
 with open(m3u_file, 'w', encoding='utf-8') as f:
     f.write('#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides.xml"\n')
     for extinf, url in working_channels:
+        new_category = assign_category(extinf, url)
+        # Reemplazar el group-title existente o añadirlo si no existe
+        if 'group-title="' in extinf:
+            extinf = re.sub(r'group-title="[^"]*"', f'group-title="{new_category}"', extinf)
+        else:
+            extinf = extinf.replace(',', f' group-title="{new_category}",', 1)
         f.write(extinf + "\n")
         f.write(url + "\n")
 

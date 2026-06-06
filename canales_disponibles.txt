@@ -1,4 +1,4 @@
-LISTA DE CANALES FINAL VIP (481 canales)
+LISTA DE CANALES FINAL VIP (476 canales)
 ============================================================
 
 Canal: 3ABN Dare To Dream Network               | Categoría: Estados Unidos - Religious
@@ -169,15 +169,12 @@ Canal: NBC 6 Johnstown PA (WJAC) (1080p)        | Categoría: Estados Unidos - U
 Canal: NBC 10 Rochester NY (WHEC) (1080p)       | Categoría: Estados Unidos - Undefined
 Canal: NBC 13 Albany NY (WNYT) (1080p)          | Categoría: Estados Unidos - Undefined
 Canal: NBC Comedy Vault (1080p)                 | Categoría: Estados Unidos - Comedy
-Canal: NBC Sports Bay Area (720p) [Not 24/7]    | Categoría: Estados Unidos - Sports
 Canal: NBC Sports Boston (1080p) [Not 24/7]     | Categoría: Estados Unidos - Sports
 Canal: NBC Sports NOW (1080p)                   | Categoría: Estados Unidos - Sports
-Canal: NBC Sports Philadelphia (720p) [Not 24/7] | Categoría: Estados Unidos - Sports
 Canal: NEW KMOVIES (1080p)                      | Categoría: Estados Unidos - Movies
 Canal: News12+ New York (1080p) [Geo-blocked]   | Categoría: Estados Unidos - News
 Canal: News 12 New York (1080p)                 | Categoría: Estados Unidos - News
 Canal: NFL Channel (1080p) [Geo-blocked]        | Categoría: Estados Unidos - Sports
-Canal: NFL RedZone (720p) [Not 24/7]            | Categoría: Estados Unidos - Sports
 Canal: NHRA TV (1080p)                          | Categoría: Estados Unidos - Sports
 Canal: Omide Iran                               | Categoría: Estados Unidos - Entertainment
 Canal: Orange Government Access TV (Orange CT) (720p) | Categoría: Estados Unidos - Legislative
@@ -388,7 +385,6 @@ Canal: Ruta66 TV (720p)                         | Categoría: República Dominic
 Canal: San Isidro TV (720p) [Not 24/7]          | Categoría: República Dominicana - General
 Canal: Santa Cruz TV (1080p) [Not 24/7]         | Categoría: República Dominicana - General
 Canal: Santiago TV (720p) [Not 24/7]            | Categoría: República Dominicana - General
-Canal: Senal Digital TV [Not 24/7]              | Categoría: República Dominicana - General
 Canal: Siembra TV (720p)                        | Categoría: República Dominicana - Music
 Canal: Sima Vision TV (720p)                    | Categoría: República Dominicana - General
 Canal: Su Mundo TV (1080p) [Not 24/7]           | Categoría: República Dominicana - General
@@ -420,7 +416,6 @@ Canal: Telenord 8 (1080p) [Not 24/7]            | Categoría: República Dominic
 Canal: Telenord 10 (720p) [Not 24/7]            | Categoría: República Dominicana - General
 Canal: Telenord 12 (720p) [Not 24/7]            | Categoría: República Dominicana - General
 Canal: Telenovisa43 (720p) [Not 24/7]           | Categoría: República Dominicana - Family;General
-Canal: Telesantodomingo (720p)                  | Categoría: República Dominicana - General
 Canal: TELESIGLO (1080p) [Not 24/7]             | Categoría: República Dominicana - General
 Canal: Teletur (720p) [Not 24/7]                | Categoría: República Dominicana - Travel
 Canal: Teleuniverso (720p)                      | Categoría: República Dominicana - General
