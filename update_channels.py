@@ -9,8 +9,24 @@ def assign_category(extinf, url):
     kw_sports = ["sports", "espn", "nba", "nfl", "mlb", "nhl", "golf", "tennis", "deportes", "bein", "wwe"]
     kw_movies = ["movies", "cine", "hbo", "starz", "showtime", "cinemax", "amc", "tcm", "paramount", "fx", "hallmark", "action", "comedy", "drama", "thriller", "epix"]
     kw_news = ["news", "noticias", "weather"]
+    kw_do = ["telemicro", "color vision", "cdn", "teleantillas", "telecentro", "dominicana", "canal 4", "rnntv", "microvision"]
+    kw_mx = ["mexico", "méxico", "mx@", "azteca", "adn 40", "adn40", "canal 10", "mexiquense", "televisa", "foro", "tudn", "milenio", "multimedios", "guanajuato", "fresnillo", "zacatecas"]
+    kw_ve = ["venezuela", "ve@", "venevision", "televen", "globovision", "vtv", "aguacate", "alcance tv", "anzoategui", "barinas", "as3 sport"]
+    kw_kids = ["kids", "infantil", "cartoon", "disney", "nickelodeon", "discovery kids", "boomerang", "pbs kids", "afarin", "anim", "niños"]
     
-    if any(kw in full_text for kw in kw_sports):
+    # Excepción para discovery en español
+    if "discovery en espa" in full_text:
+        return "🌎 Canales Generales"
+        
+    if any(kw in full_text for kw in kw_do):
+        return "🇩🇴 Rep. Dom."
+    elif any(kw in full_text for kw in kw_mx):
+        return "🇲🇽 México"
+    elif any(kw in full_text for kw in kw_ve):
+        return "🇻🇪 Venezuela"
+    elif any(kw in full_text for kw in kw_kids):
+        return "🧸 Infantiles"
+    elif any(kw in full_text for kw in kw_sports):
         return "🏆 Deportes"
     elif any(kw in full_text for kw in kw_movies):
         return "🎬 Películas"
@@ -77,8 +93,7 @@ with open(txt_file, 'w', encoding='utf-8') as f:
     f.write(f"LISTA DE CANALES FINAL VIP ({len(working_channels)} canales)\n")
     f.write("============================================================\n\n")
     for extinf, url in working_channels:
-        group_match = re.search(r'group-title="([^"]+)"', extinf)
-        group = group_match.group(1) if group_match else "Desconocido"
+        group = assign_category(extinf, url)
         name = extinf.split(',')[-1].strip()
         f.write(f"Canal: {name.ljust(40)} | Categoría: {group}\n")
 
