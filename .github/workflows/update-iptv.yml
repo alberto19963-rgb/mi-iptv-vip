@@ -8,6 +8,8 @@ on:
 jobs:
   update-channels:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v3
