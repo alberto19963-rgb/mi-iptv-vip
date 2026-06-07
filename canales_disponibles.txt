@@ -1,4 +1,4 @@
-LISTA DE CANALES FINAL VIP (468 canales)
+LISTA DE CANALES FINAL VIP (469 canales)
 ============================================================
 
 Canal: 3ABN Dare To Dream Network               | Categoría: 🌎 Canales Generales
@@ -162,7 +162,6 @@ Canal: NBC 10 Rochester NY (WHEC) (1080p)       | Categoría: 🌎 Canales Gener
 Canal: NBC 13 Albany NY (WNYT) (1080p)          | Categoría: 🌎 Canales Generales
 Canal: NBC Comedy Vault (1080p)                 | Categoría: 🎬 Películas
 Canal: NBC Sports NOW (1080p)                   | Categoría: 🏆 Deportes
-Canal: NEW KMOVIES (1080p)                      | Categoría: 🎬 Películas
 Canal: News12+ New York (1080p) [Geo-blocked]   | Categoría: 📰 Noticias
 Canal: News 12 New York (1080p)                 | Categoría: 📰 Noticias
 Canal: NFL Channel (1080p) [Geo-blocked]        | Categoría: 🏆 Deportes
@@ -375,6 +374,7 @@ Canal: Supremateve (720p) [Not 24/7]            | Categoría: 🌎 Canales Gener
 Canal: Sur TV (720p)                            | Categoría: 🌎 Canales Generales
 Canal: TDN Medios (720p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: Tele Dominicana TV (720p)                | Categoría: 🇩🇴 Rep. Dom.
+Canal: Tele Ola 44 (576i) [Not 24/7]            | Categoría: 🌎 Canales Generales
 Canal: Tele Poder TV (720p) [Not 24/7]          | Categoría: 🇩🇴 Rep. Dom.
 Canal: Tele Proyecto TV [Not 24/7]              | Categoría: 🌎 Canales Generales
 Canal: TeleBendicion (720p) [Not 24/7]          | Categoría: 🌎 Canales Generales
@@ -443,6 +443,7 @@ Canal: Salvación TV (720p)                      | Categoría: 🌎 Canales Gene
 Canal: TeleOnce (1080p)                         | Categoría: 🇩🇴 Rep. Dom.
 Canal: Triunfo 96.9 FM TV (360p)                | Categoría: 🌎 Canales Generales
 Canal: WDWL-DT1 (Teleadoración/Enlace PR) (720p) [Not 24/7] | Categoría: 🌎 Canales Generales
+Canal: WIPR (1080p)                             | Categoría: 🌎 Canales Generales
 Canal: WKAQ-DT1 (Telemundo PR) (1080p)          | Categoría: 🌎 Canales Generales
 Canal: WKAQ-DT2 (Punto 2) (720p)                | Categoría: 🌎 Canales Generales
 Canal: WRUA-DT1 (Tiva TV) (720p)                | Categoría: 🌎 Canales Generales

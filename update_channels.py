@@ -35,11 +35,12 @@ def assign_category(extinf, url):
     else:
         return "🌎 Canales Generales"
 
+master_file = "lista_maestra.m3u"
 m3u_file = "mi_lista_personal.m3u"
 txt_file = "canales_disponibles.txt"
 
-print(f"Abriendo {m3u_file}...")
-with open(m3u_file, 'r', encoding='utf-8') as f:
+print(f"Abriendo {master_file}...")
+with open(master_file, 'r', encoding='utf-8') as f:
     lines = [line.strip() for line in f.readlines() if line.strip()]
 
 channels = []

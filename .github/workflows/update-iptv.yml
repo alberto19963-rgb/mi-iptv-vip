@@ -2,7 +2,7 @@ name: Actualizador Diario de IPTV
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Se ejecuta todos los días a las 8:00 AM UTC (4:00 AM AST/EST)
+    - cron: '0 8 * * *' # Se ejecuta una vez al día a las 8:00 AM UTC
   workflow_dispatch: # Permite que lo ejecutes manualmente con un botón
 
 jobs:
