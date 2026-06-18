@@ -1,4 +1,4 @@
-LISTA DE CANALES FINAL VIP (452 canales)
+LISTA DE CANALES FINAL VIP (445 canales)
 ============================================================
 
 Canal: 3ABN Dare To Dream Network               | Categoría: 🌎 Canales Generales
@@ -235,6 +235,7 @@ Canal: XITE Nuevo Latino (1080p)                | Categoría: 🌎 Canales Gener
 Canal: XITE Siempre Latino (1080p)              | Categoría: 🌎 Canales Generales
 Canal: Young Hollywood (1080p) [Geo-blocked]    | Categoría: 🎬 Películas
 Canal: Yu-Gi-Oh! en espanol (1080p)             | Categoría: 🌎 Canales Generales
+Canal: Adoram TV (720p)                         | Categoría: 🌎 Canales Generales
 Canal: Aguila TV (1080p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: AION TV (1080p) [Not 24/7]               | Categoría: 🌎 Canales Generales
 Canal: Alcarrizos TV (720p) [Not 24/7]          | Categoría: 🌎 Canales Generales
@@ -254,7 +255,6 @@ Canal: Camu TV (480p) [Not 24/7]                | Categoría: 🌎 Canales Gener
 Canal: Canal 4 RD (1080p)                       | Categoría: 🇩🇴 Rep. Dom.
 Canal: Canal 17 RTVD (720p)                     | Categoría: 🌎 Canales Generales
 Canal: Canal 56 (720p)                          | Categoría: 🌎 Canales Generales
-Canal: Canal del Sol (1080p) [Not 24/7]         | Categoría: 🌎 Canales Generales
 Canal: Canal DTV (720p)                         | Categoría: 🌎 Canales Generales
 Canal: Canal Multivision (720p) [Not 24/7]      | Categoría: 🌎 Canales Generales
 Canal: Cananga TV (720p)                        | Categoría: 🇩🇴 Rep. Dom.
@@ -281,7 +281,6 @@ Canal: Delta TV Canal 50 (720p) [Not 24/7]      | Categoría: 🌎 Canales Gener
 Canal: Digital 15 (1080p)                       | Categoría: 🌎 Canales Generales
 Canal: Digital809 TV (720p) [Not 24/7]          | Categoría: 🌎 Canales Generales
 Canal: Digital Vision 63 (720p) [Geo-blocked]   | Categoría: 🌎 Canales Generales
-Canal: Ecos Canal 57 (1080p) [Not 24/7]         | Categoría: 🌎 Canales Generales
 Canal: Ecovisión (720p)                         | Categoría: 🌎 Canales Generales
 Canal: El PuertoTV (720p)                       | Categoría: 🌎 Canales Generales
 Canal: El Seis 6 (1080p) [Not 24/7]             | Categoría: 🌎 Canales Generales
@@ -293,7 +292,6 @@ Canal: Extra 86 TV (720p)                       | Categoría: 🌎 Canales Gener
 Canal: Farovisión (720p)                        | Categoría: 🌎 Canales Generales
 Canal: FRATA TV (1080p) [Not 24/7]              | Categoría: 🌎 Canales Generales
 Canal: Fuego TV [Not 24/7]                      | Categoría: 🌎 Canales Generales
-Canal: Galaxia TV (360p)                        | Categoría: 🌎 Canales Generales
 Canal: GH Television (1080p) [Not 24/7]         | Categoría: 🌎 Canales Generales
 Canal: Gi Television (720p) [Not 24/7]          | Categoría: 🌎 Canales Generales
 Canal: Global TV (720p)                         | Categoría: 🌎 Canales Generales
@@ -306,7 +304,6 @@ Canal: Informe TV (1080p) [Not 24/7]            | Categoría: 🌎 Canales Gener
 Canal: JARABACOA TV (1080p) [Not 24/7]          | Categoría: 🌎 Canales Generales
 Canal: Jimani TV (360p) [Geo-blocked]           | Categoría: 🌎 Canales Generales
 Canal: Junior Technologia TV (1080p) [Not 24/7] | Categoría: 🌎 Canales Generales
-Canal: La Caleta TV (720p) [Not 24/7]           | Categoría: 🌎 Canales Generales
 Canal: La Descarga TV [Geo-blocked]             | Categoría: 🌎 Canales Generales
 Canal: La Hora TV (720p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: La Reina TV [Geo-blocked]                | Categoría: 🌎 Canales Generales
@@ -314,8 +311,8 @@ Canal: La Ruta TV                               | Categoría: 🌎 Canales Gener
 Canal: La Voz de Jesus HD (720p)                | Categoría: 🌎 Canales Generales
 Canal: La Voz de Maria (720p)                   | Categoría: 🌎 Canales Generales
 Canal: La Voz del Tropico (480p) [Geo-blocked]  | Categoría: 🌎 Canales Generales
-Canal: Laguna TV (1080p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: Larivision TV [Not 24/7]                 | Categoría: 🌎 Canales Generales
+Canal: Latin Zone TV (720p)                     | Categoría: 🇩🇴 Rep. Dom.
 Canal: Latina TV Internacional (720p)           | Categoría: 🌎 Canales Generales
 Canal: Lena TV [Not 24/7]                       | Categoría: 🌎 Canales Generales
 Canal: Linieros TV (480p) [Not 24/7]            | Categoría: 📰 Noticias
@@ -336,11 +333,11 @@ Canal: Musavision (1080p)                       | Categoría: 🌎 Canales Gener
 Canal: Navarrete Television (1080p) [Not 24/7]  | Categoría: 🌎 Canales Generales
 Canal: Nexxo TV (720p) [Not 24/7]               | Categoría: 🇩🇴 Rep. Dom.
 Canal: Nitida TV (720p) [Not 24/7]              | Categoría: 🌎 Canales Generales
+Canal: Noticias 16 (720p) [Not 24/7]            | Categoría: 📰 Noticias
 Canal: OEPM TV (720p)                           | Categoría: 🌎 Canales Generales
 Canal: ORBIT TV (1080p) [Not 24/7]              | Categoría: 🌎 Canales Generales
 Canal: OxiTV (720p) [Not 24/7]                  | Categoría: 🌎 Canales Generales
 Canal: Palmar TV [Not 24/7]                     | Categoría: 🌎 Canales Generales
-Canal: Pronems TV (1080p) [Not 24/7]            | Categoría: 🌎 Canales Generales
 Canal: R Television [Not 24/7]                  | Categoría: 🌎 Canales Generales
 Canal: R&E TV (480p) [Not 24/7]                 | Categoría: 🌎 Canales Generales
 Canal: RDN (1080p) [Not 24/7]                   | Categoría: 📰 Noticias
@@ -358,10 +355,8 @@ Canal: Siembra TV (720p)                        | Categoría: 🌎 Canales Gener
 Canal: Super Digital TV (1080p) [Not 24/7]      | Categoría: 🌎 Canales Generales
 Canal: Super TV 55 (720p) [Geo-blocked]         | Categoría: 🌎 Canales Generales
 Canal: Supremateve (720p) [Not 24/7]            | Categoría: 🌎 Canales Generales
-Canal: Sur TV (720p)                            | Categoría: 🌎 Canales Generales
 Canal: TDN Medios (720p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: Tele Dominicana TV (720p)                | Categoría: 🇩🇴 Rep. Dom.
-Canal: Tele Poder TV (720p) [Not 24/7]          | Categoría: 🇩🇴 Rep. Dom.
 Canal: Tele Proyecto TV [Not 24/7]              | Categoría: 🌎 Canales Generales
 Canal: TeleBendicion (720p) [Not 24/7]          | Categoría: 🌎 Canales Generales
 Canal: Telecanal 12 (720p) [Not 24/7]           | Categoría: 🌎 Canales Generales
@@ -384,6 +379,7 @@ Canal: Teleuniverso (720p)                      | Categoría: 🌎 Canales Gener
 Canal: Telever (1080p) [Not 24/7]               | Categoría: 🌎 Canales Generales
 Canal: Televida (1080p) [Not 24/7]              | Categoría: 🌎 Canales Generales
 Canal: Television del Este (1080p) [Not 24/7]   | Categoría: 📰 Noticias
+Canal: Tenarenses TV (1080p) [Not 24/7]         | Categoría: 🌎 Canales Generales
 Canal: Tiguerito TV (720p) [Not 24/7]           | Categoría: 🌎 Canales Generales
 Canal: Tom And Jerry (720p)                     | Categoría: 🌎 Canales Generales
 Canal: Topical Moon RD (720p) [Not 24/7]        | Categoría: 🌎 Canales Generales
@@ -392,13 +388,10 @@ Canal: Turismo HD (720p)                        | Categoría: 🌎 Canales Gener
 Canal: Turismo RDTV (720p)                      | Categoría: 🇲🇽 México
 Canal: TV 10 San Juan (720p) [Not 24/7]         | Categoría: 🌎 Canales Generales
 Canal: TV Canal Sur (1080p)                     | Categoría: 🌎 Canales Generales
-Canal: TV Cotui Canal 31 (1080p) [Not 24/7]     | Categoría: 🌎 Canales Generales
 Canal: TV Daja (1080p) [Not 24/7]               | Categoría: 🌎 Canales Generales
-Canal: TV Éxitos (720p)                         | Categoría: 🌎 Canales Generales
 Canal: TV Higuey Digital (720p) [Not 24/7]      | Categoría: 🌎 Canales Generales
 Canal: TV Hispanic [Not 24/7]                   | Categoría: 🌎 Canales Generales
 Canal: TV Luz (480p)                            | Categoría: 🌎 Canales Generales
-Canal: TV Montana Canal 10 (1080p) [Not 24/7]   | Categoría: 🇲🇽 México
 Canal: TV QUISQUEYA (720p)                      | Categoría: 🌎 Canales Generales
 Canal: TVO (720p) [Not 24/7]                    | Categoría: 🌎 Canales Generales
 Canal: Valle Nuevo TV                           | Categoría: 🎬 Películas
@@ -411,6 +404,7 @@ Canal: Xtra Tv (720p) [Not 24/7]                | Categoría: 🌎 Canales Gener
 Canal: Xtremo Channel (720p) [Geo-blocked]      | Categoría: 🌎 Canales Generales
 Canal: Yunavision (720p) [Not 24/7]             | Categoría: 🌎 Canales Generales
 Canal: Zinc Nombre TV (720p) [Not 24/7]         | Categoría: 🌎 Canales Generales
+Canal: Zonavision TV [Not 24/7]                 | Categoría: 🌎 Canales Generales
 Canal: América TeVé (1080p)                     | Categoría: 🌎 Canales Generales
 Canal: Buena TV (1080p)                         | Categoría: 🌎 Canales Generales
 Canal: Candelita TV (480p)                      | Categoría: 🌎 Canales Generales
@@ -437,7 +431,6 @@ Canal: X Level Media (1080p)                    | Categoría: 🌎 Canales Gener
 Canal: ADN 40 (720p)                            | Categoría: 🇲🇽 México
 Canal: Alcance TV (720p)                        | Categoría: 🇲🇽 México
 Canal: AMX Noticias (720p) [Not 24/7]           | Categoría: 🇲🇽 México
-Canal: Audaz TV (432p) [Not 24/7]               | Categoría: 🇻🇪 Venezuela
 Canal: BTA TV (720p)                            | Categoría: 🇻🇪 Venezuela
 Canal: Canal 21 Táchira (360p)                  | Categoría: 🇻🇪 Venezuela
 Canal: 3ABN Kids Network                        | Categoría: 🧸 Infantiles
