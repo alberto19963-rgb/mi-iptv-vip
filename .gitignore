@@ -1,0 +1,8 @@
+*.exp
+logs.zip
+docker-compose.yml
+test_cat.py
+data/
+__pycache__/
+*.py[cod]
+.DS_Store

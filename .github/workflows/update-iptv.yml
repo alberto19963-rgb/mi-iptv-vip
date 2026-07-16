@@ -2,8 +2,12 @@ name: Actualizador Diario de IPTV
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Se ejecuta una vez al día a las 8:00 AM UTC
-  workflow_dispatch: # Permite que lo ejecutes manualmente con un botón
+    - cron: '0 8 * * *' # Diario a las 8:00 AM UTC
+  workflow_dispatch:
+
+concurrency:
+  group: update-iptv
+  cancel-in-progress: false
 
 jobs:
   update-channels:
@@ -12,20 +16,21 @@ jobs:
       contents: write
     steps:
       - name: Descargar el repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
 
       - name: Ejecutar la limpieza de canales muertos
         run: python update_channels.py
 
       - name: Subir los cambios a GitHub (Commit y Push)
         run: |
-          git config --global user.name "IPTV Bot"
-          git config --global user.email "bot@github.com"
+          git config user.name "IPTV Bot"
+          git config user.email "bot@github.com"
           git add mi_lista_personal.m3u canales_disponibles.txt
-          git commit -m "Auto-limpieza de canales muertos" || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Auto-limpieza de canales muertos"
           git push
