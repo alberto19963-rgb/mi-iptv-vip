@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Media Assistant{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'ui-sans-serif', 'system-ui'],
+            display: ['Source Serif 4', 'Georgia', 'serif'],
+          },
+          colors: {
+            ink: '#1a2332',
+            mist: '#eef3f8',
+            foam: '#f7fafc',
+            accent: '#0d9488',
+            accent2: '#0369a1',
+            warn: '#b45309',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(13,148,136,.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(3,105,161,.10), transparent 50%),
+        linear-gradient(180deg, #f7fafc 0%, #eef3f8 100%);
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(255,255,255,.72);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(26,35,50,.08);
+    }
+  </style>
+</head>
+<body class="font-sans text-ink antialiased">
+  <header class="border-b border-ink/10 bg-white/50 backdrop-blur-md sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+      <a href="/" class="group">
+        <div class="font-display text-2xl tracking-tight text-ink group-hover:text-accent transition">Media Assistant</div>
+        <div class="text-xs text-ink/50">Recomendaciones · Descargas · Retención</div>
+      </a>
+      <nav class="flex gap-1 text-sm">
+        <a class="px-3 py-2 rounded-lg hover:bg-accent/10 {% if request.url.path == '/' %}bg-accent/10 text-accent font-medium{% endif %}" href="/">Panel</a>
+        <a class="px-3 py-2 rounded-lg hover:bg-accent/10 {% if request.url.path.startswith('/people') %}bg-accent/10 text-accent font-medium{% endif %}" href="/people">Personas</a>
+        <a class="px-3 py-2 rounded-lg hover:bg-accent/10 {% if request.url.path.startswith('/settings') %}bg-accent/10 text-accent font-medium{% endif %}" href="/settings">Ajustes</a>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="max-w-6xl mx-auto px-4 pb-10 text-xs text-ink/40">
+    Media Assistant · puerto 8510 · datos en PostgreSQL
+  </footer>
+</body>
+</html>

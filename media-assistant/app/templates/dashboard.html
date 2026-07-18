@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}Panel · Media Assistant{% endblock %}
+{% block content %}
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+  <div>
+    <h1 class="font-display text-3xl text-ink">Panel</h1>
+    <p class="text-ink/60 mt-1">Ritmo de visionado, preferencias y estado del sistema.</p>
+  </div>
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs px-2.5 py-1 rounded-full {% if bot_status == 'running' %}bg-accent/15 text-accent{% elif bot_status == 'waiting_for_token' %}bg-warn/15 text-warn{% else %}bg-red-100 text-red-700{% endif %}">
+      Bot: {{ bot_status }}
+    </span>
+    <span class="text-xs px-2.5 py-1 rounded-full bg-accent2/10 text-accent2">
+      Disco libre: {% if free_gb is not none %}{{ free_gb }} GB{% else %}—{% endif %}
+    </span>
+    <form method="post" action="/actions/sync-watches">
+      <button class="text-sm px-3 py-2 rounded-lg bg-ink text-white hover:bg-ink/90 transition">Sincronizar Jellyfin</button>
+    </form>
+  </div>
+</div>
+
+<section class="grid md:grid-cols-2 gap-4 mb-10">
+  {% for card in cards %}
+  <article class="glass rounded-2xl p-5">
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <h2 class="font-display text-xl">{{ card.person.name }}</h2>
+        <p class="text-sm text-ink/55">
+          Jellyfin: {{ card.person.jellyfin_username or '—' }}
+          · Telegram: {{ card.person.telegram_chat_id or 'sin vincular' }}
+        </p>
+      </div>
+      <div class="text-right">
+        <div class="text-2xl font-semibold text-accent">{{ card.person.movies_per_week }}</div>
+        <div class="text-[11px] uppercase tracking-wide text-ink/45">pelis / semana</div>
+      </div>
+    </div>
+    <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+      <div>
+        <div class="text-xs uppercase tracking-wide text-ink/40 mb-1">Géneros +</div>
+        {% if card.prefs.liked %}
+          <ul class="space-y-0.5">{% for g,s in card.prefs.liked %}<li>{{ g }} <span class="text-ink/40">({{ '%.1f'|format(s) }})</span></li>{% endfor %}</ul>
+        {% else %}<span class="text-ink/40">Aún aprendiendo…</span>{% endif %}
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wide text-ink/40 mb-1">Géneros −</div>
+        {% if card.prefs.disliked %}
+          <ul class="space-y-0.5">{% for g,s in card.prefs.disliked %}<li>{{ g }} <span class="text-ink/40">({{ '%.1f'|format(s) }})</span></li>{% endfor %}</ul>
+        {% else %}<span class="text-ink/40">—</span>{% endif %}
+      </div>
+    </div>
+    <div class="mt-4 flex gap-3 text-xs text-ink/55">
+      <span>Pendientes: {{ card.pending }}</span>
+      <span>Enviadas: {{ card.sent }}</span>
+      <span>{% if card.person.paused %}Pausado{% else %}Activo{% endif %}</span>
+    </div>
+  </article>
+  {% else %}
+  <div class="glass rounded-2xl p-6 md:col-span-2">
+    <p class="text-ink/70">Aún no hay personas. <a class="text-accent underline" href="/people">Añade la primera</a> y configura el bot en <a class="text-accent underline" href="/settings">Ajustes</a>.</p>
+  </div>
+  {% endfor %}
+</section>
+
+<div class="grid lg:grid-cols-3 gap-4">
+  <section class="glass rounded-2xl p-5 lg:col-span-1">
+    <h3 class="font-display text-lg mb-3">Descargas</h3>
+    <ul class="space-y-2 text-sm">
+      {% for d in downloads %}
+      <li class="flex justify-between gap-2 border-b border-ink/5 pb-2">
+        <span class="truncate">{{ d.title }}</span>
+        <span class="text-ink/45 whitespace-nowrap">{{ d.status }}</span>
+      </li>
+      {% else %}
+      <li class="text-ink/40">Sin descargas aún</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="glass rounded-2xl p-5 lg:col-span-1">
+    <h3 class="font-display text-lg mb-3">Programadas para borrar</h3>
+    <ul class="space-y-2 text-sm">
+      {% for d in scheduled %}
+      <li class="border-b border-ink/5 pb-2">
+        <div class="flex justify-between gap-2">
+          <span class="truncate">{{ d.title }}</span>
+          <form method="post" action="/downloads/{{ d.id }}/keep"><button class="text-accent text-xs">Conservar</button></form>
+        </div>
+        <div class="text-xs text-ink/40">{{ d.delete_after }}</div>
+      </li>
+      {% else %}
+      <li class="text-ink/40">Nada pendiente</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="glass rounded-2xl p-5 lg:col-span-1">
+    <h3 class="font-display text-lg mb-3">Errores recientes</h3>
+    <ul class="space-y-2 text-sm">
+      {% for e in errors %}
+      <li class="border-b border-ink/5 pb-2">
+        <div class="text-warn text-xs">{{ e.source }} · {{ e.created_at }}</div>
+        <div>{{ e.message }}</div>
+      </li>
+      {% else %}
+      <li class="text-ink/40">Sin errores</li>
+      {% endfor %}
+    </ul>
+    {% if deletions %}
+    <h4 class="mt-4 text-xs uppercase tracking-wide text-ink/40">Últimas eliminaciones</h4>
+    <ul class="mt-2 space-y-1 text-xs text-ink/60">
+      {% for d in deletions %}
+      <li>{{ d.title }} — {{ d.reason }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Ajustes · Media Assistant{% endblock %}
+{% block content %}
+<div class="mb-8">
+  <h1 class="font-display text-3xl">Ajustes</h1>
+  <p class="text-ink/60 mt-1">Tokens, APIs y políticas de retención. Los secretos se guardan solo en el NAS.</p>
+</div>
+
+{% if saved %}
+<div class="mb-4 rounded-xl bg-accent/10 text-accent px-4 py-3 text-sm">Guardado. Si pegaste el token de Telegram, el bot debería arrancar en unos segundos.</div>
+{% endif %}
+
+<form method="post" action="/settings" class="space-y-6">
+  <section class="glass rounded-2xl p-6 space-y-4">
+    <h2 class="font-display text-xl">Telegram &amp; TMDb</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <label class="block text-sm">
+        <span class="text-ink/60">Token del bot (BotFather)</span>
+        <input name="telegram_bot_token" type="password" value="{{ settings.telegram_bot_token }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" />
+      </label>
+      <label class="block text-sm">
+        <span class="text-ink/60">API key TMDb (v3 key o Read Access Token v4)</span>
+        <input name="tmdb_api_key" type="password" value="{{ settings.tmdb_api_key }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" />
+      </label>
+    </div>
+  </section>
+
+  <section class="glass rounded-2xl p-6 space-y-4">
+    <h2 class="font-display text-xl">Jellyfin</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <label class="block text-sm">
+        <span class="text-ink/60">URL</span>
+        <input name="jellyfin_url" value="{{ settings.jellyfin_url }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" />
+      </label>
+      <label class="block text-sm">
+        <span class="text-ink/60">API key</span>
+        <input name="jellyfin_api_key" type="password" value="{{ settings.jellyfin_api_key }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" />
+      </label>
+    </div>
+  </section>
+
+  <section class="glass rounded-2xl p-6 space-y-4">
+    <h2 class="font-display text-xl">Radarr</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <label class="block text-sm"><span class="text-ink/60">URL</span>
+        <input name="radarr_url" value="{{ settings.radarr_url }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">API key</span>
+        <input name="radarr_api_key" type="password" value="{{ settings.radarr_api_key }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Quality profile ID (9 = ESP - HD)</span>
+        <input name="radarr_quality_profile_id" value="{{ settings.radarr_quality_profile_id }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Root folder</span>
+        <input name="radarr_root_folder" value="{{ settings.radarr_root_folder }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+    </div>
+  </section>
+
+  <section class="glass rounded-2xl p-6 space-y-4">
+    <h2 class="font-display text-xl">Sonarr</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <label class="block text-sm"><span class="text-ink/60">URL</span>
+        <input name="sonarr_url" value="{{ settings.sonarr_url }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">API key</span>
+        <input name="sonarr_api_key" type="password" value="{{ settings.sonarr_api_key }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Quality profile ID</span>
+        <input name="sonarr_quality_profile_id" value="{{ settings.sonarr_quality_profile_id }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Root folder</span>
+        <input name="sonarr_root_folder" value="{{ settings.sonarr_root_folder }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+    </div>
+  </section>
+
+  <section class="glass rounded-2xl p-6 space-y-4">
+    <h2 class="font-display text-xl">Bazarr &amp; políticas</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <label class="block text-sm"><span class="text-ink/60">Bazarr URL</span>
+        <input name="bazarr_url" value="{{ settings.bazarr_url }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Bazarr API key</span>
+        <input name="bazarr_api_key" type="password" value="{{ settings.bazarr_api_key }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" autocomplete="off" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Tope de resolución (nunca 4K)</span>
+        <select name="resolution_cap" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2">
+          <option value="1080p" {% if settings.resolution_cap != '720p' %}selected{% endif %}>1080p (recomendado)</option>
+          <option value="720p" {% if settings.resolution_cap == '720p' %}selected{% endif %}>720p</option>
+        </select>
+      </label>
+      <label class="block text-sm"><span class="text-ink/60">Buffer de episodios (series)</span>
+        <input name="series_buffer_episodes" value="{{ settings.series_buffer_episodes or '3' }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Días de retención tras ver</span>
+        <input name="retention_days" value="{{ settings.retention_days }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Umbral disco libre (GB)</span>
+        <input name="disk_threshold_gb" value="{{ settings.disk_threshold_gb }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Máx. recomendaciones / semana</span>
+        <input name="max_recs_per_week" value="{{ settings.max_recs_per_week }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+      <label class="block text-sm"><span class="text-ink/60">Timeout valoración ⭐ (horas)</span>
+        <input name="rating_timeout_hours" value="{{ settings.rating_timeout_hours or '24' }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+    </div>
+  </section>
+
+  <button type="submit" class="px-5 py-2.5 rounded-xl bg-accent text-white font-medium hover:bg-teal-700 transition">Guardar ajustes</button>
+</form>
+{% endblock %}

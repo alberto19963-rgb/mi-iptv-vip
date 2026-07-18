@@ -6,3 +6,11 @@ data/
 __pycache__/
 *.py[cod]
 .DS_Store
+media-assistant/.env
+media-assistant/postgres-data/
+media-assistant/data/
+.env
+.env.*
+*.pyc
+media-assistant/**/.env
+media-assistant/**/node_modules/

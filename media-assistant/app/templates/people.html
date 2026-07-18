@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}Personas · Media Assistant{% endblock %}
+{% block content %}
+<div class="mb-8">
+  <h1 class="font-display text-3xl">Personas</h1>
+  <p class="text-ink/60 mt-1">Vincula cada persona a un usuario de Jellyfin y a Telegram.</p>
+</div>
+
+<section class="glass rounded-2xl p-6 mb-8">
+  <h2 class="font-display text-xl mb-4">Añadir persona</h2>
+  <form method="post" action="/people" class="grid md:grid-cols-4 gap-3 items-end">
+    <label class="block text-sm md:col-span-1">
+      <span class="text-ink/60">Nombre</span>
+      <input name="name" required class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" placeholder="Luis" />
+    </label>
+    <label class="block text-sm md:col-span-1">
+      <span class="text-ink/60">Usuario Jellyfin</span>
+      <select name="jellyfin_user_id" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2">
+        <option value="">— seleccionar —</option>
+        {% for u in jf_users %}
+        <option value="{{ u.Id }}">{{ u.Name }}</option>
+        {% endfor %}
+      </select>
+      {% if not jf_users %}
+      <span class="text-xs text-warn">No se listaron usuarios. Revisa la API key de Jellyfin en Ajustes.</span>
+      {% endif %}
+    </label>
+    <label class="block text-sm md:col-span-1">
+      <span class="text-ink/60">Chat ID Telegram (opcional)</span>
+      <input name="telegram_chat_id" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" placeholder="si ya lo sabes" />
+    </label>
+    <button class="px-4 py-2.5 rounded-xl bg-accent text-white font-medium hover:bg-teal-700">Crear</button>
+  </form>
+  <p class="text-xs text-ink/45 mt-3">Si no pones Chat ID, se genera un código de emparejamiento. La persona escribe <code>/start CODIGO</code> al bot.</p>
+</section>
+
+<div class="space-y-4">
+  {% for p in people %}
+  <article class="glass rounded-2xl p-5">
+    <div class="flex flex-col lg:flex-row lg:items-start gap-4 justify-between">
+      <div>
+        <h3 class="font-display text-xl">{{ p.name }}</h3>
+        <p class="text-sm text-ink/55 mt-1">
+          Jellyfin: {{ p.jellyfin_username or '—' }} ·
+          Telegram: {{ p.telegram_chat_id or 'sin vincular' }} ·
+          Ritmo: {{ p.movies_per_week }}/sem ·
+          {% if p.paused %}<span class="text-warn">Pausado</span>{% else %}Activo{% endif %}
+        </p>
+        {% if p.pairing_code %}
+        <p class="mt-2 text-sm bg-accent2/10 text-accent2 inline-block px-3 py-1 rounded-lg">
+          Código: <strong>{{ p.pairing_code }}</strong> → envía <code>/start {{ p.pairing_code }}</code> al bot
+        </p>
+        {% endif %}
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <form method="post" action="/people/{{ p.id }}/pairing"><button class="text-sm px-3 py-1.5 rounded-lg border border-ink/10 hover:bg-white">Nuevo código</button></form>
+        <form method="post" action="/people/{{ p.id }}/pause"><button class="text-sm px-3 py-1.5 rounded-lg border border-ink/10 hover:bg-white">{% if p.paused %}Reanudar{% else %}Pausar{% endif %}</button></form>
+        <form method="post" action="/people/{{ p.id }}/delete" onsubmit="return confirm('¿Eliminar a {{ p.name }}?')"><button class="text-sm px-3 py-1.5 rounded-lg border border-red-200 text-red-700 hover:bg-red-50">Eliminar</button></form>
+      </div>
+    </div>
+    <details class="mt-4">
+      <summary class="text-sm text-accent cursor-pointer">Editar</summary>
+      <form method="post" action="/people/{{ p.id }}/update" class="mt-3 grid md:grid-cols-4 gap-3 items-end">
+        <label class="block text-sm"><span class="text-ink/60">Nombre</span>
+          <input name="name" value="{{ p.name }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+        <label class="block text-sm"><span class="text-ink/60">Jellyfin</span>
+          <select name="jellyfin_user_id" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2">
+            <option value="">—</option>
+            {% for u in jf_users %}
+            <option value="{{ u.Id }}" {% if p.jellyfin_user_id == u.Id %}selected{% endif %}>{{ u.Name }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <label class="block text-sm"><span class="text-ink/60">Chat ID</span>
+          <input name="telegram_chat_id" value="{{ p.telegram_chat_id or '' }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+        <label class="block text-sm"><span class="text-ink/60">Tope recs/sem</span>
+          <input name="recs_cap" type="number" value="{{ p.recs_cap }}" class="mt-1 w-full rounded-lg border border-ink/10 bg-white/80 px-3 py-2" /></label>
+        <button class="md:col-span-4 justify-self-start px-4 py-2 rounded-lg bg-ink text-white text-sm">Guardar cambios</button>
+      </form>
+    </details>
+  </article>
+  {% else %}
+  <p class="text-ink/50">No hay personas todavía.</p>
+  {% endfor %}
+</div>
+{% endblock %}
