@@ -1,4 +1,4 @@
-LISTA DE CANALES GRATIS (441 canales)
+LISTA DE CANALES GRATIS (440 canales)
 ============================================================
 
 
@@ -176,7 +176,6 @@ Canal: Turismo HD (720p) [DO]
 Canal: TV 10 San Juan (720p) [Not 24/7] [DO]
 Canal: TV Higuey Digital (720p) [Not 24/7] [DO]
 Canal: TV Luz (480p) [DO]
-Canal: TV Plata (720p) [Geo-blocked] [DO]
 Canal: TV Éxitos (720p) [DO]
 Canal: TVN (Dominican Republic) (1080p) [Not 24/7] [DO]
 Canal: TVN24 (720p) [Not 24/7] [DO]
@@ -330,7 +329,6 @@ Canal: CBS News New York (720p) [US]
 Canal: Estrella News (1080p) [US]
 Canal: NBC 5 Chicago Live News (1080p) [US]
 Canal: News 12 New York (1080p) [US]
-Canal: News12+ New York (1080p) [Geo-blocked] [US]
 Canal: SC Currents [US]
 Canal: WBRZ Weather Channel Baton Rouge LA (480p) [US]
 Canal: WDEF-TV News Chattanooga TN (720p) [US]
@@ -409,6 +407,7 @@ Canal: NBC 10 Rochester NY (WHEC) (1080p) [US]
 Canal: NBC 13 Albany NY (WNYT) (1080p) [US]
 Canal: NBC 4 Albuquerque NM (KOB) (1080p) [US]
 Canal: NBC Comedy Vault (1080p) [US]
+Canal: NBC WBTS-CD (1080p) [US]
 Canal: Orange Government Access TV (Orange CT) (720p) [US]
 Canal: PBS KET KY (480p) [US]
 Canal: PBS KET Louisville KY (WKMJ-TV) (720p) [US]
