@@ -16,14 +16,14 @@ LOGO_API = "https://iptv-org.github.io/api/logos.json"
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia-tv.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id iptv-org -> id de nuestra guía / id en iptv-epg.org
-# El id de la guía es el nombre visible del canal, tal cual está en la lista.
-# OttPlayer no ata la programación si el texto no coincide completo.
+# id de iptv-org -> (id exacto en la guía, nombre exacto en la guía)
+# La guía original no usa "Telemicro": usa id Telemicro.dr y nombre "DR - Telemicro".
 DO_GUIDE = {
-    "CDN.do": ("CDN", "CDN.dr"),
-    "TeleAntillas.do": ("Tele Antillas", "TeleAntillas.dr"),
-    "Telemicro.do": ("Telemicro", "Telemicro.dr"),
-    "Telesistema11.do": ("Telesistema 11", "Telesistema11.dr"),
-    "Teleunion.do": ("Teleunion", "Teleunion.dr"),
+    "CDN.do": ("CDN.dr", "DR - CDN"),
+    "TeleAntillas.do": ("TeleAntillas.dr", "DR - Tele Antillas"),
+    "Telemicro.do": ("Telemicro.dr", "DR - Telemicro"),
+    "Telesistema11.do": ("Telesistema11.dr", "DR - Telesistema 11"),
+    "Teleunion.do": ("Teleunion.dr", "DR - Teleunión"),
 }
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
@@ -282,14 +282,20 @@ def set_logo(extinf, logo_url):
     return extinf.replace("tvg-id=", f'tvg-logo="{logo_url}" tvg-id=', 1)
 
 
-def guide_id_for(tvg_id):
+def guide_match(tvg_id):
+    """Devuelve (id de la guía, nombre de la guía) o None."""
     base = (tvg_id or "").split("@")[0]
     if base in DO_GUIDE:
-        return DO_GUIDE[base][0]
-    for ours, _source in DO_GUIDE.values():
-        if base == ours:
-            return ours
+        return DO_GUIDE[base]
+    for channel_id, display in DO_GUIDE.values():
+        if base in (channel_id, display):
+            return channel_id, display
     return None
+
+
+def guide_id_for(tvg_id):
+    found = guide_match(tvg_id)
+    return found[0] if found else None
 
 
 def xml_escape(text):
@@ -328,7 +334,7 @@ def write_guia():
 
         raw = gzip.decompress(raw)
     text = raw.decode("utf-8", "replace")
-    wanted = {source: ours for ours, source in DO_GUIDE.values()}
+    wanted = {channel_id: channel_id for channel_id, _display in DO_GUIDE.values()}
     programmes = []
     for start, stop, channel, body in re.findall(
         r'<programme\s+start="([^"]+)"\s+stop="([^"]+)"\s+channel="([^"]+)"\s*>(.*?)</programme>',
@@ -347,17 +353,14 @@ def write_guia():
         programmes.append((xmltv_to_local(start), xmltv_to_local(stop), ours, title_text, desc_text))
     if not programmes:
         raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
-    names = []
-    for name, _source in DO_GUIDE.values():
-        if name not in names:
-            names.append(name)
+    names = list(DO_GUIDE.values())
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         "<tv>",
     ]
-    for name in names:
-        lines.append(f'  <channel id="{xml_escape(name)}">')
-        lines.append(f"    <display-name>{xml_escape(name)}</display-name>")
+    for channel_id, display in names:
+        lines.append(f'  <channel id="{xml_escape(channel_id)}">')
+        lines.append(f"    <display-name>{xml_escape(display)}</display-name>")
         lines.append("  </channel>")
     for start, stop, name, title_text, desc_text in programmes:
         lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(name)}">')
@@ -415,12 +418,13 @@ def write_m3u(path, channels, *, player=False, logos=None):
             extinf = set_group_title(extinf, category)
             if player:
                 extinf = set_logo(extinf, best_logo(logos, extinf))
-                matched = guide_id_for(extinf_attr(extinf, "tvg-id") or "")
+                found = guide_match(extinf_attr(extinf, "tvg-id") or "")
                 name = player_name(extinf)
-                if matched:
-                    name = matched
-                    extinf = set_tvg_id(extinf, matched)
-                    extinf = set_tvg_name(extinf, matched)
+                if found:
+                    channel_id, display = found
+                    name = display
+                    extinf = set_tvg_id(extinf, channel_id)
+                    extinf = set_tvg_name(extinf, display)
                 extinf = extinf[: extinf.rfind(",") + 1] + name
             f.write(extinf + "\n")
             if player:
