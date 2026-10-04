@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "IPTV Bot"
           git config user.email "bot@github.com"
-          git add mi_lista_personal.m3u canales_disponibles.txt
+          git add mi_lista_personal.m3u canales_disponibles.txt guia.xml
           git diff --cached --quiet && exit 0
           git commit -m "Auto-limpieza de canales muertos"
           git push

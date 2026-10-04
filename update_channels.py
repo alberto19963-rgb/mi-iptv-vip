@@ -9,17 +9,19 @@ ROOT = Path(__file__).resolve().parent
 MASTER_FILE = ROOT / "lista_maestra.m3u"
 OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
+GUIDE_FILE = ROOT / "guia.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
-# Una sola guía, XML sin comprimir. El archivo de EE.UU. pesa 515 MB y tumba la carga.
-# El iPhone ata el programa por el nombre exacto de la guía y por el id.
-EPG_DO_URL = "https://iptv-epg.org/files/epg-do.xml"
-# id de iptv-org -> (id de la guía, nombre exacto dentro de esa guía)
+# Guía nuestra, XMLTV válido. OttPlayer iOS no lee el xml de iptv-epg.org
+# (sin declaración XML y con <desc> antes de <title>).
+EPG_URL = "https://raw.githubusercontent.com/alberto19963-rgb/mi-iptv-vip/main/guia.xml"
+EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
+# id iptv-org -> id de nuestra guía / id en iptv-epg.org
 DO_GUIDE = {
-    "CDN.do": ("CDN.dr", "DR - CDN"),
-    "TeleAntillas.do": ("TeleAntillas.dr", "DR - Tele Antillas"),
-    "Telemicro.do": ("Telemicro.dr", "DR - Telemicro"),
-    "Telesistema11.do": ("Telesistema11.dr", "DR - Telesistema 11"),
-    "Teleunion.do": ("Teleunion.dr", "DR - Teleunión"),
+    "CDN.do": ("CDN", "CDN.dr"),
+    "TeleAntillas.do": ("TeleAntillas", "TeleAntillas.dr"),
+    "Telemicro.do": ("Telemicro", "Telemicro.dr"),
+    "Telesistema11.do": ("Telesistema11", "Telesistema11.dr"),
+    "Teleunion.do": ("Teleunion", "Teleunion.dr"),
 }
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
@@ -278,15 +280,98 @@ def set_logo(extinf, logo_url):
     return extinf.replace("tvg-id=", f'tvg-logo="{logo_url}" tvg-id=', 1)
 
 
-def guide_match(tvg_id):
-    """Devuelve (id, nombre) de la guía dominicana, si ese canal existe ahí."""
+def guide_id_for(tvg_id):
     base = (tvg_id or "").split("@")[0]
     if base in DO_GUIDE:
-        return DO_GUIDE[base]
-    for guide_id, guide_name in DO_GUIDE.values():
-        if base == guide_id:
-            return guide_id, guide_name
+        return DO_GUIDE[base][0]
+    for ours, _source in DO_GUIDE.values():
+        if base == ours:
+            return ours
     return None
+
+
+def xml_escape(text):
+    return (
+        (text or "")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def xmltv_to_local(stamp):
+    """Pasa YYYYMMDDHHMMSS ±HHMM a hora de República Dominicana (−0400)."""
+    from datetime import datetime, timedelta, timezone
+
+    match = re.match(r"^(\d{14})(?:\s*([+-]\d{4}))?", (stamp or "").strip())
+    if not match:
+        return stamp
+    digits, offset = match.group(1), match.group(2) or "+0000"
+    sign = 1 if offset[0] == "+" else -1
+    minutes = sign * (int(offset[1:3]) * 60 + int(offset[3:5]))
+    utc = datetime.strptime(digits, "%Y%m%d%H%M%S").replace(
+        tzinfo=timezone(timedelta(minutes=minutes))
+    ).astimezone(timezone.utc)
+    local = utc.astimezone(timezone(timedelta(hours=-4)))
+    return local.strftime("%Y%m%d%H%M%S -0400")
+
+
+def write_guia():
+    """ Reescribe iptv-epg.org en XMLTV válido, solo los canales de la lista."""
+    req = urllib.request.Request(EPG_SOURCE, headers={"User-Agent": "Mozilla/5.0"})
+    raw = urllib.request.urlopen(req, timeout=60).read()
+    if raw[:2] == b"\x1f\x8b":
+        import gzip
+
+        raw = gzip.decompress(raw)
+    text = raw.decode("utf-8", "replace")
+    wanted = {source: ours for ours, source in DO_GUIDE.values()}
+    names = {
+        "CDN": "CDN",
+        "TeleAntillas": "Tele Antillas",
+        "Telemicro": "Telemicro",
+        "Telesistema11": "Telesistema 11",
+        "Teleunion": "Teleunion",
+    }
+    programmes = []
+    for start, stop, channel, body in re.findall(
+        r'<programme\s+start="([^"]+)"\s+stop="([^"]+)"\s+channel="([^"]+)"\s*>(.*?)</programme>',
+        text,
+        re.S,
+    ):
+        ours = wanted.get(channel)
+        if not ours:
+            continue
+        title = re.search(r"<title[^>]*>(.*?)</title>", body, re.S)
+        desc = re.search(r"<desc[^>]*>(.*?)</desc>", body, re.S)
+        title_text = re.sub(r"<[^>]+>", "", title.group(1)).strip() if title else ""
+        desc_text = re.sub(r"<[^>]+>", "", desc.group(1)).strip() if desc else ""
+        if not title_text:
+            continue
+        programmes.append((xmltv_to_local(start), xmltv_to_local(stop), ours, title_text, desc_text))
+    if not programmes:
+        raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
+        '<tv generator-info-name="mi-iptv-vip" source-info-name="IPTV-EPG.org">',
+    ]
+    for ours in names:
+        lines.append(f'  <channel id="{ours}">')
+        lines.append(f"    <display-name>{xml_escape(names[ours])}</display-name>")
+        lines.append("  </channel>")
+    for start, stop, ours, title_text, desc_text in programmes:
+        lines.append(f'  <programme start="{start}" stop="{stop}" channel="{ours}">')
+        lines.append(f'    <title lang="es">{xml_escape(title_text)}</title>')
+        if desc_text:
+            lines.append(f'    <desc lang="es">{xml_escape(desc_text)}</desc>')
+        lines.append("  </programme>")
+    lines.append("</tv>")
+    lines.append("")
+    GUIDE_FILE.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Guía XMLTV: {len(programmes)} programas en {GUIDE_FILE.name}.")
+    return len(programmes)
 
 
 def set_tvg_id(extinf, tvg_id):
@@ -324,7 +409,7 @@ def write_m3u(path, channels, *, player=False, logos=None):
     logos = logos or {}
     with path.open("w", encoding="utf-8") as f:
         if player:
-            f.write(f'#EXTM3U url-tvg="{EPG_DO_URL}" x-tvg-url="{EPG_DO_URL}"\n')
+            f.write(f'#EXTM3U url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}"\n')
         else:
             f.write("#EXTM3U\n")
         for extinf, url in channels:
@@ -332,13 +417,11 @@ def write_m3u(path, channels, *, player=False, logos=None):
             extinf = set_group_title(extinf, category)
             if player:
                 extinf = set_logo(extinf, best_logo(logos, extinf))
-                matched = guide_match(extinf_attr(extinf, "tvg-id") or "")
+                matched = guide_id_for(extinf_attr(extinf, "tvg-id") or "")
                 name = player_name(extinf)
                 if matched:
-                    guide_id, guide_name = matched
-                    extinf = set_tvg_id(extinf, guide_id)
-                    extinf = set_tvg_name(extinf, guide_name)
-                    name = guide_name
+                    extinf = set_tvg_id(extinf, matched)
+                    extinf = set_tvg_name(extinf, name)
                 extinf = extinf[: extinf.rfind(",") + 1] + name
             f.write(extinf + "\n")
             if player:
@@ -364,8 +447,8 @@ def validate_player_m3u(path):
     text = path.read_text(encoding="utf-8")
     if "guides.xml" in text:
         raise RuntimeError("La lista publicada todavía apunta a una guía inexistente.")
-    if EPG_DO_URL not in text or "epg-us.xml" in text:
-        raise RuntimeError("La lista publicada no lleva solo la guía dominicana.")
+    if EPG_URL not in text:
+        raise RuntimeError("La lista publicada no apunta a nuestra guía XMLTV.")
     lines = [line.strip() for line in text.splitlines() if line.strip()]
     if not lines or not lines[0].startswith("#EXTM3U"):
         raise RuntimeError("La lista no empieza con #EXTM3U.")
@@ -403,6 +486,7 @@ def validate_player_m3u(path):
 def write_outputs(working_channels):
     sorted_channels = sort_channels(working_channels)
     logos = load_logos()
+    write_guia()
     write_m3u(OUTPUT_M3U, sorted_channels, player=True, logos=logos)
     write_summary(OUTPUT_TXT, sorted_channels)
     validate_player_m3u(OUTPUT_M3U)
@@ -414,6 +498,7 @@ def recategorize_lists():
 
     channels = sort_channels(parse_channels(MASTER_FILE))
     write_m3u(MASTER_FILE, channels)
+    write_guia()
     write_m3u(OUTPUT_M3U, channels, player=True, logos=load_logos())
     write_summary(OUTPUT_TXT, channels)
     validate_player_m3u(OUTPUT_M3U)
