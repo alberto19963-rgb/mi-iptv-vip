@@ -11,9 +11,9 @@ OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
 GUIDE_FILE = ROOT / "guia.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
-# Guía nuestra, XMLTV válido. OttPlayer iOS no lee el xml de iptv-epg.org
-# (sin declaración XML y con <desc> antes de <title>).
-EPG_URL = "https://raw.githubusercontent.com/alberto19963-rgb/mi-iptv-vip/main/guia.xml"
+# Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
+# celular no la trata como XML. jsDelivr la sirve como application/xml.
+EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id iptv-org -> id de nuestra guía / id en iptv-epg.org
 DO_GUIDE = {
@@ -334,6 +334,15 @@ def write_guia():
         "Telesistema11": "Telesistema 11",
         "Teleunion": "Teleunion",
     }
+    # El celular puede emparejar por el id, por el nombre visible o por el
+    # nombre viejo "DR - …" si todavía no recargó la lista.
+    aliases = {
+        "CDN": ["CDN", "DR - CDN"],
+        "TeleAntillas": ["TeleAntillas", "Tele Antillas", "DR - Tele Antillas"],
+        "Telemicro": ["Telemicro", "DR - Telemicro"],
+        "Telesistema11": ["Telesistema11", "Telesistema 11", "DR - Telesistema 11"],
+        "Teleunion": ["Teleunion", "DR - Teleunion"],
+    }
     programmes = []
     for start, stop, channel, body in re.findall(
         r'<programme\s+start="([^"]+)"\s+stop="([^"]+)"\s+channel="([^"]+)"\s*>(.*?)</programme>',
@@ -349,23 +358,28 @@ def write_guia():
         desc_text = re.sub(r"<[^>]+>", "", desc.group(1)).strip() if desc else ""
         if not title_text:
             continue
-        programmes.append((xmltv_to_local(start), xmltv_to_local(stop), ours, title_text, desc_text))
+        local_start = xmltv_to_local(start)
+        local_stop = xmltv_to_local(stop)
+        for alias in aliases[ours]:
+            programmes.append((local_start, local_stop, alias, title_text, desc_text))
     if not programmes:
         raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
-        '<tv generator-info-name="mi-iptv-vip" source-info-name="IPTV-EPG.org">',
+        "<tv>",
     ]
-    for ours in names:
-        lines.append(f'  <channel id="{ours}">')
-        lines.append(f"    <display-name>{xml_escape(names[ours])}</display-name>")
-        lines.append("  </channel>")
-    for start, stop, ours, title_text, desc_text in programmes:
-        lines.append(f'  <programme start="{start}" stop="{stop}" channel="{ours}">')
-        lines.append(f'    <title lang="es">{xml_escape(title_text)}</title>')
+    for ours, alias_ids in aliases.items():
+        for alias in alias_ids:
+            lines.append(f'  <channel id="{xml_escape(alias)}">')
+            lines.append(f"    <display-name>{xml_escape(alias)}</display-name>")
+            if alias != names[ours]:
+                lines.append(f"    <display-name>{xml_escape(names[ours])}</display-name>")
+            lines.append("  </channel>")
+    for start, stop, alias, title_text, desc_text in programmes:
+        lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(alias)}">')
+        lines.append(f"    <title>{xml_escape(title_text)}</title>")
         if desc_text:
-            lines.append(f'    <desc lang="es">{xml_escape(desc_text)}</desc>')
+            lines.append(f"    <desc>{xml_escape(desc_text)}</desc>")
         lines.append("  </programme>")
     lines.append("</tv>")
     lines.append("")
