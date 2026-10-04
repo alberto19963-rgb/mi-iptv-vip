@@ -1190,7 +1190,7 @@ https://fox.hostlagarto.com:8081/bocachicatv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Canalda26HD.do@HD" tvg-logo="https://canaldahd.com/wp-content/uploads/2023/03/cropped-canaldahdlogo-1.png" group-title="🇩🇴 República Dominicana",Canalda 26 HD
 #EXTGRP:🇩🇴 República Dominicana
 https://canalda.rgradio.net:3084/live/canaldalive.m3u8
-#EXTINF:-1 tvg-name="DR - CDN" tvg-id="DR - CDN" tvg-logo="https://i.imgur.com/eQyjIgf.png" group-title="🇩🇴 República Dominicana",DR - CDN
+#EXTINF:-1 tvg-name="DR - CDN" tvg-id="CDN.dr" tvg-logo="https://i.imgur.com/eQyjIgf.png" group-title="🇩🇴 República Dominicana",DR - CDN
 #EXTGRP:🇩🇴 República Dominicana
 http://190.61.90.17:40000/play/a03p/index.m3u8
 #EXTINF:-1 tvg-id="CenovisionHD.do@HD" tvg-logo="https://imgur.com/ShPaOvn.jpg" group-title="🇩🇴 República Dominicana",Cenovision HD
@@ -1256,7 +1256,7 @@ https://live.dionelysterrero.com/senalestv/stream.m3u8
 #EXTINF:-1 tvg-id="SiTV.do@SD" tvg-logo="https://i.imgur.com/f8bDccF.png" group-title="🇩🇴 República Dominicana",SiTV
 #EXTGRP:🇩🇴 República Dominicana
 http://190.122.104.210:5080/LiveApp/streams/sitv2.m3u8
-#EXTINF:-1 tvg-name="DR - Tele Antillas" tvg-id="DR - Tele Antillas" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="🇩🇴 República Dominicana",DR - Tele Antillas
+#EXTINF:-1 tvg-name="DR - Tele Antillas" tvg-id="TeleAntillas.dr" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="🇩🇴 República Dominicana",DR - Tele Antillas
 #EXTGRP:🇩🇴 República Dominicana
 http://45.171.108.253:8888/TELEANTILLAS/index.m3u8
 #EXTINF:-1 tvg-id="TeleDajabonTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3822-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana",Tele Dajabon TV
@@ -1265,16 +1265,16 @@ https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleimpacto.do@SD" tvg-logo="https://i.imgur.com/dBEysOV.png" group-title="🇩🇴 República Dominicana",Teleimpacto
 #EXTGRP:🇩🇴 República Dominicana
 https://vpss2003.streamprolive.com/hls/live.m3u8
-#EXTINF:-1 tvg-name="DR - Telemicro" tvg-id="DR - Telemicro" tvg-logo="https://i.imgur.com/WhgySAk.png" http-referrer="https://telemicro.com.do/players/5tv/index_pc.php" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:152.0) Gecko/20100101 Firefox/152.0" group-title="🇩🇴 República Dominicana",DR - Telemicro
+#EXTINF:-1 tvg-name="DR - Telemicro" tvg-id="Telemicro.dr" tvg-logo="https://i.imgur.com/WhgySAk.png" http-referrer="https://telemicro.com.do/players/5tv/index_pc.php" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:152.0) Gecko/20100101 Firefox/152.0" group-title="🇩🇴 República Dominicana",DR - Telemicro
 #EXTGRP:🇩🇴 República Dominicana
 https://live2.telemicro.com.do/live/55/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleRadioNorte.do@SD" tvg-logo="https://i.imgur.com/s43eFy0.png" group-title="🇩🇴 República Dominicana",TeleRadioNorte
 #EXTGRP:🇩🇴 República Dominicana
 https://angelistic.live:3785/live/tvoficiallive.m3u8
-#EXTINF:-1 tvg-name="DR - Telesistema 11" tvg-id="DR - Telesistema 11" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="🇩🇴 República Dominicana",DR - Telesistema 11
+#EXTINF:-1 tvg-name="DR - Telesistema 11" tvg-id="Telesistema11.dr" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="🇩🇴 República Dominicana",DR - Telesistema 11
 #EXTGRP:🇩🇴 República Dominicana
 https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8
-#EXTINF:-1 tvg-name="DR - Teleunión" tvg-id="DR - Teleunión" tvg-logo="https://i.imgur.com/vTfxkjW.png" http-referrer="https://teleuniontvrd.com/portal/" group-title="🇩🇴 República Dominicana",DR - Teleunión
+#EXTINF:-1 tvg-name="DR - Teleunión" tvg-id="Teleunion.dr" tvg-logo="https://i.imgur.com/vTfxkjW.png" http-referrer="https://teleuniontvrd.com/portal/" group-title="🇩🇴 República Dominicana",DR - Teleunión
 #EXTGRP:🇩🇴 República Dominicana
 http://server2grupocam.com:1945/teleunion/TU/playlist.m3u8
 #EXTINF:-1 tvg-id="ToraCanal69.do@HD" tvg-logo="https://latoratv69.com.do/wp-content/themes/bootscore/assets/img/logo-tora-tv.png" group-title="🇩🇴 República Dominicana",Tora Canal 69

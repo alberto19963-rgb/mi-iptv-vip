@@ -15,8 +15,8 @@ LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia-espejo.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
-# id de iptv-org -> (texto único del canal, id en la fuente)
-# Ese texto queda igual en el nombre, el tvg-id, el tvg-name y el id de la guía.
+# id de iptv-org -> (nombre en pantalla, id de la guía)
+# El nombre y el id no son el mismo texto. El id no lleva espacios.
 DO_GUIDE = {
     "CDN.do": ("DR - CDN", "CDN.dr"),
     "TeleAntillas.do": ("DR - Tele Antillas", "TeleAntillas.dr"),
@@ -282,14 +282,14 @@ def set_logo(extinf, logo_url):
 
 
 def guide_match(tvg_id):
-    """Devuelve (texto, texto): nombre, tvg-id e id de la guía son el mismo."""
+    """Devuelve (id de la guía, nombre). Son campos distintos."""
     base = (tvg_id or "").split("@")[0]
     if base in DO_GUIDE:
-        mirror, _source = DO_GUIDE[base]
-        return mirror, mirror
-    for mirror, source in DO_GUIDE.values():
-        if base in (mirror, source):
-            return mirror, mirror
+        display, source = DO_GUIDE[base]
+        return source, display
+    for display, source in DO_GUIDE.values():
+        if base in (display, source):
+            return source, display
     return None
 
 
@@ -334,7 +334,7 @@ def write_guia():
 
         raw = gzip.decompress(raw)
     text = raw.decode("utf-8", "replace")
-    wanted = {source: mirror for mirror, source in DO_GUIDE.values()}
+    wanted = {source: source for _display, source in DO_GUIDE.values()}
     programmes = []
     for start, stop, channel, body in re.findall(
         r'<programme\s+start="([^"]+)"\s+stop="([^"]+)"\s+channel="([^"]+)"\s*>(.*?)</programme>',
@@ -357,9 +357,9 @@ def write_guia():
         '<?xml version="1.0" encoding="UTF-8"?>',
         "<tv>",
     ]
-    for mirror, _source in DO_GUIDE.values():
-        lines.append(f'  <channel id="{xml_escape(mirror)}">')
-        lines.append(f"    <display-name>{xml_escape(mirror)}</display-name>")
+    for display, source in DO_GUIDE.values():
+        lines.append(f'  <channel id="{xml_escape(source)}">')
+        lines.append(f"    <display-name>{xml_escape(display)}</display-name>")
         lines.append("  </channel>")
     for start, stop, name, title_text, desc_text in programmes:
         lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(name)}">')
