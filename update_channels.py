@@ -109,6 +109,8 @@ GROUP_ORDER = [
 
 TVG_ID_RE = re.compile(r'tvg-id="([^"]*)"', re.IGNORECASE)
 COUNTRY_CODE_RE = re.compile(r"\.([a-z]{2})(?:@|$)")
+EXTINF_ATTR_RE = re.compile(r'([\w-]+)="([^"]*)"')
+DEFAULT_USER_AGENT = "VLC/3.0.9 LibVLC/3.0.9"
 
 
 def channel_name(extinf):
@@ -150,6 +152,11 @@ def assign_category(extinf, url=""):
     return "🌍 Otros"
 
 
+def extinf_attr(extinf, name):
+    attrs = {key.lower(): value for key, value in EXTINF_ATTR_RE.findall(extinf)}
+    return attrs.get(name.lower())
+
+
 def parse_channels(path):
     lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
     channels = []
@@ -158,10 +165,12 @@ def parse_channels(path):
     while i < len(lines):
         if lines[i].startswith("#EXTINF:"):
             extinf = lines[i]
-            url = lines[i + 1] if i + 1 < len(lines) and not lines[i + 1].startswith("#") else None
-            if url:
-                channels.append((extinf, url))
-                i += 2
+            j = i + 1
+            while j < len(lines) and lines[j].startswith("#"):
+                j += 1
+            if j < len(lines):
+                channels.append((extinf, lines[j]))
+                i = j + 1
                 continue
         i += 1
 
@@ -169,8 +178,12 @@ def parse_channels(path):
 
 
 def check_url(channel):
-    _, url = channel
-    req = urllib.request.Request(url, headers={"User-Agent": "VLC/3.0.9 LibVLC/3.0.9"})
+    extinf, url = channel
+    headers = {"User-Agent": extinf_attr(extinf, "http-user-agent") or DEFAULT_USER_AGENT}
+    referrer = extinf_attr(extinf, "http-referrer") or extinf_attr(extinf, "http-referer")
+    if referrer:
+        headers["Referer"] = referrer
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=URL_TIMEOUT) as response:
             if 200 <= response.status < 400:
