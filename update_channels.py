@@ -9,11 +9,12 @@ ROOT = Path(__file__).resolve().parent
 MASTER_FILE = ROOT / "lista_maestra.m3u"
 OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
-GUIDE_FILE = ROOT / "guia-espejo.xml"
+GUIDE_FILE = ROOT / "g.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
-EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@92faab7/guia-espejo.xml"
+# Este enlace es fijo. No cambiarlo: Alberto lo escribe a mano en el celular.
+EPG_URL = "https://tinyurl.com/guiard"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id de iptv-org -> (nombre en pantalla, id de la guía)
 # El nombre y el id no son el mismo texto. El id no lleva espacios.
@@ -409,7 +410,7 @@ def write_m3u(path, channels, *, player=False, logos=None):
     logos = logos or {}
     with path.open("w", encoding="utf-8") as f:
         if player:
-            f.write(f'#EXTM3U url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}"\n')
+            f.write(f'#EXTM3U url-tvg="{EPG_URL}"\n')
         else:
             f.write("#EXTM3U\n")
         for extinf, url in channels:
