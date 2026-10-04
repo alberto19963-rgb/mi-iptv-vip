@@ -1256,7 +1256,7 @@ https://live.dionelysterrero.com/senalestv/stream.m3u8
 #EXTINF:-1 tvg-id="SiTV.do@SD" tvg-logo="https://i.imgur.com/f8bDccF.png" group-title="🇩🇴 República Dominicana",SiTV
 #EXTGRP:🇩🇴 República Dominicana
 http://190.122.104.210:5080/LiveApp/streams/sitv2.m3u8
-#EXTINF:-1 tvg-name="Tele Antillas" tvg-id="TeleAntillas" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="🇩🇴 República Dominicana",Tele Antillas
+#EXTINF:-1 tvg-name="Tele Antillas" tvg-id="Tele Antillas" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="🇩🇴 República Dominicana",Tele Antillas
 #EXTGRP:🇩🇴 República Dominicana
 http://45.171.108.253:8888/TELEANTILLAS/index.m3u8
 #EXTINF:-1 tvg-id="TeleDajabonTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3822-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana",Tele Dajabon TV
@@ -1271,7 +1271,7 @@ https://live2.telemicro.com.do/live/55/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleRadioNorte.do@SD" tvg-logo="https://i.imgur.com/s43eFy0.png" group-title="🇩🇴 República Dominicana",TeleRadioNorte
 #EXTGRP:🇩🇴 República Dominicana
 https://angelistic.live:3785/live/tvoficiallive.m3u8
-#EXTINF:-1 tvg-name="Telesistema 11" tvg-id="Telesistema11" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="🇩🇴 República Dominicana",Telesistema 11
+#EXTINF:-1 tvg-name="Telesistema 11" tvg-id="Telesistema 11" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="🇩🇴 República Dominicana",Telesistema 11
 #EXTGRP:🇩🇴 República Dominicana
 https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8
 #EXTINF:-1 tvg-name="Teleunion" tvg-id="Teleunion" tvg-logo="https://i.imgur.com/vTfxkjW.png" http-referrer="https://teleuniontvrd.com/portal/" group-title="🇩🇴 República Dominicana",Teleunion
