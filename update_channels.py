@@ -13,7 +13,8 @@ GUIDE_FILE = ROOT / "g.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
-# Enlace oficial de la guía. No cambiarlo.
+# Enlace oficial de la guía. No cambiarlo. Va en la cabecera y en cada canal:
+# si solo está en la primera línea, OttPlayer no se la pasa a los canales.
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id de iptv-org -> (nombre en pantalla, id de la guía)
@@ -375,14 +376,19 @@ def write_guia():
             lines.append("  </channel>")
     for start, stop, source, title_text, desc_text in programmes:
         display = by_source[source]
-        # Una sola línea. OttPlayer lee start/stop del atributo y el
-        # título solo si <title> va pegado, antes de <desc>.
-        body = f"<title>{xml_escape(title_text)}</title>"
+        # OttPlayer lee la hora del atributo y, si no ve un <title> hijo,
+        # deja "Falta el título". El título va también en el atributo title.
+        title_attr = xml_escape(title_text)
+        desc_attr = xml_escape(desc_text) if desc_text else ""
+        body = f"<title>{title_attr}</title>"
         if desc_text:
-            body += f"<desc>{xml_escape(desc_text)}</desc>"
+            body += f"<desc>{desc_attr}</desc>"
         for channel_id in (source, display):
+            extra = f' title="{title_attr}"'
+            if desc_text:
+                extra += f' desc="{desc_attr}"'
             lines.append(
-                f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(channel_id)}">{body}</programme>'
+                f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(channel_id)}"{extra}>{body}</programme>'
             )
     lines.append("</tv>")
     lines.append("")
@@ -403,6 +409,16 @@ def set_tvg_name(extinf, name):
     if 'tvg-name="' in extinf:
         return re.sub(r'tvg-name="[^"]*"', f'tvg-name="{name}"', extinf)
     return extinf.replace("tvg-id=", f'tvg-name="{name}" tvg-id=', 1)
+
+
+def set_channel_epg(extinf):
+    """La guía va en el canal. OttPlayer no hereda la de la primera línea."""
+    if 'url-tvg="' in extinf:
+        extinf = re.sub(r'url-tvg="[^"]*"', f'url-tvg="{EPG_URL}"', extinf)
+    else:
+        comma = extinf.rfind(",")
+        extinf = extinf[:comma] + f' url-tvg="{EPG_URL}"' + extinf[comma:]
+    return extinf
 
 
 def set_group_title(extinf, category):
@@ -426,7 +442,9 @@ def write_m3u(path, channels, *, player=False, logos=None):
     logos = logos or {}
     with path.open("w", encoding="utf-8") as f:
         if player:
-            f.write(f'#EXTM3U url-tvg="{EPG_URL}"\n')
+            f.write(
+                f'#EXTM3U tvg-shift="0" url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}" tvg-url="{EPG_URL}"\n'
+            )
         else:
             f.write("#EXTM3U\n")
         for extinf, url in channels:
@@ -434,6 +452,7 @@ def write_m3u(path, channels, *, player=False, logos=None):
             extinf = set_group_title(extinf, category)
             if player:
                 extinf = set_logo(extinf, best_logo(logos, extinf))
+                extinf = set_channel_epg(extinf)
                 found = guide_match(extinf_attr(extinf, "tvg-id") or "")
                 name = player_name(extinf)
                 if found:
