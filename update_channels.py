@@ -351,7 +351,7 @@ def write_guia():
         desc_text = re.sub(r"<[^>]+>", "", desc.group(1)).strip() if desc else ""
         if not title_text:
             continue
-        programmes.append((xmltv_to_local(start), xmltv_to_local(stop), ours, title_text, desc_text))
+        programmes.append((start.strip(), stop.strip(), ours, title_text, desc_text))
     if not programmes:
         raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
     lines = [
@@ -364,9 +364,9 @@ def write_guia():
         lines.append("  </channel>")
     for start, stop, name, title_text, desc_text in programmes:
         lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(name)}">')
-        lines.append(f"    <title>{xml_escape(title_text)}</title>")
+        lines.append(f'    <title lang="es">{xml_escape(title_text)}</title>')
         if desc_text:
-            lines.append(f"    <desc>{xml_escape(desc_text)}</desc>")
+            lines.append(f'    <desc lang="es">{xml_escape(desc_text)}</desc>')
         lines.append("  </programme>")
     lines.append("</tv>")
     lines.append("")
