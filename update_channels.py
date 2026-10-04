@@ -10,6 +10,18 @@ MASTER_FILE = ROOT / "lista_maestra.m3u"
 OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
+# Guía que el iPhone lee por tvg-id. XML sin comprimir: la app no abre los .gz.
+# El Apple TV viejo ignora este enlace y sigue comparando por el nombre visible.
+EPG_DO_URL = "https://iptv-epg.org/files/epg-do.xml"
+EPG_US_URL = "https://iptv-epg.org/files/epg-us.xml.gz"
+# En esa guía dominicana el país es .dr, no .do. Solo estos existen ahí.
+DO_GUIDE_IDS = {
+    "CDN.do": "CDN.dr",
+    "TeleAntillas.do": "TeleAntillas.dr",
+    "Telemicro.do": "Telemicro.dr",
+    "Telesistema11.do": "Telesistema11.dr",
+    "Teleunion.do": "Teleunion.dr",
+}
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
 QUALITY_RE = re.compile(r"\s*\(\d{3,4}[pi]\)", re.IGNORECASE)
@@ -267,6 +279,22 @@ def set_logo(extinf, logo_url):
     return extinf.replace("tvg-id=", f'tvg-logo="{logo_url}" tvg-id=', 1)
 
 
+def guide_tvg_id(tvg_id):
+    """Id que usa la guía del celular. El nombre visible no cambia."""
+    base = (tvg_id or "").split("@")[0]
+    if base in DO_GUIDE_IDS:
+        return DO_GUIDE_IDS[base]
+    if base.endswith(".us"):
+        return base
+    return tvg_id
+
+
+def set_tvg_id(extinf, tvg_id):
+    if not tvg_id or not TVG_ID_RE.search(extinf):
+        return extinf
+    return TVG_ID_RE.sub(f'tvg-id="{tvg_id}"', extinf, count=1)
+
+
 def set_group_title(extinf, category):
     if 'group-title="' in extinf:
         return re.sub(r'group-title="[^"]*"', f'group-title="{category}"', extinf)
@@ -287,14 +315,16 @@ def sort_channels(channels):
 def write_m3u(path, channels, *, player=False, logos=None):
     logos = logos or {}
     with path.open("w", encoding="utf-8") as f:
-        # Sin x-tvg-url: la guía vieja de iptv-org ya no existe (404).
-        # OTTPlayer ata la programación por el nombre del canal.
-        f.write("#EXTM3U\n")
+        if player:
+            f.write(f'#EXTM3U url-tvg="{EPG_DO_URL},{EPG_US_URL}" x-tvg-url="{EPG_DO_URL},{EPG_US_URL}"\n')
+        else:
+            f.write("#EXTM3U\n")
         for extinf, url in channels:
             category = assign_category(extinf, url)
             extinf = set_group_title(extinf, category)
             if player:
                 extinf = set_logo(extinf, best_logo(logos, extinf))
+                extinf = set_tvg_id(extinf, guide_tvg_id(extinf_attr(extinf, "tvg-id") or ""))
                 name = player_name(extinf)
                 extinf = extinf[: extinf.rfind(",") + 1] + name
             f.write(extinf + "\n")
@@ -319,10 +349,12 @@ def write_summary(path, channels):
 
 def validate_player_m3u(path):
     text = path.read_text(encoding="utf-8")
-    if "guides.xml" in text or "x-tvg-url=" in text or "url-tvg=" in text:
+    if "guides.xml" in text:
         raise RuntimeError("La lista publicada todavía apunta a una guía inexistente.")
+    if EPG_DO_URL not in text or EPG_US_URL not in text:
+        raise RuntimeError("La lista publicada no lleva el enlace de la guía.")
     lines = [line.strip() for line in text.splitlines() if line.strip()]
-    if not lines or lines[0] != "#EXTM3U":
+    if not lines or not lines[0].startswith("#EXTM3U"):
         raise RuntimeError("La lista no empieza con #EXTM3U.")
     channels = 0
     index = 1
