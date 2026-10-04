@@ -13,7 +13,7 @@ GUIDE_FILE = ROOT / "g.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
-# Enlace directo. tinyurl solo devuelve una página HTML y el celular no lee la guía.
+# Enlace oficial de la guía. No cambiarlo.
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id de iptv-org -> (nombre en pantalla, id de la guía)
