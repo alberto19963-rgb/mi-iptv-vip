@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://tinyurl.com/guiard"
+#EXTM3U url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml"
 #EXTINF:-1 tvg-id="AdoramTV.do@SD" tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="🇩🇴 República Dominicana",Adoram TV
 #EXTGRP:🇩🇴 República Dominicana
 https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
