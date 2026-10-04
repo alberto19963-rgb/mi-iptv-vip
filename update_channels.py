@@ -17,7 +17,10 @@ LOGO_API = "https://iptv-org.github.io/api/logos.json"
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id de iptv-org -> (nombre en pantalla, id de la guía)
-# El nombre y el id no son el mismo texto. El id no lleva espacios.
+# El id no lleva espacios y es el que va en tvg-id.
+# La guía repite cada canal también con el nombre de pantalla, porque
+# OttPlayer ata por ese nombre. El título va sin lang="es": si el
+# lector busca <title> a secas, no ve el texto.
 DO_GUIDE = {
     "CDN.do": ("DR - CDN", "CDN.dr"),
     "TeleAntillas.do": ("DR - Tele Antillas", "TeleAntillas.dr"),
@@ -354,20 +357,27 @@ def write_guia():
         programmes.append((start.strip(), stop.strip(), ours, title_text, desc_text))
     if not programmes:
         raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
+    by_source = {source: display for display, source in DO_GUIDE.values()}
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         "<tv>",
     ]
     for display, source in DO_GUIDE.values():
-        lines.append(f'  <channel id="{xml_escape(source)}">')
-        lines.append(f"    <display-name>{xml_escape(display)}</display-name>")
-        lines.append("  </channel>")
-    for start, stop, name, title_text, desc_text in programmes:
-        lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(name)}">')
-        lines.append(f'    <title lang="es">{xml_escape(title_text)}</title>')
-        if desc_text:
-            lines.append(f'    <desc lang="es">{xml_escape(desc_text)}</desc>')
-        lines.append("  </programme>")
+        for channel_id in (source, display):
+            lines.append(f'  <channel id="{xml_escape(channel_id)}">')
+            lines.append(f"    <display-name>{xml_escape(display)}</display-name>")
+            lines.append(f"    <display-name>{xml_escape(source)}</display-name>")
+            lines.append("  </channel>")
+    for start, stop, source, title_text, desc_text in programmes:
+        display = by_source[source]
+        for channel_id in (source, display):
+            lines.append(
+                f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(channel_id)}">'
+            )
+            lines.append(f"    <title>{xml_escape(title_text)}</title>")
+            if desc_text:
+                lines.append(f"    <desc>{xml_escape(desc_text)}</desc>")
+            lines.append("  </programme>")
     lines.append("</tv>")
     lines.append("")
     GUIDE_FILE.write_text("\n".join(lines), encoding="utf-8")

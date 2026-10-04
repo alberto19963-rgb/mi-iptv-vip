@@ -2,797 +2,2210 @@
 <tv>
   <channel id="CDN.dr">
     <display-name>DR - CDN</display-name>
+    <display-name>CDN.dr</display-name>
+  </channel>
+  <channel id="DR - CDN">
+    <display-name>DR - CDN</display-name>
+    <display-name>CDN.dr</display-name>
   </channel>
   <channel id="TeleAntillas.dr">
     <display-name>DR - Tele Antillas</display-name>
+    <display-name>TeleAntillas.dr</display-name>
+  </channel>
+  <channel id="DR - Tele Antillas">
+    <display-name>DR - Tele Antillas</display-name>
+    <display-name>TeleAntillas.dr</display-name>
   </channel>
   <channel id="Telemicro.dr">
     <display-name>DR - Telemicro</display-name>
+    <display-name>Telemicro.dr</display-name>
+  </channel>
+  <channel id="DR - Telemicro">
+    <display-name>DR - Telemicro</display-name>
+    <display-name>Telemicro.dr</display-name>
   </channel>
   <channel id="Telesistema11.dr">
     <display-name>DR - Telesistema 11</display-name>
+    <display-name>Telesistema11.dr</display-name>
+  </channel>
+  <channel id="DR - Telesistema 11">
+    <display-name>DR - Telesistema 11</display-name>
+    <display-name>Telesistema11.dr</display-name>
   </channel>
   <channel id="Teleunion.dr">
     <display-name>DR - Teleunión</display-name>
+    <display-name>Teleunion.dr</display-name>
   </channel>
-  <programme start="20261003005500 +0000" stop="20261003010000 +0000" channel="CDN.dr">
-    <title lang="es">Loto de Leidsa</title>
-    <desc lang="es">Loto de Leidsa.</desc>
-  </programme>
-  <programme start="20261003010000 +0000" stop="20261003020000 +0000" channel="CDN.dr">
-    <title lang="es">Enfoque Final</title>
-    <desc lang="es">Enfoque Final.</desc>
-  </programme>
-  <programme start="20261003020000 +0000" stop="20261003030000 +0000" channel="CDN.dr">
-    <title lang="es">55 Minutos</title>
-    <desc lang="es">55 Minutos.</desc>
-  </programme>
-  <programme start="20261003030000 +0000" stop="20261003040000 +0000" channel="CDN.dr">
-    <title lang="es">Tú opinas Resumen final</title>
-    <desc lang="es">Tú opinas Resumen final.</desc>
-  </programme>
-  <programme start="20261003040000 +0000" stop="20261003050000 +0000" channel="CDN.dr">
-    <title lang="es">Y entonces</title>
-    <desc lang="es">Y entonces.</desc>
-  </programme>
-  <programme start="20261003050000 +0000" stop="20261003060000 +0000" channel="CDN.dr">
-    <title lang="es">Enfoque Final</title>
-    <desc lang="es">Enfoque Final.</desc>
-  </programme>
-  <programme start="20261003060000 +0000" stop="20261003070000 +0000" channel="CDN.dr">
-    <title lang="es">Tú opinas Resumen final</title>
-    <desc lang="es">Tú opinas Resumen final.</desc>
-  </programme>
-  <programme start="20261003070000 +0000" stop="20261003080000 +0000" channel="CDN.dr">
-    <title lang="es">Más que noticias</title>
-    <desc lang="es">Más que noticias.</desc>
-  </programme>
-  <programme start="20261003080000 +0000" stop="20261003090000 +0000" channel="CDN.dr">
-    <title lang="es">Enfoque Final</title>
-    <desc lang="es">Enfoque Final.</desc>
-  </programme>
+  <channel id="DR - Teleunión">
+    <display-name>DR - Teleunión</display-name>
+    <display-name>Teleunion.dr</display-name>
+  </channel>
   <programme start="20261003090000 +0000" stop="20261003100000 +0000" channel="CDN.dr">
-    <title lang="es">Tú opinas Resumen final</title>
-    <desc lang="es">Tú opinas Resumen final.</desc>
+    <title>Tú opinas Resumen final</title>
+    <desc>Tú opinas Resumen final.</desc>
+  </programme>
+  <programme start="20261003090000 +0000" stop="20261003100000 +0000" channel="DR - CDN">
+    <title>Tú opinas Resumen final</title>
+    <desc>Tú opinas Resumen final.</desc>
   </programme>
   <programme start="20261003100000 +0000" stop="20261003103000 +0000" channel="CDN.dr">
-    <title lang="es">Informe Kliksberg</title>
-    <desc lang="es">Informe Kliksberg.</desc>
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
+  </programme>
+  <programme start="20261003100000 +0000" stop="20261003103000 +0000" channel="DR - CDN">
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
   </programme>
   <programme start="20261003103000 +0000" stop="20261003113000 +0000" channel="CDN.dr">
-    <title lang="es">Jose Gutierrez</title>
-    <desc lang="es">Jose Gutierrez.</desc>
+    <title>Jose Gutierrez</title>
+    <desc>Jose Gutierrez.</desc>
+  </programme>
+  <programme start="20261003103000 +0000" stop="20261003113000 +0000" channel="DR - CDN">
+    <title>Jose Gutierrez</title>
+    <desc>Jose Gutierrez.</desc>
   </programme>
   <programme start="20261003113000 +0000" stop="20261003123000 +0000" channel="CDN.dr">
-    <title lang="es">Homenajes</title>
-    <desc lang="es">Homenajes.</desc>
+    <title>Homenajes</title>
+    <desc>Homenajes.</desc>
+  </programme>
+  <programme start="20261003113000 +0000" stop="20261003123000 +0000" channel="DR - CDN">
+    <title>Homenajes</title>
+    <desc>Homenajes.</desc>
   </programme>
   <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="CDN.dr">
-    <title lang="es">Visión 360</title>
-    <desc lang="es">Visión 360.</desc>
+    <title>Visión 360</title>
+    <desc>Visión 360.</desc>
+  </programme>
+  <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="DR - CDN">
+    <title>Visión 360</title>
+    <desc>Visión 360.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="CDN.dr">
-    <title lang="es">Y entonces</title>
-    <desc lang="es">Y entonces.</desc>
+    <title>Y entonces</title>
+    <desc>Y entonces.</desc>
+  </programme>
+  <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="DR - CDN">
+    <title>Y entonces</title>
+    <desc>Y entonces.</desc>
   </programme>
   <programme start="20261003140000 +0000" stop="20261003150000 +0000" channel="CDN.dr">
-    <title lang="es">Verdades al aire</title>
-    <desc lang="es">Verdades al aire.</desc>
+    <title>Verdades al aire</title>
+    <desc>Verdades al aire.</desc>
+  </programme>
+  <programme start="20261003140000 +0000" stop="20261003150000 +0000" channel="DR - CDN">
+    <title>Verdades al aire</title>
+    <desc>Verdades al aire.</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003153000 +0000" channel="CDN.dr">
-    <title lang="es">Bienestar al día</title>
-    <desc lang="es">Bienestar al día.</desc>
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
+  </programme>
+  <programme start="20261003150000 +0000" stop="20261003153000 +0000" channel="DR - CDN">
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
   </programme>
   <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="CDN.dr">
-    <title lang="es">Cultura.21</title>
-    <desc lang="es">Cultura.21.</desc>
+    <title>Cultura.21</title>
+    <desc>Cultura.21.</desc>
+  </programme>
+  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="DR - CDN">
+    <title>Cultura.21</title>
+    <desc>Cultura.21.</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003163000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261003160000 +0000" stop="20261003163000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261003163000 +0000" stop="20261003170000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261003163000 +0000" stop="20261003170000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261003170000 +0000" stop="20261003180000 +0000" channel="CDN.dr">
-    <title lang="es">JG fin de semana</title>
-    <desc lang="es">JG fin de semana.</desc>
+    <title>JG fin de semana</title>
+    <desc>JG fin de semana.</desc>
+  </programme>
+  <programme start="20261003170000 +0000" stop="20261003180000 +0000" channel="DR - CDN">
+    <title>JG fin de semana</title>
+    <desc>JG fin de semana.</desc>
   </programme>
   <programme start="20261003180000 +0000" stop="20261003183000 +0000" channel="CDN.dr">
-    <title lang="es">Bienestar al día</title>
-    <desc lang="es">Bienestar al día.</desc>
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
+  </programme>
+  <programme start="20261003180000 +0000" stop="20261003183000 +0000" channel="DR - CDN">
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
   </programme>
   <programme start="20261003183000 +0000" stop="20261003190000 +0000" channel="CDN.dr">
-    <title lang="es">La entrevista</title>
-    <desc lang="es">La entrevista.</desc>
+    <title>La entrevista</title>
+    <desc>La entrevista.</desc>
+  </programme>
+  <programme start="20261003183000 +0000" stop="20261003190000 +0000" channel="DR - CDN">
+    <title>La entrevista</title>
+    <desc>La entrevista.</desc>
   </programme>
   <programme start="20261003190000 +0000" stop="20261003200000 +0000" channel="CDN.dr">
-    <title lang="es">Estructuras</title>
-    <desc lang="es">Estructuras.</desc>
+    <title>Estructuras</title>
+    <desc>Estructuras.</desc>
+  </programme>
+  <programme start="20261003190000 +0000" stop="20261003200000 +0000" channel="DR - CDN">
+    <title>Estructuras</title>
+    <desc>Estructuras.</desc>
   </programme>
   <programme start="20261003200000 +0000" stop="20261003210000 +0000" channel="CDN.dr">
-    <title lang="es">Vida Empresarial</title>
-    <desc lang="es">Vida Empresarial.</desc>
+    <title>Vida Empresarial</title>
+    <desc>Vida Empresarial.</desc>
+  </programme>
+  <programme start="20261003200000 +0000" stop="20261003210000 +0000" channel="DR - CDN">
+    <title>Vida Empresarial</title>
+    <desc>Vida Empresarial.</desc>
   </programme>
   <programme start="20261003210000 +0000" stop="20261003213000 +0000" channel="CDN.dr">
-    <title lang="es">Agenda climática</title>
-    <desc lang="es">Agenda climática.</desc>
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261003210000 +0000" stop="20261003213000 +0000" channel="DR - CDN">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
   </programme>
   <programme start="20261003213000 +0000" stop="20261003220000 +0000" channel="CDN.dr">
-    <title lang="es">Eco Latinoamérica</title>
-    <desc lang="es">Eco Latinoamérica.</desc>
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
+  </programme>
+  <programme start="20261003213000 +0000" stop="20261003220000 +0000" channel="DR - CDN">
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
   </programme>
   <programme start="20261003220000 +0000" stop="20261003230000 +0000" channel="CDN.dr">
-    <title lang="es">Camino real</title>
-    <desc lang="es">Camino real.</desc>
+    <title>Camino real</title>
+    <desc>Camino real.</desc>
+  </programme>
+  <programme start="20261003220000 +0000" stop="20261003230000 +0000" channel="DR - CDN">
+    <title>Camino real</title>
+    <desc>Camino real.</desc>
   </programme>
   <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN - Fin semana</title>
-    <desc lang="es">Noticiario CDN - Fin semana.</desc>
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
   <programme start="20261004000000 +0000" stop="20261004005500 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN - Fin semana</title>
-    <desc lang="es">Noticiario CDN - Fin semana.</desc>
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261004000000 +0000" stop="20261004005500 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
   <programme start="20261004005500 +0000" stop="20261004010000 +0000" channel="CDN.dr">
-    <title lang="es">Loto de Leidsa</title>
-    <desc lang="es">Loto de Leidsa.</desc>
+    <title>Loto de Leidsa</title>
+    <desc>Loto de Leidsa.</desc>
+  </programme>
+  <programme start="20261004005500 +0000" stop="20261004010000 +0000" channel="DR - CDN">
+    <title>Loto de Leidsa</title>
+    <desc>Loto de Leidsa.</desc>
   </programme>
   <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="CDN.dr">
-    <title lang="es">En perspectiva</title>
-    <desc lang="es">En perspectiva.</desc>
+    <title>En perspectiva</title>
+    <desc>En perspectiva.</desc>
+  </programme>
+  <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="DR - CDN">
+    <title>En perspectiva</title>
+    <desc>En perspectiva.</desc>
   </programme>
   <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="CDN.dr">
-    <title lang="es">Verdades al aire</title>
-    <desc lang="es">Verdades al aire.</desc>
+    <title>Verdades al aire</title>
+    <desc>Verdades al aire.</desc>
+  </programme>
+  <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="DR - CDN">
+    <title>Verdades al aire</title>
+    <desc>Verdades al aire.</desc>
   </programme>
   <programme start="20261004030000 +0000" stop="20261004040000 +0000" channel="CDN.dr">
-    <title lang="es">Debate</title>
-    <desc lang="es">Debate.</desc>
+    <title>Debate</title>
+    <desc>Debate.</desc>
+  </programme>
+  <programme start="20261004030000 +0000" stop="20261004040000 +0000" channel="DR - CDN">
+    <title>Debate</title>
+    <desc>Debate.</desc>
   </programme>
   <programme start="20261004040000 +0000" stop="20261004050000 +0000" channel="CDN.dr">
-    <title lang="es">Estructuras</title>
-    <desc lang="es">Estructuras.</desc>
+    <title>Estructuras</title>
+    <desc>Estructuras.</desc>
+  </programme>
+  <programme start="20261004040000 +0000" stop="20261004050000 +0000" channel="DR - CDN">
+    <title>Estructuras</title>
+    <desc>Estructuras.</desc>
   </programme>
   <programme start="20261004050000 +0000" stop="20261004053000 +0000" channel="CDN.dr">
-    <title lang="es">Informe Kliksberg</title>
-    <desc lang="es">Informe Kliksberg.</desc>
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
+  </programme>
+  <programme start="20261004050000 +0000" stop="20261004053000 +0000" channel="DR - CDN">
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
   </programme>
   <programme start="20261004053000 +0000" stop="20261004063000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN - Fin semana</title>
-    <desc lang="es">Noticiario CDN - Fin semana.</desc>
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261004053000 +0000" stop="20261004063000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
   <programme start="20261004063000 +0000" stop="20261004070000 +0000" channel="CDN.dr">
-    <title lang="es">Agenda climática</title>
-    <desc lang="es">Agenda climática.</desc>
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261004063000 +0000" stop="20261004070000 +0000" channel="DR - CDN">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
   </programme>
   <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN - Fin semana</title>
-    <desc lang="es">Noticiario CDN - Fin semana.</desc>
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
   <programme start="20261004080000 +0000" stop="20261004083000 +0000" channel="CDN.dr">
-    <title lang="es">Global es</title>
-    <desc lang="es">Global es.</desc>
+    <title>Global es</title>
+    <desc>Global es.</desc>
+  </programme>
+  <programme start="20261004080000 +0000" stop="20261004083000 +0000" channel="DR - CDN">
+    <title>Global es</title>
+    <desc>Global es.</desc>
   </programme>
   <programme start="20261004083000 +0000" stop="20261004093000 +0000" channel="CDN.dr">
-    <title lang="es">Más que noticias</title>
-    <desc lang="es">Más que noticias.</desc>
+    <title>Más que noticias</title>
+    <desc>Más que noticias.</desc>
+  </programme>
+  <programme start="20261004083000 +0000" stop="20261004093000 +0000" channel="DR - CDN">
+    <title>Más que noticias</title>
+    <desc>Más que noticias.</desc>
   </programme>
   <programme start="20261004093000 +0000" stop="20261004100000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261004093000 +0000" stop="20261004100000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261004100000 +0000" stop="20261004103000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261004100000 +0000" stop="20261004103000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261004103000 +0000" stop="20261004113000 +0000" channel="CDN.dr">
-    <title lang="es">Conversando con mi arzobispo</title>
-    <desc lang="es">Conversando con mi arzobispo.</desc>
+    <title>Conversando con mi arzobispo</title>
+    <desc>Conversando con mi arzobispo.</desc>
+  </programme>
+  <programme start="20261004103000 +0000" stop="20261004113000 +0000" channel="DR - CDN">
+    <title>Conversando con mi arzobispo</title>
+    <desc>Conversando con mi arzobispo.</desc>
   </programme>
   <programme start="20261004113000 +0000" stop="20261004120000 +0000" channel="CDN.dr">
-    <title lang="es">Informe Kliksberg</title>
-    <desc lang="es">Informe Kliksberg.</desc>
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
+  </programme>
+  <programme start="20261004113000 +0000" stop="20261004120000 +0000" channel="DR - CDN">
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
   </programme>
   <programme start="20261004120000 +0000" stop="20261004123000 +0000" channel="CDN.dr">
-    <title lang="es">Tiempo de cosecha</title>
-    <desc lang="es">Tiempo de cosecha.</desc>
+    <title>Tiempo de cosecha</title>
+    <desc>Tiempo de cosecha.</desc>
+  </programme>
+  <programme start="20261004120000 +0000" stop="20261004123000 +0000" channel="DR - CDN">
+    <title>Tiempo de cosecha</title>
+    <desc>Tiempo de cosecha.</desc>
   </programme>
   <programme start="20261004123000 +0000" stop="20261004130000 +0000" channel="CDN.dr">
-    <title lang="es">¡Escápate!</title>
-    <desc lang="es">¡Escápate!</desc>
+    <title>¡Escápate!</title>
+    <desc>¡Escápate!</desc>
+  </programme>
+  <programme start="20261004123000 +0000" stop="20261004130000 +0000" channel="DR - CDN">
+    <title>¡Escápate!</title>
+    <desc>¡Escápate!</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004133000 +0000" channel="CDN.dr">
-    <title lang="es">Código Salud</title>
-    <desc lang="es">Código Salud.</desc>
+    <title>Código Salud</title>
+    <desc>Código Salud.</desc>
+  </programme>
+  <programme start="20261004130000 +0000" stop="20261004133000 +0000" channel="DR - CDN">
+    <title>Código Salud</title>
+    <desc>Código Salud.</desc>
   </programme>
   <programme start="20261004133000 +0000" stop="20261004140000 +0000" channel="CDN.dr">
-    <title lang="es">Vivir en salud</title>
-    <desc lang="es">Vivir en salud.</desc>
+    <title>Vivir en salud</title>
+    <desc>Vivir en salud.</desc>
+  </programme>
+  <programme start="20261004133000 +0000" stop="20261004140000 +0000" channel="DR - CDN">
+    <title>Vivir en salud</title>
+    <desc>Vivir en salud.</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004143000 +0000" channel="CDN.dr">
-    <title lang="es">Global es</title>
-    <desc lang="es">Global es.</desc>
+    <title>Global es</title>
+    <desc>Global es.</desc>
+  </programme>
+  <programme start="20261004140000 +0000" stop="20261004143000 +0000" channel="DR - CDN">
+    <title>Global es</title>
+    <desc>Global es.</desc>
   </programme>
   <programme start="20261004143000 +0000" stop="20261004150000 +0000" channel="CDN.dr">
-    <title lang="es">Eco Latinoamérica</title>
-    <desc lang="es">Eco Latinoamérica.</desc>
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
+  </programme>
+  <programme start="20261004143000 +0000" stop="20261004150000 +0000" channel="DR - CDN">
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
   </programme>
   <programme start="20261004150000 +0000" stop="20261004160000 +0000" channel="CDN.dr">
-    <title lang="es">Finjus</title>
-    <desc lang="es">Finjus.</desc>
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
+  </programme>
+  <programme start="20261004150000 +0000" stop="20261004160000 +0000" channel="DR - CDN">
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
   </programme>
   <programme start="20261004160000 +0000" stop="20261004163000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261004160000 +0000" stop="20261004163000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261004163000 +0000" stop="20261004170000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN</title>
-    <desc lang="es">Noticiario CDN.</desc>
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
+  </programme>
+  <programme start="20261004163000 +0000" stop="20261004170000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN</title>
+    <desc>Noticiario CDN.</desc>
   </programme>
   <programme start="20261004170000 +0000" stop="20261004180000 +0000" channel="CDN.dr">
-    <title lang="es">A Fondo</title>
-    <desc lang="es">A Fondo.</desc>
+    <title>A Fondo</title>
+    <desc>A Fondo.</desc>
+  </programme>
+  <programme start="20261004170000 +0000" stop="20261004180000 +0000" channel="DR - CDN">
+    <title>A Fondo</title>
+    <desc>A Fondo.</desc>
   </programme>
   <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="CDN.dr">
-    <title lang="es">Coloquios</title>
-    <desc lang="es">Coloquios.</desc>
+    <title>Coloquios</title>
+    <desc>Coloquios.</desc>
+  </programme>
+  <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="DR - CDN">
+    <title>Coloquios</title>
+    <desc>Coloquios.</desc>
   </programme>
   <programme start="20261004190000 +0000" stop="20261004195500 +0000" channel="CDN.dr">
-    <title lang="es">Finjus</title>
-    <desc lang="es">Finjus.</desc>
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
+  </programme>
+  <programme start="20261004190000 +0000" stop="20261004195500 +0000" channel="DR - CDN">
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
   </programme>
   <programme start="20261004195500 +0000" stop="20261004200000 +0000" channel="CDN.dr">
-    <title lang="es">Loto de Leidsa</title>
-    <desc lang="es">Loto de Leidsa.</desc>
+    <title>Loto de Leidsa</title>
+    <desc>Loto de Leidsa.</desc>
+  </programme>
+  <programme start="20261004195500 +0000" stop="20261004200000 +0000" channel="DR - CDN">
+    <title>Loto de Leidsa</title>
+    <desc>Loto de Leidsa.</desc>
   </programme>
   <programme start="20261004200000 +0000" stop="20261004203000 +0000" channel="CDN.dr">
-    <title lang="es">T al Cubo</title>
-    <desc lang="es">T al Cubo.</desc>
+    <title>T al Cubo</title>
+    <desc>T al Cubo.</desc>
+  </programme>
+  <programme start="20261004200000 +0000" stop="20261004203000 +0000" channel="DR - CDN">
+    <title>T al Cubo</title>
+    <desc>T al Cubo.</desc>
   </programme>
   <programme start="20261004203000 +0000" stop="20261004210000 +0000" channel="CDN.dr">
-    <title lang="es">Eco Latinoamérica</title>
-    <desc lang="es">Eco Latinoamérica.</desc>
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
+  </programme>
+  <programme start="20261004203000 +0000" stop="20261004210000 +0000" channel="DR - CDN">
+    <title>Eco Latinoamérica</title>
+    <desc>Eco Latinoamérica.</desc>
   </programme>
   <programme start="20261004210000 +0000" stop="20261004213000 +0000" channel="CDN.dr">
-    <title lang="es">Agenda climática</title>
-    <desc lang="es">Agenda climática.</desc>
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261004210000 +0000" stop="20261004213000 +0000" channel="DR - CDN">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
   </programme>
   <programme start="20261004213000 +0000" stop="20261004220000 +0000" channel="CDN.dr">
-    <title lang="es">Visión 360</title>
-    <desc lang="es">Visión 360.</desc>
+    <title>Visión 360</title>
+    <desc>Visión 360.</desc>
+  </programme>
+  <programme start="20261004213000 +0000" stop="20261004220000 +0000" channel="DR - CDN">
+    <title>Visión 360</title>
+    <desc>Visión 360.</desc>
   </programme>
   <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="CDN.dr">
-    <title lang="es">Confabulaciones</title>
-    <desc lang="es">Confabulaciones.</desc>
+    <title>Confabulaciones</title>
+    <desc>Confabulaciones.</desc>
+  </programme>
+  <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="DR - CDN">
+    <title>Confabulaciones</title>
+    <desc>Confabulaciones.</desc>
   </programme>
   <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="CDN.dr">
-    <title lang="es">Noticiario CDN - Fin semana</title>
-    <desc lang="es">Noticiario CDN - Fin semana.</desc>
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
-  <programme start="20261003020000 +0000" stop="20261003030000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Panorama Mundial</title>
-    <desc lang="es">Panorama Mundial.</desc>
+  <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
   </programme>
-  <programme start="20261003030000 +0000" stop="20261003033000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Conclusiones</title>
-    <desc lang="es">Conclusiones.</desc>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="CDN.dr">
+    <title>Circulo de Grandes Ligas</title>
+    <desc>Circulo de Grandes Ligas.</desc>
   </programme>
-  <programme start="20261003033000 +0000" stop="20261003040000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">El comentario de Hazim</title>
-    <desc lang="es">El comentario de Hazim.</desc>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="DR - CDN">
+    <title>Circulo de Grandes Ligas</title>
+    <desc>Circulo de Grandes Ligas.</desc>
   </programme>
-  <programme start="20261003040000 +0000" stop="20261003043000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Final Deportivo</title>
-    <desc lang="es">Final Deportivo.</desc>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="CDN.dr">
+    <title>Reporte Especial</title>
+    <desc>Reporte Especial.</desc>
   </programme>
-  <programme start="20261003043000 +0000" stop="20261003053000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Acorralada</title>
-    <desc lang="es">Acorralada.</desc>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="DR - CDN">
+    <title>Reporte Especial</title>
+    <desc>Reporte Especial.</desc>
   </programme>
-  <programme start="20261003053000 +0000" stop="20261003060000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Nuevo rico, nuevo pobre</title>
-    <desc lang="es">Nuevo rico, nuevo pobre.</desc>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="CDN.dr">
+    <title>Siendo honestos</title>
+    <desc>Siendo honestos.</desc>
   </programme>
-  <programme start="20261003060000 +0000" stop="20261003070000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Almas Heridas</title>
-    <desc lang="es">Almas Heridas.</desc>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="DR - CDN">
+    <title>Siendo honestos</title>
+    <desc>Siendo honestos.</desc>
   </programme>
-  <programme start="20261003070000 +0000" stop="20261003080000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Piezas rotas</title>
-    <desc lang="es">Piezas rotas.</desc>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="CDN.dr">
+    <title>Iluminada la entrevista</title>
+    <desc>Iluminada la entrevista.</desc>
   </programme>
-  <programme start="20261003080000 +0000" stop="20261003090000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Pedro el Escamoso: Más Escamoso que Nunca</title>
-    <desc lang="es">Después de 20 años huyendo de su amor fallido con la Dra. Paula (Sandra Reyes), Pedro (Miguel Varoni) vuelve al país y sin proponérselo, comete de nuevo el error de enamorarse de quien no debe. Esta vez se trata de Fernanda, la jefa y futura suegra de su hijo Pedro Júnior (Carlos Torres), cuya brillante carrera en ascenso se pone en riesgo con el retorno de este padre arruinado, enamoradizo y con el que no tiene nada en común. Para protegerlo, Pedro decide mentir a todos sobre su verdadero vínculo y, juntos, comienzan en privado un emotivo camino de aprendizaje padre-hijo. Cuando sus sentimientos por Fernanda empiezan a ser correspondidos, su propia mentira y la guerra de desprecios que le declara Marina, la novia de Junior, ponen en jaque su amor y dejan su renacida relación con Junior al borde del abismo.</desc>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="DR - CDN">
+    <title>Iluminada la entrevista</title>
+    <desc>Iluminada la entrevista.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005050000 +0000" channel="CDN.dr">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005050000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="CDN.dr">
+    <title>Coloquios</title>
+    <desc>Coloquios.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="DR - CDN">
+    <title>Coloquios</title>
+    <desc>Coloquios.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="CDN.dr">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005073000 +0000" channel="CDN.dr">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005073000 +0000" channel="DR - CDN">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261005073000 +0000" stop="20261005080000 +0000" channel="CDN.dr">
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
+  </programme>
+  <programme start="20261005073000 +0000" stop="20261005080000 +0000" channel="DR - CDN">
+    <title>Informe Kliksberg</title>
+    <desc>Informe Kliksberg.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005090000 +0000" channel="CDN.dr">
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005090000 +0000" channel="DR - CDN">
+    <title>Finjus</title>
+    <desc>Finjus.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005100000 +0000" channel="CDN.dr">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005100000 +0000" channel="DR - CDN">
+    <title>Noticiario CDN - Fin semana</title>
+    <desc>Noticiario CDN - Fin semana.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005110000 +0000" channel="CDN.dr">
+    <title>Noticias 6 AM</title>
+    <desc>Noticias 6 AM.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005110000 +0000" channel="DR - CDN">
+    <title>Noticias 6 AM</title>
+    <desc>Noticias 6 AM.</desc>
+  </programme>
+  <programme start="20261005110000 +0000" stop="20261005130000 +0000" channel="CDN.dr">
+    <title>Despierta con CDN</title>
+    <desc>Despierta con CDN.</desc>
+  </programme>
+  <programme start="20261005110000 +0000" stop="20261005130000 +0000" channel="DR - CDN">
+    <title>Despierta con CDN</title>
+    <desc>Despierta con CDN.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="CDN.dr">
+    <title>Conversando con Ana Simó</title>
+    <desc>Conversando con Ana Simó.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="DR - CDN">
+    <title>Conversando con Ana Simó</title>
+    <desc>Conversando con Ana Simó.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005143000 +0000" channel="CDN.dr">
+    <title>En forma</title>
+    <desc>En forma.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005143000 +0000" channel="DR - CDN">
+    <title>En forma</title>
+    <desc>En forma.</desc>
+  </programme>
+  <programme start="20261005143000 +0000" stop="20261005150000 +0000" channel="CDN.dr">
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
+  </programme>
+  <programme start="20261005143000 +0000" stop="20261005150000 +0000" channel="DR - CDN">
+    <title>Bienestar al día</title>
+    <desc>Bienestar al día.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005153000 +0000" channel="CDN.dr">
+    <title>Visión futuro</title>
+    <desc>Visión futuro.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005153000 +0000" channel="DR - CDN">
+    <title>Visión futuro</title>
+    <desc>Visión futuro.</desc>
+  </programme>
+  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="CDN.dr">
+    <title>¿Cómo te afecta?</title>
+    <desc>¿Cómo te afecta?</desc>
+  </programme>
+  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="DR - CDN">
+    <title>¿Cómo te afecta?</title>
+    <desc>¿Cómo te afecta?</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="CDN.dr">
+    <title>Noticias ahora</title>
+    <desc>Noticias ahora.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="DR - CDN">
+    <title>Noticias ahora</title>
+    <desc>Noticias ahora.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005183000 +0000" channel="CDN.dr">
+    <title>Jose Gutierrez en CDN</title>
+    <desc>Jose Gutierrez en CDN.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005183000 +0000" channel="DR - CDN">
+    <title>Jose Gutierrez en CDN</title>
+    <desc>Jose Gutierrez en CDN.</desc>
+  </programme>
+  <programme start="20261005183000 +0000" stop="20261005190000 +0000" channel="CDN.dr">
+    <title>Ahora más</title>
+    <desc>Ahora más.</desc>
+  </programme>
+  <programme start="20261005183000 +0000" stop="20261005190000 +0000" channel="DR - CDN">
+    <title>Ahora más</title>
+    <desc>Ahora más.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005200000 +0000" channel="CDN.dr">
+    <title>Tú Opinas en CDN</title>
+    <desc>Tú Opinas en CDN.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005200000 +0000" channel="DR - CDN">
+    <title>Tú Opinas en CDN</title>
+    <desc>Tú Opinas en CDN.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005203000 +0000" channel="CDN.dr">
+    <title>Famosos Inside</title>
+    <desc>Famosos Inside.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005203000 +0000" channel="DR - CDN">
+    <title>Famosos Inside</title>
+    <desc>Famosos Inside.</desc>
+  </programme>
+  <programme start="20261005203000 +0000" stop="20261005210000 +0000" channel="CDN.dr">
+    <title>Agenda Noticiosa</title>
+    <desc>Agenda Noticiosa.</desc>
+  </programme>
+  <programme start="20261005203000 +0000" stop="20261005210000 +0000" channel="DR - CDN">
+    <title>Agenda Noticiosa</title>
+    <desc>Agenda Noticiosa.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005213000 +0000" channel="CDN.dr">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005213000 +0000" channel="DR - CDN">
+    <title>Agenda climática</title>
+    <desc>Agenda climática.</desc>
+  </programme>
+  <programme start="20261005213000 +0000" stop="20261005220000 +0000" channel="CDN.dr">
+    <title>Todo Deportes</title>
+    <desc>Todo Deportes.</desc>
+  </programme>
+  <programme start="20261005213000 +0000" stop="20261005220000 +0000" channel="DR - CDN">
+    <title>Todo Deportes</title>
+    <desc>Todo Deportes.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="CDN.dr">
+    <title>El Psiquiatra en línea</title>
+    <desc>El Psiquiatra en línea.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="DR - CDN">
+    <title>El Psiquiatra en línea</title>
+    <desc>El Psiquiatra en línea.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261005233000 +0000" channel="CDN.dr">
+    <title>Red de noticias</title>
+    <desc>Red de noticias.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261005233000 +0000" channel="DR - CDN">
+    <title>Red de noticias</title>
+    <desc>Red de noticias.</desc>
+  </programme>
+  <programme start="20261005233000 +0000" stop="20261006000000 +0000" channel="CDN.dr">
+    <title>Montecristi</title>
+    <desc>Montecristi.</desc>
+  </programme>
+  <programme start="20261005233000 +0000" stop="20261006000000 +0000" channel="DR - CDN">
+    <title>Montecristi</title>
+    <desc>Montecristi.</desc>
   </programme>
   <programme start="20261003090000 +0000" stop="20261003120000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Revista 110</title>
-    <desc lang="es">Revista 110.</desc>
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
+  </programme>
+  <programme start="20261003090000 +0000" stop="20261003120000 +0000" channel="DR - Tele Antillas">
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
   </programme>
   <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Voces</title>
-    <desc lang="es">Voces.</desc>
+    <title>Voces</title>
+    <desc>Voces.</desc>
+  </programme>
+  <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="DR - Tele Antillas">
+    <title>Voces</title>
+    <desc>Voces.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Cine infantil 1era funcion</title>
-    <desc lang="es">Cine infantil 1era funcion.</desc>
+    <title>Cine infantil 1era funcion</title>
+    <desc>Cine infantil 1era funcion.</desc>
+  </programme>
+  <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="DR - Tele Antillas">
+    <title>Cine infantil 1era funcion</title>
+    <desc>Cine infantil 1era funcion.</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003170000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Cine infantil 2da función</title>
-    <desc lang="es">Cine infantil 2da función.</desc>
+    <title>Cine infantil 2da función</title>
+    <desc>Cine infantil 2da función.</desc>
+  </programme>
+  <programme start="20261003150000 +0000" stop="20261003170000 +0000" channel="DR - Tele Antillas">
+    <title>Cine infantil 2da función</title>
+    <desc>Cine infantil 2da función.</desc>
   </programme>
   <programme start="20261003170000 +0000" stop="20261003190000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Súper sábados I</title>
-    <desc lang="es">Súper sábados I.</desc>
+    <title>Súper sábados I</title>
+    <desc>Súper sábados I.</desc>
+  </programme>
+  <programme start="20261003170000 +0000" stop="20261003190000 +0000" channel="DR - Tele Antillas">
+    <title>Súper sábados I</title>
+    <desc>Súper sábados I.</desc>
   </programme>
   <programme start="20261003190000 +0000" stop="20261003210000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Súper sábados II</title>
-    <desc lang="es">Súper sábados II.</desc>
+    <title>Súper sábados II</title>
+    <desc>Súper sábados II.</desc>
+  </programme>
+  <programme start="20261003190000 +0000" stop="20261003210000 +0000" channel="DR - Tele Antillas">
+    <title>Súper sábados II</title>
+    <desc>Súper sábados II.</desc>
   </programme>
   <programme start="20261003210000 +0000" stop="20261003230000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Súper sábados III</title>
-    <desc lang="es">Súper sábados III.</desc>
+    <title>Súper sábados III</title>
+    <desc>Súper sábados III.</desc>
+  </programme>
+  <programme start="20261003210000 +0000" stop="20261003230000 +0000" channel="DR - Tele Antillas">
+    <title>Súper sábados III</title>
+    <desc>Súper sábados III.</desc>
   </programme>
   <programme start="20261003230000 +0000" stop="20261004020000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">A confirmar</title>
-    <desc lang="es">A confirmar.</desc>
+    <title>A confirmar</title>
+    <desc>A confirmar.</desc>
+  </programme>
+  <programme start="20261003230000 +0000" stop="20261004020000 +0000" channel="DR - Tele Antillas">
+    <title>A confirmar</title>
+    <desc>A confirmar.</desc>
   </programme>
   <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Ser humano</title>
-    <desc lang="es">Ser humano.</desc>
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
+  </programme>
+  <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="DR - Tele Antillas">
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
   </programme>
   <programme start="20261004030000 +0000" stop="20261004050000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Pelicula Teleantillas</title>
-    <desc lang="es">Pelicula Teleantillas.</desc>
+    <title>Pelicula Teleantillas</title>
+    <desc>Pelicula Teleantillas.</desc>
+  </programme>
+  <programme start="20261004030000 +0000" stop="20261004050000 +0000" channel="DR - Tele Antillas">
+    <title>Pelicula Teleantillas</title>
+    <desc>Pelicula Teleantillas.</desc>
   </programme>
   <programme start="20261004050000 +0000" stop="20261004060000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Ser humano</title>
-    <desc lang="es">Ser humano.</desc>
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
+  </programme>
+  <programme start="20261004050000 +0000" stop="20261004060000 +0000" channel="DR - Tele Antillas">
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
   </programme>
   <programme start="20261004060000 +0000" stop="20261004070000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Esta misma semana</title>
-    <desc lang="es">Esta misma semana.</desc>
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
+  </programme>
+  <programme start="20261004060000 +0000" stop="20261004070000 +0000" channel="DR - Tele Antillas">
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
   </programme>
   <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Conversaciones</title>
-    <desc lang="es">Conversaciones.</desc>
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
+  </programme>
+  <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="DR - Tele Antillas">
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
   </programme>
   <programme start="20261004080000 +0000" stop="20261004090000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Voces</title>
-    <desc lang="es">Voces.</desc>
+    <title>Voces</title>
+    <desc>Voces.</desc>
+  </programme>
+  <programme start="20261004080000 +0000" stop="20261004090000 +0000" channel="DR - Tele Antillas">
+    <title>Voces</title>
+    <desc>Voces.</desc>
   </programme>
   <programme start="20261004090000 +0000" stop="20261004130000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Revista 110</title>
-    <desc lang="es">Revista 110.</desc>
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
+  </programme>
+  <programme start="20261004090000 +0000" stop="20261004130000 +0000" channel="DR - Tele Antillas">
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Triálogo</title>
-    <desc lang="es">Triálogo.</desc>
+    <title>Triálogo</title>
+    <desc>Triálogo.</desc>
+  </programme>
+  <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="DR - Tele Antillas">
+    <title>Triálogo</title>
+    <desc>Triálogo.</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Lo bueno</title>
-    <desc lang="es">Lo bueno.</desc>
+    <title>Lo bueno</title>
+    <desc>Lo bueno.</desc>
+  </programme>
+  <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="DR - Tele Antillas">
+    <title>Lo bueno</title>
+    <desc>Lo bueno.</desc>
   </programme>
   <programme start="20261004150000 +0000" stop="20261004190000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Cine familiar</title>
-    <desc lang="es">Cine familiar.</desc>
+    <title>Cine familiar</title>
+    <desc>Cine familiar.</desc>
+  </programme>
+  <programme start="20261004150000 +0000" stop="20261004190000 +0000" channel="DR - Tele Antillas">
+    <title>Cine familiar</title>
+    <desc>Cine familiar.</desc>
   </programme>
   <programme start="20261004190000 +0000" stop="20261004220000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">MLB</title>
-    <desc lang="es">MLB.</desc>
+    <title>MLB</title>
+    <desc>MLB.</desc>
+  </programme>
+  <programme start="20261004190000 +0000" stop="20261004220000 +0000" channel="DR - Tele Antillas">
+    <title>MLB</title>
+    <desc>MLB.</desc>
   </programme>
   <programme start="20261004220000 +0000" stop="20261005000000 +0000" channel="TeleAntillas.dr">
-    <title lang="es">Sin corte... Como en el cine</title>
-    <desc lang="es">Sin corte... Como en el cine.</desc>
+    <title>Sin corte... Como en el cine</title>
+    <desc>Sin corte... Como en el cine.</desc>
   </programme>
-  <programme start="20261003010000 +0000" stop="20261003020000 +0000" channel="Telemicro.dr">
-    <title lang="es">Como dice el dicho</title>
-    <desc lang="es">Como dice el dicho.</desc>
+  <programme start="20261004220000 +0000" stop="20261005000000 +0000" channel="DR - Tele Antillas">
+    <title>Sin corte... Como en el cine</title>
+    <desc>Sin corte... Como en el cine.</desc>
   </programme>
-  <programme start="20261003020000 +0000" stop="20261003030000 +0000" channel="Telemicro.dr">
-    <title lang="es">Más noche</title>
-    <desc lang="es">Más noche.</desc>
+  <programme start="20261005000000 +0000" stop="20261005020000 +0000" channel="TeleAntillas.dr">
+    <title>Bien de Bien</title>
+    <desc>Bien de Bien.</desc>
   </programme>
-  <programme start="20261003030000 +0000" stop="20261003040000 +0000" channel="Telemicro.dr">
-    <title lang="es">La 3ra en discordia</title>
-    <desc lang="es">La 3ra en discordia.</desc>
+  <programme start="20261005000000 +0000" stop="20261005020000 +0000" channel="DR - Tele Antillas">
+    <title>Bien de Bien</title>
+    <desc>Bien de Bien.</desc>
   </programme>
-  <programme start="20261003040000 +0000" stop="20261003100000 +0000" channel="Telemicro.dr">
-    <title lang="es">Bloque de repeticiones</title>
-    <desc lang="es">Bloque de repeticiones.</desc>
+  <programme start="20261005020000 +0000" stop="20261005040000 +0000" channel="TeleAntillas.dr">
+    <title>Pelicula Teleantillas</title>
+    <desc>Pelicula Teleantillas.</desc>
+  </programme>
+  <programme start="20261005020000 +0000" stop="20261005040000 +0000" channel="DR - Tele Antillas">
+    <title>Pelicula Teleantillas</title>
+    <desc>Pelicula Teleantillas.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005050000 +0000" channel="TeleAntillas.dr">
+    <title>Triálogo</title>
+    <desc>Triálogo.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005050000 +0000" channel="DR - Tele Antillas">
+    <title>Triálogo</title>
+    <desc>Triálogo.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="TeleAntillas.dr">
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="DR - Tele Antillas">
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="TeleAntillas.dr">
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="DR - Tele Antillas">
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005080000 +0000" channel="TeleAntillas.dr">
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005080000 +0000" channel="DR - Tele Antillas">
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005090000 +0000" channel="TeleAntillas.dr">
+    <title>Alexandra Izquierdo</title>
+    <desc>Alexandra Izquierdo.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005090000 +0000" channel="DR - Tele Antillas">
+    <title>Alexandra Izquierdo</title>
+    <desc>Alexandra Izquierdo.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005110000 +0000" channel="TeleAntillas.dr">
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005110000 +0000" channel="DR - Tele Antillas">
+    <title>Revista 110</title>
+    <desc>Revista 110.</desc>
+  </programme>
+  <programme start="20261005110000 +0000" stop="20261005130000 +0000" channel="TeleAntillas.dr">
+    <title>Una nueva mañana</title>
+    <desc>Una nueva mañana.</desc>
+  </programme>
+  <programme start="20261005110000 +0000" stop="20261005130000 +0000" channel="DR - Tele Antillas">
+    <title>Una nueva mañana</title>
+    <desc>Una nueva mañana.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="TeleAntillas.dr">
+    <title>Uno + Uno</title>
+    <desc>Uno + Uno.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="DR - Tele Antillas">
+    <title>Uno + Uno</title>
+    <desc>Uno + Uno.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="TeleAntillas.dr">
+    <title>Conclusiones</title>
+    <desc>Conclusiones.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="DR - Tele Antillas">
+    <title>Conclusiones</title>
+    <desc>Conclusiones.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="TeleAntillas.dr">
+    <title>Primera jugada</title>
+    <desc>Primera jugada.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="DR - Tele Antillas">
+    <title>Primera jugada</title>
+    <desc>Primera jugada.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="TeleAntillas.dr">
+    <title>CNN América</title>
+    <desc>CNN América.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="DR - Tele Antillas">
+    <title>CNN América</title>
+    <desc>CNN América.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005190000 +0000" channel="TeleAntillas.dr">
+    <title>Esto No Tiene Nombre</title>
+    <desc>Esto No Tiene Nombre.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005190000 +0000" channel="DR - Tele Antillas">
+    <title>Esto No Tiene Nombre</title>
+    <desc>Esto No Tiene Nombre.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005191500 +0000" channel="TeleAntillas.dr">
+    <title>A 2 camaras</title>
+    <desc>A 2 camaras.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005191500 +0000" channel="DR - Tele Antillas">
+    <title>A 2 camaras</title>
+    <desc>A 2 camaras.</desc>
+  </programme>
+  <programme start="20261005191500 +0000" stop="20261005200000 +0000" channel="TeleAntillas.dr">
+    <title>Al fondo hay sitio</title>
+    <desc>Al fondo hay sitio.</desc>
+  </programme>
+  <programme start="20261005191500 +0000" stop="20261005200000 +0000" channel="DR - Tele Antillas">
+    <title>Al fondo hay sitio</title>
+    <desc>Al fondo hay sitio.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="TeleAntillas.dr">
+    <title>Piezas rotas</title>
+    <desc>Piezas rotas.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="DR - Tele Antillas">
+    <title>Piezas rotas</title>
+    <desc>Piezas rotas.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="TeleAntillas.dr">
+    <title>Canto para no llorar</title>
+    <desc>Canto para no llorar.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="DR - Tele Antillas">
+    <title>Canto para no llorar</title>
+    <desc>Canto para no llorar.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="TeleAntillas.dr">
+    <title>Primera jugada</title>
+    <desc>Primera jugada.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="DR - Tele Antillas">
+    <title>Primera jugada</title>
+    <desc>Primera jugada.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006020000 +0000" channel="TeleAntillas.dr">
+    <title>MLB</title>
+    <desc>MLB.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006020000 +0000" channel="DR - Tele Antillas">
+    <title>MLB</title>
+    <desc>MLB.</desc>
   </programme>
   <programme start="20261003100000 +0000" stop="20261003110000 +0000" channel="Telemicro.dr">
-    <title lang="es">Central de abastos</title>
-    <desc lang="es">Central de abastos.</desc>
+    <title>Central de abastos</title>
+    <desc>Central de abastos.</desc>
+  </programme>
+  <programme start="20261003100000 +0000" stop="20261003110000 +0000" channel="DR - Telemicro">
+    <title>Central de abastos</title>
+    <desc>Central de abastos.</desc>
   </programme>
   <programme start="20261003110000 +0000" stop="20261003120000 +0000" channel="Telemicro.dr">
-    <title lang="es">Central de abastos</title>
-    <desc lang="es">Central de abastos.</desc>
+    <title>Central de abastos</title>
+    <desc>Central de abastos.</desc>
+  </programme>
+  <programme start="20261003110000 +0000" stop="20261003120000 +0000" channel="DR - Telemicro">
+    <title>Central de abastos</title>
+    <desc>Central de abastos.</desc>
   </programme>
   <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="Telemicro.dr">
-    <title lang="es">Como dice el dicho</title>
-    <desc lang="es">Como dice el dicho.</desc>
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
+  </programme>
+  <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="DR - Telemicro">
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="Telemicro.dr">
-    <title lang="es">Nosotros los guapos</title>
-    <desc lang="es">Nosotros los guapos.</desc>
+    <title>Nosotros los guapos</title>
+    <desc>Nosotros los guapos.</desc>
+  </programme>
+  <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="DR - Telemicro">
+    <title>Nosotros los guapos</title>
+    <desc>Nosotros los guapos.</desc>
   </programme>
   <programme start="20261003140000 +0000" stop="20261003150000 +0000" channel="Telemicro.dr">
-    <title lang="es">Música digital</title>
-    <desc lang="es">Música digital.</desc>
+    <title>Música digital</title>
+    <desc>Música digital.</desc>
+  </programme>
+  <programme start="20261003140000 +0000" stop="20261003150000 +0000" channel="DR - Telemicro">
+    <title>Música digital</title>
+    <desc>Música digital.</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003160000 +0000" channel="Telemicro.dr">
-    <title lang="es">El Príncipe del Barrio</title>
-    <desc lang="es">El Príncipe del Barrio.</desc>
+    <title>El Príncipe del Barrio</title>
+    <desc>El Príncipe del Barrio.</desc>
+  </programme>
+  <programme start="20261003150000 +0000" stop="20261003160000 +0000" channel="DR - Telemicro">
+    <title>El Príncipe del Barrio</title>
+    <desc>El Príncipe del Barrio.</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003200000 +0000" channel="Telemicro.dr">
-    <title lang="es">Yoryi internacional</title>
-    <desc lang="es">Yoryi internacional.</desc>
+    <title>Yoryi internacional</title>
+    <desc>Yoryi internacional.</desc>
+  </programme>
+  <programme start="20261003160000 +0000" stop="20261003200000 +0000" channel="DR - Telemicro">
+    <title>Yoryi internacional</title>
+    <desc>Yoryi internacional.</desc>
   </programme>
   <programme start="20261003200000 +0000" stop="20261003210000 +0000" channel="Telemicro.dr">
-    <title lang="es">Sabrina en fin de semana</title>
-    <desc lang="es">Sabrina en fin de semana.</desc>
+    <title>Sabrina en fin de semana</title>
+    <desc>Sabrina en fin de semana.</desc>
+  </programme>
+  <programme start="20261003200000 +0000" stop="20261003210000 +0000" channel="DR - Telemicro">
+    <title>Sabrina en fin de semana</title>
+    <desc>Sabrina en fin de semana.</desc>
   </programme>
   <programme start="20261003210000 +0000" stop="20261003230000 +0000" channel="Telemicro.dr">
-    <title lang="es">Reto 4 Elementos</title>
-    <desc lang="es">Reto 4 Elementos.</desc>
+    <title>Reto 4 Elementos</title>
+    <desc>Reto 4 Elementos.</desc>
+  </programme>
+  <programme start="20261003210000 +0000" stop="20261003230000 +0000" channel="DR - Telemicro">
+    <title>Reto 4 Elementos</title>
+    <desc>Reto 4 Elementos.</desc>
   </programme>
   <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="Telemicro.dr">
-    <title lang="es">El corazón de la medicina</title>
-    <desc lang="es">El corazón de la medicina.</desc>
+    <title>El corazón de la medicina</title>
+    <desc>El corazón de la medicina.</desc>
+  </programme>
+  <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="DR - Telemicro">
+    <title>El corazón de la medicina</title>
+    <desc>El corazón de la medicina.</desc>
   </programme>
   <programme start="20261004000000 +0000" stop="20261004010000 +0000" channel="Telemicro.dr">
-    <title lang="es">¡Ay güey!</title>
-    <desc lang="es">¡Ay güey!</desc>
+    <title>¡Ay güey!</title>
+    <desc>¡Ay güey!</desc>
+  </programme>
+  <programme start="20261004000000 +0000" stop="20261004010000 +0000" channel="DR - Telemicro">
+    <title>¡Ay güey!</title>
+    <desc>¡Ay güey!</desc>
   </programme>
   <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="Telemicro.dr">
-    <title lang="es">De noche con Yordi Rosado</title>
-    <desc lang="es">De noche con Yordi Rosado.</desc>
+    <title>De noche con Yordi Rosado</title>
+    <desc>De noche con Yordi Rosado.</desc>
+  </programme>
+  <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="DR - Telemicro">
+    <title>De noche con Yordi Rosado</title>
+    <desc>De noche con Yordi Rosado.</desc>
   </programme>
   <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="Telemicro.dr">
-    <title lang="es">Dogma</title>
-    <desc lang="es">Dogma.</desc>
+    <title>Dogma</title>
+    <desc>Dogma.</desc>
+  </programme>
+  <programme start="20261004020000 +0000" stop="20261004030000 +0000" channel="DR - Telemicro">
+    <title>Dogma</title>
+    <desc>Dogma.</desc>
   </programme>
   <programme start="20261004030000 +0000" stop="20261004040000 +0000" channel="Telemicro.dr">
-    <title lang="es">Dime a ver</title>
-    <desc lang="es">Dime a ver.</desc>
+    <title>Dime a ver</title>
+    <desc>Dime a ver.</desc>
+  </programme>
+  <programme start="20261004030000 +0000" stop="20261004040000 +0000" channel="DR - Telemicro">
+    <title>Dime a ver</title>
+    <desc>Dime a ver.</desc>
   </programme>
   <programme start="20261004040000 +0000" stop="20261004050000 +0000" channel="Telemicro.dr">
-    <title lang="es">Objetivo 5</title>
-    <desc lang="es">Objetivo 5.</desc>
+    <title>Objetivo 5</title>
+    <desc>Objetivo 5.</desc>
+  </programme>
+  <programme start="20261004040000 +0000" stop="20261004050000 +0000" channel="DR - Telemicro">
+    <title>Objetivo 5</title>
+    <desc>Objetivo 5.</desc>
   </programme>
   <programme start="20261004050000 +0000" stop="20261004100000 +0000" channel="Telemicro.dr">
-    <title lang="es">Bloque de repeticiones</title>
-    <desc lang="es">Bloque de repeticiones.</desc>
+    <title>Bloque de repeticiones</title>
+    <desc>Bloque de repeticiones.</desc>
+  </programme>
+  <programme start="20261004050000 +0000" stop="20261004100000 +0000" channel="DR - Telemicro">
+    <title>Bloque de repeticiones</title>
+    <desc>Bloque de repeticiones.</desc>
   </programme>
   <programme start="20261004100000 +0000" stop="20261004110000 +0000" channel="Telemicro.dr">
-    <title lang="es">Musicales</title>
-    <desc lang="es">Musicales.</desc>
+    <title>Musicales</title>
+    <desc>Musicales.</desc>
+  </programme>
+  <programme start="20261004100000 +0000" stop="20261004110000 +0000" channel="DR - Telemicro">
+    <title>Musicales</title>
+    <desc>Musicales.</desc>
   </programme>
   <programme start="20261004110000 +0000" stop="20261004120000 +0000" channel="Telemicro.dr">
-    <title lang="es">Yoga con Luz</title>
-    <desc lang="es">Yoga con Luz.</desc>
+    <title>Yoga con Luz</title>
+    <desc>Yoga con Luz.</desc>
+  </programme>
+  <programme start="20261004110000 +0000" stop="20261004120000 +0000" channel="DR - Telemicro">
+    <title>Yoga con Luz</title>
+    <desc>Yoga con Luz.</desc>
   </programme>
   <programme start="20261004120000 +0000" stop="20261004130000 +0000" channel="Telemicro.dr">
-    <title lang="es">Como dice el dicho</title>
-    <desc lang="es">Como dice el dicho.</desc>
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
+  </programme>
+  <programme start="20261004120000 +0000" stop="20261004130000 +0000" channel="DR - Telemicro">
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="Telemicro.dr">
-    <title lang="es">Principalmente</title>
-    <desc lang="es">Principalmente.</desc>
+    <title>Principalmente</title>
+    <desc>Principalmente.</desc>
+  </programme>
+  <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="DR - Telemicro">
+    <title>Principalmente</title>
+    <desc>Principalmente.</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="Telemicro.dr">
-    <title lang="es">La Familia Peluche</title>
-    <desc lang="es">La Familia Peluche.</desc>
+    <title>La Familia Peluche</title>
+    <desc>La Familia Peluche.</desc>
+  </programme>
+  <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="DR - Telemicro">
+    <title>La Familia Peluche</title>
+    <desc>La Familia Peluche.</desc>
   </programme>
   <programme start="20261004150000 +0000" stop="20261004160000 +0000" channel="Telemicro.dr">
-    <title lang="es">Mi pueblo por dentro</title>
-    <desc lang="es">Mi pueblo por dentro.</desc>
+    <title>Mi pueblo por dentro</title>
+    <desc>Mi pueblo por dentro.</desc>
+  </programme>
+  <programme start="20261004150000 +0000" stop="20261004160000 +0000" channel="DR - Telemicro">
+    <title>Mi pueblo por dentro</title>
+    <desc>Mi pueblo por dentro.</desc>
   </programme>
   <programme start="20261004160000 +0000" stop="20261004180000 +0000" channel="Telemicro.dr">
-    <title lang="es">El domingo es mío</title>
-    <desc lang="es">El domingo es mío.</desc>
+    <title>El domingo es mío</title>
+    <desc>El domingo es mío.</desc>
+  </programme>
+  <programme start="20261004160000 +0000" stop="20261004180000 +0000" channel="DR - Telemicro">
+    <title>El domingo es mío</title>
+    <desc>El domingo es mío.</desc>
   </programme>
   <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="Telemicro.dr">
-    <title lang="es">Tras la verdad</title>
-    <desc lang="es">Tras la verdad.</desc>
+    <title>Tras la verdad</title>
+    <desc>Tras la verdad.</desc>
+  </programme>
+  <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="DR - Telemicro">
+    <title>Tras la verdad</title>
+    <desc>Tras la verdad.</desc>
   </programme>
   <programme start="20261004190000 +0000" stop="20261004200000 +0000" channel="Telemicro.dr">
-    <title lang="es">La parrilla del fuego</title>
-    <desc lang="es">La parrilla del fuego.</desc>
+    <title>La parrilla del fuego</title>
+    <desc>La parrilla del fuego.</desc>
+  </programme>
+  <programme start="20261004190000 +0000" stop="20261004200000 +0000" channel="DR - Telemicro">
+    <title>La parrilla del fuego</title>
+    <desc>La parrilla del fuego.</desc>
   </programme>
   <programme start="20261004200000 +0000" stop="20261004210000 +0000" channel="Telemicro.dr">
-    <title lang="es">Como dice el dicho</title>
-    <desc lang="es">Como dice el dicho.</desc>
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
+  </programme>
+  <programme start="20261004200000 +0000" stop="20261004210000 +0000" channel="DR - Telemicro">
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
   </programme>
   <programme start="20261004210000 +0000" stop="20261004220000 +0000" channel="Telemicro.dr">
-    <title lang="es">Los Pecados de Bárbara</title>
-    <desc lang="es">Los Pecados de Bárbara.</desc>
+    <title>Los Pecados de Bárbara</title>
+    <desc>Los Pecados de Bárbara.</desc>
+  </programme>
+  <programme start="20261004210000 +0000" stop="20261004220000 +0000" channel="DR - Telemicro">
+    <title>Los Pecados de Bárbara</title>
+    <desc>Los Pecados de Bárbara.</desc>
   </programme>
   <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="Telemicro.dr">
-    <title lang="es">Albertano contra los Mostros</title>
-    <desc lang="es">Albertano contra los Mostros.</desc>
+    <title>Albertano contra los Mostros</title>
+    <desc>Albertano contra los Mostros.</desc>
+  </programme>
+  <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="DR - Telemicro">
+    <title>Albertano contra los Mostros</title>
+    <desc>Albertano contra los Mostros.</desc>
   </programme>
   <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="Telemicro.dr">
-    <title lang="es">40 y 20</title>
-    <desc lang="es">40 y 20.</desc>
+    <title>40 y 20</title>
+    <desc>40 y 20.</desc>
   </programme>
-  <programme start="20261003010000 +0000" stop="20261003020000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Tres hermanas</title>
-    <desc lang="es">Tres hermanas.</desc>
+  <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="DR - Telemicro">
+    <title>40 y 20</title>
+    <desc>40 y 20.</desc>
   </programme>
-  <programme start="20261003020000 +0000" stop="20261003030000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Telenoticias - Emisión estelar</title>
-    <desc lang="es">Telenoticias - Emisión estelar.</desc>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="Telemicro.dr">
+    <title>Faysi Nights</title>
+    <desc>Faysi Nights.</desc>
   </programme>
-  <programme start="20261003030000 +0000" stop="20261003040000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Coraje de mujer</title>
-    <desc lang="es">Coraje de mujer.</desc>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="DR - Telemicro">
+    <title>Faysi Nights</title>
+    <desc>Faysi Nights.</desc>
   </programme>
-  <programme start="20261003040000 +0000" stop="20261003043000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Telenoticias - Hora cero</title>
-    <desc lang="es">Telenoticias - Hora cero.</desc>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="Telemicro.dr">
+    <title>Game Time</title>
+    <desc>Game Time.</desc>
   </programme>
-  <programme start="20261003043000 +0000" stop="20261003053000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Acorralada</title>
-    <desc lang="es">Acorralada.</desc>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="DR - Telemicro">
+    <title>Game Time</title>
+    <desc>Game Time.</desc>
   </programme>
-  <programme start="20261003053000 +0000" stop="20261003060000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Nuevo rico, nuevo pobre</title>
-    <desc lang="es">Nuevo rico, nuevo pobre.</desc>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="Telemicro.dr">
+    <title>Miembros al aire</title>
+    <desc>Miembros al aire.</desc>
   </programme>
-  <programme start="20261003060000 +0000" stop="20261003070000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Almas Heridas</title>
-    <desc lang="es">Almas Heridas.</desc>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="DR - Telemicro">
+    <title>Miembros al aire</title>
+    <desc>Miembros al aire.</desc>
   </programme>
-  <programme start="20261003070000 +0000" stop="20261003080000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Piezas rotas</title>
-    <desc lang="es">Piezas rotas.</desc>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="Telemicro.dr">
+    <title>Doble Sentido</title>
+    <desc>Doble Sentido.</desc>
   </programme>
-  <programme start="20261003080000 +0000" stop="20261003090000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Pedro el Escamoso: Más Escamoso que Nunca</title>
-    <desc lang="es">Después de 20 años huyendo de su amor fallido con la Dra. Paula (Sandra Reyes), Pedro (Miguel Varoni) vuelve al país y sin proponérselo, comete de nuevo el error de enamorarse de quien no debe. Esta vez se trata de Fernanda, la jefa y futura suegra de su hijo Pedro Júnior (Carlos Torres), cuya brillante carrera en ascenso se pone en riesgo con el retorno de este padre arruinado, enamoradizo y con el que no tiene nada en común. Para protegerlo, Pedro decide mentir a todos sobre su verdadero vínculo y, juntos, comienzan en privado un emotivo camino de aprendizaje padre-hijo. Cuando sus sentimientos por Fernanda empiezan a ser correspondidos, su propia mentira y la guerra de desprecios que le declara Marina, la novia de Junior, ponen en jaque su amor y dejan su renacida relación con Junior al borde del abismo.</desc>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="DR - Telemicro">
+    <title>Doble Sentido</title>
+    <desc>Doble Sentido.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005090000 +0000" channel="Telemicro.dr">
+    <title>Bloque de repeticiones</title>
+    <desc>Bloque de repeticiones.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005090000 +0000" channel="DR - Telemicro">
+    <title>Bloque de repeticiones</title>
+    <desc>Bloque de repeticiones.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005120000 +0000" channel="Telemicro.dr">
+    <title>La opción de la mañana</title>
+    <desc>La opción de la mañana.</desc>
+  </programme>
+  <programme start="20261005090000 +0000" stop="20261005120000 +0000" channel="DR - Telemicro">
+    <title>La opción de la mañana</title>
+    <desc>La opción de la mañana.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="Telemicro.dr">
+    <title>La revista del 15</title>
+    <desc>La revista del 15.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="DR - Telemicro">
+    <title>La revista del 15</title>
+    <desc>La revista del 15.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="Telemicro.dr">
+    <title>La belleza es mia</title>
+    <desc>La belleza es mia.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="DR - Telemicro">
+    <title>La belleza es mia</title>
+    <desc>La belleza es mia.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="Telemicro.dr">
+    <title>Ponte fit</title>
+    <desc>Ponte fit.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="DR - Telemicro">
+    <title>Ponte fit</title>
+    <desc>Ponte fit.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="Telemicro.dr">
+    <title>Chispita</title>
+    <desc>Chispita.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="DR - Telemicro">
+    <title>Chispita</title>
+    <desc>Chispita.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005190000 +0000" channel="Telemicro.dr">
+    <title>Extremo a extremo</title>
+    <desc>Extremo a extremo.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005190000 +0000" channel="DR - Telemicro">
+    <title>Extremo a extremo</title>
+    <desc>Extremo a extremo.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005200000 +0000" channel="Telemicro.dr">
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005200000 +0000" channel="DR - Telemicro">
+    <title>Como dice el dicho</title>
+    <desc>Como dice el dicho.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="Telemicro.dr">
+    <title>Rebelde</title>
+    <desc>Rebelde.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="DR - Telemicro">
+    <title>Rebelde</title>
+    <desc>Rebelde.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="Telemicro.dr">
+    <title>Alondra</title>
+    <desc>Alondra.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="DR - Telemicro">
+    <title>Alondra</title>
+    <desc>Alondra.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="Telemicro.dr">
+    <title>Portada digital</title>
+    <desc>Portada digital.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="DR - Telemicro">
+    <title>Portada digital</title>
+    <desc>Portada digital.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="Telemicro.dr">
+    <title>Echando el pulso</title>
+    <desc>Echando el pulso.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="DR - Telemicro">
+    <title>Echando el pulso</title>
+    <desc>Echando el pulso.</desc>
   </programme>
   <programme start="20261003090000 +0000" stop="20261003100000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Telenoticias - Emisión estelar</title>
-    <desc lang="es">Telenoticias - Emisión estelar.</desc>
+    <title>Telenoticias - Emisión estelar</title>
+    <desc>Telenoticias - Emisión estelar.</desc>
+  </programme>
+  <programme start="20261003090000 +0000" stop="20261003100000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Emisión estelar</title>
+    <desc>Telenoticias - Emisión estelar.</desc>
   </programme>
   <programme start="20261003100000 +0000" stop="20261003110000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Coloquio</title>
-    <desc lang="es">Coloquio.</desc>
+    <title>Coloquio</title>
+    <desc>Coloquio.</desc>
+  </programme>
+  <programme start="20261003100000 +0000" stop="20261003110000 +0000" channel="DR - Telesistema 11">
+    <title>Coloquio</title>
+    <desc>Coloquio.</desc>
   </programme>
   <programme start="20261003110000 +0000" stop="20261003120000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Gusto expreso</title>
-    <desc lang="es">Gusto expreso.</desc>
+    <title>Gusto expreso</title>
+    <desc>Gusto expreso.</desc>
+  </programme>
+  <programme start="20261003110000 +0000" stop="20261003120000 +0000" channel="DR - Telesistema 11">
+    <title>Gusto expreso</title>
+    <desc>Gusto expreso.</desc>
   </programme>
   <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Telenoticias - Emisión estelar</title>
-    <desc lang="es">Telenoticias - Emisión estelar.</desc>
+    <title>Telenoticias - Emisión estelar</title>
+    <desc>Telenoticias - Emisión estelar.</desc>
+  </programme>
+  <programme start="20261003120000 +0000" stop="20261003130000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Emisión estelar</title>
+    <desc>Telenoticias - Emisión estelar.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="Telesistema11.dr">
-    <title lang="es">El dia</title>
-    <desc lang="es">El dia.</desc>
+    <title>El dia</title>
+    <desc>El dia.</desc>
+  </programme>
+  <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="DR - Telesistema 11">
+    <title>El dia</title>
+    <desc>El dia.</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003153000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Arte y medio</title>
-    <desc lang="es">Arte y medio.</desc>
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261003150000 +0000" stop="20261003153000 +0000" channel="DR - Telesistema 11">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
   </programme>
   <programme start="20261003153000 +0000" stop="20261003155500 +0000" channel="Telesistema11.dr">
-    <title lang="es">Noti chicos</title>
-    <desc lang="es">Noti chicos.</desc>
+    <title>Noti chicos</title>
+    <desc>Noti chicos.</desc>
+  </programme>
+  <programme start="20261003153000 +0000" stop="20261003155500 +0000" channel="DR - Telesistema 11">
+    <title>Noti chicos</title>
+    <desc>Noti chicos.</desc>
   </programme>
   <programme start="20261003155500 +0000" stop="20261003160000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Lotedom</title>
-    <desc lang="es">Lotedom.</desc>
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
+  </programme>
+  <programme start="20261003155500 +0000" stop="20261003160000 +0000" channel="DR - Telesistema 11">
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003180000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Tardes de cine</title>
-    <desc lang="es">Tardes de cine.</desc>
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
+  </programme>
+  <programme start="20261003160000 +0000" stop="20261003180000 +0000" channel="DR - Telesistema 11">
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
   </programme>
   <programme start="20261003180000 +0000" stop="20261003200000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Tardes de cine</title>
-    <desc lang="es">Tardes de cine.</desc>
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
+  </programme>
+  <programme start="20261003180000 +0000" stop="20261003200000 +0000" channel="DR - Telesistema 11">
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
   </programme>
   <programme start="20261003200000 +0000" stop="20261003230000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Maratón Tres hermanas</title>
-    <desc lang="es">Maratón Tres hermanas.</desc>
+    <title>Maratón Tres hermanas</title>
+    <desc>Maratón Tres hermanas.</desc>
+  </programme>
+  <programme start="20261003200000 +0000" stop="20261003230000 +0000" channel="DR - Telesistema 11">
+    <title>Maratón Tres hermanas</title>
+    <desc>Maratón Tres hermanas.</desc>
   </programme>
   <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Esta misma semana</title>
-    <desc lang="es">Esta misma semana.</desc>
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
+  </programme>
+  <programme start="20261003230000 +0000" stop="20261004000000 +0000" channel="DR - Telesistema 11">
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
   </programme>
   <programme start="20261004000000 +0000" stop="20261004000500 +0000" channel="Telesistema11.dr">
-    <title lang="es">Sorteo loteka</title>
-    <desc lang="es">Sorteo loteka.</desc>
+    <title>Sorteo loteka</title>
+    <desc>Sorteo loteka.</desc>
+  </programme>
+  <programme start="20261004000000 +0000" stop="20261004000500 +0000" channel="DR - Telesistema 11">
+    <title>Sorteo loteka</title>
+    <desc>Sorteo loteka.</desc>
   </programme>
   <programme start="20261004000500 +0000" stop="20261004010000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Conversaciones</title>
-    <desc lang="es">Conversaciones.</desc>
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
+  </programme>
+  <programme start="20261004000500 +0000" stop="20261004010000 +0000" channel="DR - Telesistema 11">
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
   </programme>
   <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Caso Cerrado</title>
-    <desc lang="es">Caso Cerrado.</desc>
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261004010000 +0000" stop="20261004020000 +0000" channel="DR - Telesistema 11">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
   </programme>
   <programme start="20261004020000 +0000" stop="20261004023000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Telenoticias - Fin de semana</title>
-    <desc lang="es">Telenoticias - Fin de semana.</desc>
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
+  </programme>
+  <programme start="20261004020000 +0000" stop="20261004023000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
   </programme>
   <programme start="20261004023000 +0000" stop="20261004033000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Mujeres al borde</title>
-    <desc lang="es">Mujeres al borde.</desc>
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
+  </programme>
+  <programme start="20261004023000 +0000" stop="20261004033000 +0000" channel="DR - Telesistema 11">
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
   </programme>
   <programme start="20261004033000 +0000" stop="20261004050000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Película</title>
-    <desc lang="es">Película.</desc>
+    <title>Película</title>
+    <desc>Película.</desc>
+  </programme>
+  <programme start="20261004033000 +0000" stop="20261004050000 +0000" channel="DR - Telesistema 11">
+    <title>Película</title>
+    <desc>Película.</desc>
   </programme>
   <programme start="20261004050000 +0000" stop="20261004060000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Ser humano</title>
-    <desc lang="es">Ser humano.</desc>
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
+  </programme>
+  <programme start="20261004050000 +0000" stop="20261004060000 +0000" channel="DR - Telesistema 11">
+    <title>Ser humano</title>
+    <desc>Ser humano.</desc>
   </programme>
   <programme start="20261004060000 +0000" stop="20261004070000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Esta misma semana</title>
-    <desc lang="es">Esta misma semana.</desc>
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
+  </programme>
+  <programme start="20261004060000 +0000" stop="20261004070000 +0000" channel="DR - Telesistema 11">
+    <title>Esta misma semana</title>
+    <desc>Esta misma semana.</desc>
   </programme>
   <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Conversaciones</title>
-    <desc lang="es">Conversaciones.</desc>
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
+  </programme>
+  <programme start="20261004070000 +0000" stop="20261004080000 +0000" channel="DR - Telesistema 11">
+    <title>Conversaciones</title>
+    <desc>Conversaciones.</desc>
   </programme>
   <programme start="20261004080000 +0000" stop="20261004090000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Voces</title>
-    <desc lang="es">Voces.</desc>
+    <title>Voces</title>
+    <desc>Voces.</desc>
+  </programme>
+  <programme start="20261004080000 +0000" stop="20261004090000 +0000" channel="DR - Telesistema 11">
+    <title>Voces</title>
+    <desc>Voces.</desc>
   </programme>
   <programme start="20261004090000 +0000" stop="20261004100000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Mujeres al borde</title>
-    <desc lang="es">Mujeres al borde.</desc>
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
+  </programme>
+  <programme start="20261004090000 +0000" stop="20261004100000 +0000" channel="DR - Telesistema 11">
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
   </programme>
   <programme start="20261004100000 +0000" stop="20261004110000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Coloquio</title>
-    <desc lang="es">Coloquio.</desc>
+    <title>Coloquio</title>
+    <desc>Coloquio.</desc>
+  </programme>
+  <programme start="20261004100000 +0000" stop="20261004110000 +0000" channel="DR - Telesistema 11">
+    <title>Coloquio</title>
+    <desc>Coloquio.</desc>
   </programme>
   <programme start="20261004110000 +0000" stop="20261004120000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Mujeres al borde</title>
-    <desc lang="es">Mujeres al borde.</desc>
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
+  </programme>
+  <programme start="20261004110000 +0000" stop="20261004120000 +0000" channel="DR - Telesistema 11">
+    <title>Mujeres al borde</title>
+    <desc>Mujeres al borde.</desc>
   </programme>
   <programme start="20261004120000 +0000" stop="20261004130000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Propuesta semanal</title>
-    <desc lang="es">Propuesta semanal.</desc>
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
+  </programme>
+  <programme start="20261004120000 +0000" stop="20261004130000 +0000" channel="DR - Telesistema 11">
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="Telesistema11.dr">
-    <title lang="es">D'agenda</title>
-    <desc lang="es">D'agenda.</desc>
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
+  </programme>
+  <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="DR - Telesistema 11">
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Caso Cerrado</title>
-    <desc lang="es">Caso Cerrado.</desc>
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="DR - Telesistema 11">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
   </programme>
   <programme start="20261004150000 +0000" stop="20261004155500 +0000" channel="Telesistema11.dr">
-    <title lang="es">Entre periodistas</title>
-    <desc lang="es">Entre periodistas.</desc>
+    <title>Entre periodistas</title>
+    <desc>Entre periodistas.</desc>
+  </programme>
+  <programme start="20261004150000 +0000" stop="20261004155500 +0000" channel="DR - Telesistema 11">
+    <title>Entre periodistas</title>
+    <desc>Entre periodistas.</desc>
   </programme>
   <programme start="20261004155500 +0000" stop="20261004160000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Lotedom</title>
-    <desc lang="es">Lotedom.</desc>
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
+  </programme>
+  <programme start="20261004155500 +0000" stop="20261004160000 +0000" channel="DR - Telesistema 11">
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
   </programme>
   <programme start="20261004160000 +0000" stop="20261004190000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Más Roberto</title>
-    <desc lang="es">Más Roberto.</desc>
+    <title>Más Roberto</title>
+    <desc>Más Roberto.</desc>
+  </programme>
+  <programme start="20261004160000 +0000" stop="20261004190000 +0000" channel="DR - Telesistema 11">
+    <title>Más Roberto</title>
+    <desc>Más Roberto.</desc>
   </programme>
   <programme start="20261004190000 +0000" stop="20261004210000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Tardes de cine</title>
-    <desc lang="es">Tardes de cine.</desc>
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
+  </programme>
+  <programme start="20261004190000 +0000" stop="20261004210000 +0000" channel="DR - Telesistema 11">
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
   </programme>
   <programme start="20261004210000 +0000" stop="20261004230000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Tardes de cine</title>
-    <desc lang="es">Tardes de cine.</desc>
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
+  </programme>
+  <programme start="20261004210000 +0000" stop="20261004230000 +0000" channel="DR - Telesistema 11">
+    <title>Tardes de cine</title>
+    <desc>Tardes de cine.</desc>
   </programme>
   <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="Telesistema11.dr">
-    <title lang="es">Yayo Pinto</title>
-    <desc lang="es">Yayo Pinto.</desc>
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
   </programme>
-  <programme start="20261003003000 +0000" stop="20261003010000 +0000" channel="Teleunion.dr">
-    <title lang="es">Mundo Noticias</title>
-    <desc lang="es">Mundo Noticias.</desc>
+  <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="DR - Telesistema 11">
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
   </programme>
-  <programme start="20261003010000 +0000" stop="20261003020000 +0000" channel="Teleunion.dr">
-    <title lang="es">De ahora</title>
-    <desc lang="es">De ahora.</desc>
+  <programme start="20261005000000 +0000" stop="20261005000500 +0000" channel="Telesistema11.dr">
+    <title>Sorteo loteka</title>
+    <desc>Sorteo loteka.</desc>
   </programme>
-  <programme start="20261003020000 +0000" stop="20261003023000 +0000" channel="Teleunion.dr">
-    <title lang="es">Noticias Teleunión</title>
-    <desc lang="es">Noticias Teleunión.</desc>
+  <programme start="20261005000000 +0000" stop="20261005000500 +0000" channel="DR - Telesistema 11">
+    <title>Sorteo loteka</title>
+    <desc>Sorteo loteka.</desc>
   </programme>
-  <programme start="20261003023000 +0000" stop="20261003040000 +0000" channel="Teleunion.dr">
-    <title lang="es">Mundo Noticias</title>
-    <desc lang="es">Mundo Noticias.</desc>
+  <programme start="20261005000500 +0000" stop="20261005020000 +0000" channel="Telesistema11.dr">
+    <title>Película</title>
+    <desc>Película.</desc>
   </programme>
-  <programme start="20261003040000 +0000" stop="20261003110000 +0000" channel="Teleunion.dr">
-    <title lang="es">La plaza Radio Show</title>
-    <desc lang="es">La plaza Radio Show.</desc>
+  <programme start="20261005000500 +0000" stop="20261005020000 +0000" channel="DR - Telesistema 11">
+    <title>Película</title>
+    <desc>Película.</desc>
+  </programme>
+  <programme start="20261005020000 +0000" stop="20261005023000 +0000" channel="Telesistema11.dr">
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
+  </programme>
+  <programme start="20261005020000 +0000" stop="20261005023000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
+  </programme>
+  <programme start="20261005023000 +0000" stop="20261005030000 +0000" channel="Telesistema11.dr">
+    <title>Miralba Multitasking</title>
+    <desc>Miralba Multitasking.</desc>
+  </programme>
+  <programme start="20261005023000 +0000" stop="20261005030000 +0000" channel="DR - Telesistema 11">
+    <title>Miralba Multitasking</title>
+    <desc>Miralba Multitasking.</desc>
+  </programme>
+  <programme start="20261005030000 +0000" stop="20261005050000 +0000" channel="Telesistema11.dr">
+    <title>Cine de medianoche</title>
+    <desc>Cine de medianoche.</desc>
+  </programme>
+  <programme start="20261005030000 +0000" stop="20261005050000 +0000" channel="DR - Telesistema 11">
+    <title>Cine de medianoche</title>
+    <desc>Cine de medianoche.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="Telesistema11.dr">
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
+  </programme>
+  <programme start="20261005050000 +0000" stop="20261005060000 +0000" channel="DR - Telesistema 11">
+    <title>Yayo Pinto</title>
+    <desc>Yayo Pinto.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="Telesistema11.dr">
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
+  </programme>
+  <programme start="20261005060000 +0000" stop="20261005070000 +0000" channel="DR - Telesistema 11">
+    <title>D'agenda</title>
+    <desc>D'agenda.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005080000 +0000" channel="Telesistema11.dr">
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
+  </programme>
+  <programme start="20261005070000 +0000" stop="20261005080000 +0000" channel="DR - Telesistema 11">
+    <title>Propuesta semanal</title>
+    <desc>Propuesta semanal.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005083000 +0000" channel="Telesistema11.dr">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005080000 +0000" stop="20261005083000 +0000" channel="DR - Telesistema 11">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005083000 +0000" stop="20261005093000 +0000" channel="Telesistema11.dr">
+    <title>Alexandra Izquierdo</title>
+    <desc>Alexandra Izquierdo.</desc>
+  </programme>
+  <programme start="20261005083000 +0000" stop="20261005093000 +0000" channel="DR - Telesistema 11">
+    <title>Alexandra Izquierdo</title>
+    <desc>Alexandra Izquierdo.</desc>
+  </programme>
+  <programme start="20261005093000 +0000" stop="20261005100000 +0000" channel="Telesistema11.dr">
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
+  </programme>
+  <programme start="20261005093000 +0000" stop="20261005100000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Fin de semana</title>
+    <desc>Telenoticias - Fin de semana.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005120000 +0000" channel="Telesistema11.dr">
+    <title>El dia</title>
+    <desc>El dia.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005120000 +0000" channel="DR - Telesistema 11">
+    <title>El dia</title>
+    <desc>El dia.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="Telesistema11.dr">
+    <title>Telematutino 11</title>
+    <desc>Telematutino 11.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="DR - Telesistema 11">
+    <title>Telematutino 11</title>
+    <desc>Telematutino 11.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="Telesistema11.dr">
+    <title>Con el consumidor</title>
+    <desc>Con el consumidor.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="DR - Telesistema 11">
+    <title>Con el consumidor</title>
+    <desc>Con el consumidor.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="Telesistema11.dr">
+    <title>CNN América</title>
+    <desc>CNN América.</desc>
+  </programme>
+  <programme start="20261005140000 +0000" stop="20261005150000 +0000" channel="DR - Telesistema 11">
+    <title>CNN América</title>
+    <desc>CNN América.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005155500 +0000" channel="Telesistema11.dr">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005155500 +0000" channel="DR - Telesistema 11">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261005155500 +0000" stop="20261005160000 +0000" channel="Telesistema11.dr">
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
+  </programme>
+  <programme start="20261005155500 +0000" stop="20261005160000 +0000" channel="DR - Telesistema 11">
+    <title>Lotedom</title>
+    <desc>Lotedom.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="Telesistema11.dr">
+    <title>Acorralada</title>
+    <desc>Acorralada.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="DR - Telesistema 11">
+    <title>Acorralada</title>
+    <desc>Acorralada.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005173000 +0000" channel="Telesistema11.dr">
+    <title>Telenoticias - Emisión vespertina</title>
+    <desc>Telenoticias - Emisión vespertina.</desc>
+  </programme>
+  <programme start="20261005170000 +0000" stop="20261005173000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Emisión vespertina</title>
+    <desc>Telenoticias - Emisión vespertina.</desc>
+  </programme>
+  <programme start="20261005173000 +0000" stop="20261005180000 +0000" channel="Telesistema11.dr">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005173000 +0000" stop="20261005180000 +0000" channel="DR - Telesistema 11">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005180000 +0000" stop="20261005190000 +0000" channel="Telesistema11.dr">
+    <title>Almas Heridas</title>
+    <desc>Almas Heridas.</desc>
+  </programme>
+  <programme start="20261005180000 +0000" stop="20261005190000 +0000" channel="DR - Telesistema 11">
+    <title>Almas Heridas</title>
+    <desc>Almas Heridas.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005193000 +0000" channel="Telesistema11.dr">
+    <title>Jonas</title>
+    <desc>Jonas.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005193000 +0000" channel="DR - Telesistema 11">
+    <title>Jonas</title>
+    <desc>Jonas.</desc>
+  </programme>
+  <programme start="20261005193000 +0000" stop="20261005200000 +0000" channel="Telesistema11.dr">
+    <title>Jessie</title>
+    <desc>Jessie.</desc>
+  </programme>
+  <programme start="20261005193000 +0000" stop="20261005200000 +0000" channel="DR - Telesistema 11">
+    <title>Jessie</title>
+    <desc>Jessie.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="Telesistema11.dr">
+    <title>Victoria</title>
+    <desc>Victoria.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="DR - Telesistema 11">
+    <title>Victoria</title>
+    <desc>Victoria.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005213000 +0000" channel="Telesistema11.dr">
+    <title>Telenoticias - Emisión vespertina</title>
+    <desc>Telenoticias - Emisión vespertina.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005213000 +0000" channel="DR - Telesistema 11">
+    <title>Telenoticias - Emisión vespertina</title>
+    <desc>Telenoticias - Emisión vespertina.</desc>
+  </programme>
+  <programme start="20261005213000 +0000" stop="20261005220000 +0000" channel="Telesistema11.dr">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005213000 +0000" stop="20261005220000 +0000" channel="DR - Telesistema 11">
+    <title>Arte y medio</title>
+    <desc>Arte y medio.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="Telesistema11.dr">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="DR - Telesistema 11">
+    <title>Caso Cerrado</title>
+    <desc>Caso Cerrado.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="Telesistema11.dr">
+    <title>Amar una vez más</title>
+    <desc>Amar una vez más.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="DR - Telesistema 11">
+    <title>Amar una vez más</title>
+    <desc>Amar una vez más.</desc>
   </programme>
   <programme start="20261003110000 +0000" stop="20261003130000 +0000" channel="Teleunion.dr">
-    <title lang="es">Entre noticias y más</title>
-    <desc lang="es">Entre noticias y más.</desc>
+    <title>Entre noticias y más</title>
+    <desc>Entre noticias y más.</desc>
+  </programme>
+  <programme start="20261003110000 +0000" stop="20261003130000 +0000" channel="DR - Teleunión">
+    <title>Entre noticias y más</title>
+    <desc>Entre noticias y más.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="Teleunion.dr">
-    <title lang="es">Convivencia tv</title>
-    <desc lang="es">Convivencia tv.</desc>
+    <title>Convivencia tv</title>
+    <desc>Convivencia tv.</desc>
+  </programme>
+  <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="DR - Teleunión">
+    <title>Convivencia tv</title>
+    <desc>Convivencia tv.</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003170000 +0000" channel="Teleunion.dr">
-    <title lang="es">Videos musicales</title>
-    <desc lang="es">Videos musicales.</desc>
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261003150000 +0000" stop="20261003170000 +0000" channel="DR - Teleunión">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
   </programme>
   <programme start="20261003170000 +0000" stop="20261003173000 +0000" channel="Teleunion.dr">
-    <title lang="es">Noticiero CAM informativo</title>
-    <desc lang="es">Noticiero CAM informativo.</desc>
+    <title>Noticiero CAM informativo</title>
+    <desc>Noticiero CAM informativo.</desc>
+  </programme>
+  <programme start="20261003170000 +0000" stop="20261003173000 +0000" channel="DR - Teleunión">
+    <title>Noticiero CAM informativo</title>
+    <desc>Noticiero CAM informativo.</desc>
   </programme>
   <programme start="20261003173000 +0000" stop="20261003180000 +0000" channel="Teleunion.dr">
-    <title lang="es">Acis TV</title>
-    <desc lang="es">Acis TV.</desc>
+    <title>Acis TV</title>
+    <desc>Acis TV.</desc>
+  </programme>
+  <programme start="20261003173000 +0000" stop="20261003180000 +0000" channel="DR - Teleunión">
+    <title>Acis TV</title>
+    <desc>Acis TV.</desc>
   </programme>
   <programme start="20261003180000 +0000" stop="20261003183000 +0000" channel="Teleunion.dr">
-    <title lang="es">Anthony's Super Cars</title>
-    <desc lang="es">Anthony's Super Cars.</desc>
+    <title>Anthony's Super Cars</title>
+    <desc>Anthony's Super Cars.</desc>
+  </programme>
+  <programme start="20261003180000 +0000" stop="20261003183000 +0000" channel="DR - Teleunión">
+    <title>Anthony's Super Cars</title>
+    <desc>Anthony's Super Cars.</desc>
   </programme>
   <programme start="20261003183000 +0000" stop="20261003203000 +0000" channel="Teleunion.dr">
-    <title lang="es">Peliculas</title>
-    <desc lang="es">Peliculas.</desc>
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
+  </programme>
+  <programme start="20261003183000 +0000" stop="20261003203000 +0000" channel="DR - Teleunión">
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
   </programme>
   <programme start="20261003203000 +0000" stop="20261003210000 +0000" channel="Teleunion.dr">
-    <title lang="es">Videos musicales</title>
-    <desc lang="es">Videos musicales.</desc>
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261003203000 +0000" stop="20261003210000 +0000" channel="DR - Teleunión">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
   </programme>
   <programme start="20261003210000 +0000" stop="20261003220000 +0000" channel="Teleunion.dr">
-    <title lang="es">De todo y algo mas</title>
-    <desc lang="es">De todo y algo mas.</desc>
+    <title>De todo y algo mas</title>
+    <desc>De todo y algo mas.</desc>
+  </programme>
+  <programme start="20261003210000 +0000" stop="20261003220000 +0000" channel="DR - Teleunión">
+    <title>De todo y algo mas</title>
+    <desc>De todo y algo mas.</desc>
   </programme>
   <programme start="20261003220000 +0000" stop="20261003223000 +0000" channel="Teleunion.dr">
-    <title lang="es">Share TV</title>
-    <desc lang="es">Share TV.</desc>
+    <title>Share TV</title>
+    <desc>Share TV.</desc>
+  </programme>
+  <programme start="20261003220000 +0000" stop="20261003223000 +0000" channel="DR - Teleunión">
+    <title>Share TV</title>
+    <desc>Share TV.</desc>
   </programme>
   <programme start="20261003223000 +0000" stop="20261004000000 +0000" channel="Teleunion.dr">
-    <title lang="es">Peliculas</title>
-    <desc lang="es">Peliculas.</desc>
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
+  </programme>
+  <programme start="20261003223000 +0000" stop="20261004000000 +0000" channel="DR - Teleunión">
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
   </programme>
   <programme start="20261004000000 +0000" stop="20261004010000 +0000" channel="Teleunion.dr">
-    <title lang="es">En voz alta con Laura</title>
-    <desc lang="es">En voz alta con Laura.</desc>
+    <title>En voz alta con Laura</title>
+    <desc>En voz alta con Laura.</desc>
+  </programme>
+  <programme start="20261004000000 +0000" stop="20261004010000 +0000" channel="DR - Teleunión">
+    <title>En voz alta con Laura</title>
+    <desc>En voz alta con Laura.</desc>
   </programme>
   <programme start="20261004010000 +0000" stop="20261004110000 +0000" channel="Teleunion.dr">
-    <title lang="es">Programación nocturna</title>
-    <desc lang="es">Programación nocturna.</desc>
+    <title>Programación nocturna</title>
+    <desc>Programación nocturna.</desc>
+  </programme>
+  <programme start="20261004010000 +0000" stop="20261004110000 +0000" channel="DR - Teleunión">
+    <title>Programación nocturna</title>
+    <desc>Programación nocturna.</desc>
   </programme>
   <programme start="20261004110000 +0000" stop="20261004130000 +0000" channel="Teleunion.dr">
-    <title lang="es">Entre noticias y más</title>
-    <desc lang="es">Entre noticias y más.</desc>
+    <title>Entre noticias y más</title>
+    <desc>Entre noticias y más.</desc>
+  </programme>
+  <programme start="20261004110000 +0000" stop="20261004130000 +0000" channel="DR - Teleunión">
+    <title>Entre noticias y más</title>
+    <desc>Entre noticias y más.</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="Teleunion.dr">
-    <title lang="es">Videos musicales</title>
-    <desc lang="es">Videos musicales.</desc>
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261004130000 +0000" stop="20261004140000 +0000" channel="DR - Teleunión">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004180000 +0000" channel="Teleunion.dr">
-    <title lang="es">Peliculas</title>
-    <desc lang="es">Peliculas.</desc>
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
+  </programme>
+  <programme start="20261004140000 +0000" stop="20261004180000 +0000" channel="DR - Teleunión">
+    <title>Peliculas</title>
+    <desc>Peliculas.</desc>
   </programme>
   <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="Teleunion.dr">
-    <title lang="es">Comunicación y vida</title>
-    <desc lang="es">Comunicación y vida.</desc>
+    <title>Comunicación y vida</title>
+    <desc>Comunicación y vida.</desc>
+  </programme>
+  <programme start="20261004180000 +0000" stop="20261004190000 +0000" channel="DR - Teleunión">
+    <title>Comunicación y vida</title>
+    <desc>Comunicación y vida.</desc>
   </programme>
   <programme start="20261004190000 +0000" stop="20261004200000 +0000" channel="Teleunion.dr">
-    <title lang="es">Análisis político</title>
-    <desc lang="es">Análisis político.</desc>
+    <title>Análisis político</title>
+    <desc>Análisis político.</desc>
+  </programme>
+  <programme start="20261004190000 +0000" stop="20261004200000 +0000" channel="DR - Teleunión">
+    <title>Análisis político</title>
+    <desc>Análisis político.</desc>
   </programme>
   <programme start="20261004200000 +0000" stop="20261004220000 +0000" channel="Teleunion.dr">
-    <title lang="es">Enlace semanal</title>
-    <desc lang="es">Enlace semanal.</desc>
+    <title>Enlace semanal</title>
+    <desc>Enlace semanal.</desc>
+  </programme>
+  <programme start="20261004200000 +0000" stop="20261004220000 +0000" channel="DR - Teleunión">
+    <title>Enlace semanal</title>
+    <desc>Enlace semanal.</desc>
   </programme>
   <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="Teleunion.dr">
-    <title lang="es">República política</title>
-    <desc lang="es">República política.</desc>
+    <title>República política</title>
+    <desc>República política.</desc>
+  </programme>
+  <programme start="20261004220000 +0000" stop="20261004230000 +0000" channel="DR - Teleunión">
+    <title>República política</title>
+    <desc>República política.</desc>
   </programme>
   <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="Teleunion.dr">
-    <title lang="es">Abogados, justicia y sociedad</title>
-    <desc lang="es">Abogados, justicia y sociedad.</desc>
+    <title>Abogados, justicia y sociedad</title>
+    <desc>Abogados, justicia y sociedad.</desc>
+  </programme>
+  <programme start="20261004230000 +0000" stop="20261005000000 +0000" channel="DR - Teleunión">
+    <title>Abogados, justicia y sociedad</title>
+    <desc>Abogados, justicia y sociedad.</desc>
+  </programme>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="Teleunion.dr">
+    <title>Sin rodeos</title>
+    <desc>Sin rodeos.</desc>
+  </programme>
+  <programme start="20261005000000 +0000" stop="20261005010000 +0000" channel="DR - Teleunión">
+    <title>Sin rodeos</title>
+    <desc>Sin rodeos.</desc>
+  </programme>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="Teleunion.dr">
+    <title>El Podcast de Yayo Sanz Lovaton</title>
+    <desc>El Podcast de Yayo Sanz Lovaton.</desc>
+  </programme>
+  <programme start="20261005010000 +0000" stop="20261005020000 +0000" channel="DR - Teleunión">
+    <title>El Podcast de Yayo Sanz Lovaton</title>
+    <desc>El Podcast de Yayo Sanz Lovaton.</desc>
+  </programme>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="Teleunion.dr">
+    <title>Sobre Los Hechos</title>
+    <desc>Sobre Los Hechos.</desc>
+  </programme>
+  <programme start="20261005020000 +0000" stop="20261005030000 +0000" channel="DR - Teleunión">
+    <title>Sobre Los Hechos</title>
+    <desc>Sobre Los Hechos.</desc>
+  </programme>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="Teleunion.dr">
+    <title>Fuera del aire</title>
+    <desc>Fuera del aire.</desc>
+  </programme>
+  <programme start="20261005030000 +0000" stop="20261005040000 +0000" channel="DR - Teleunión">
+    <title>Fuera del aire</title>
+    <desc>Fuera del aire.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005100000 +0000" channel="Teleunion.dr">
+    <title>Programación nocturna</title>
+    <desc>Programación nocturna.</desc>
+  </programme>
+  <programme start="20261005040000 +0000" stop="20261005100000 +0000" channel="DR - Teleunión">
+    <title>Programación nocturna</title>
+    <desc>Programación nocturna.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005120000 +0000" channel="Teleunion.dr">
+    <title>Vozz Matutina</title>
+    <desc>Vozz Matutina.</desc>
+  </programme>
+  <programme start="20261005100000 +0000" stop="20261005120000 +0000" channel="DR - Teleunión">
+    <title>Vozz Matutina</title>
+    <desc>Vozz Matutina.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="Teleunion.dr">
+    <title>Encuentro matinal</title>
+    <desc>Encuentro matinal.</desc>
+  </programme>
+  <programme start="20261005120000 +0000" stop="20261005130000 +0000" channel="DR - Teleunión">
+    <title>Encuentro matinal</title>
+    <desc>Encuentro matinal.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005133000 +0000" channel="Teleunion.dr">
+    <title>Mundo Noticias</title>
+    <desc>Mundo Noticias.</desc>
+  </programme>
+  <programme start="20261005130000 +0000" stop="20261005133000 +0000" channel="DR - Teleunión">
+    <title>Mundo Noticias</title>
+    <desc>Mundo Noticias.</desc>
+  </programme>
+  <programme start="20261005133000 +0000" stop="20261005150000 +0000" channel="Teleunion.dr">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261005133000 +0000" stop="20261005150000 +0000" channel="DR - Teleunión">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="Teleunion.dr">
+    <title>Circumax, Soltimex, Puricolon</title>
+    <desc>Circumax, Soltimex, Puricolon.</desc>
+  </programme>
+  <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="DR - Teleunión">
+    <title>Circumax, Soltimex, Puricolon</title>
+    <desc>Circumax, Soltimex, Puricolon.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005173000 +0000" channel="Teleunion.dr">
+    <title>El show de Nelson</title>
+    <desc>El show de Nelson.</desc>
+  </programme>
+  <programme start="20261005160000 +0000" stop="20261005173000 +0000" channel="DR - Teleunión">
+    <title>El show de Nelson</title>
+    <desc>El show de Nelson.</desc>
+  </programme>
+  <programme start="20261005173000 +0000" stop="20261005180000 +0000" channel="Teleunion.dr">
+    <title>Concavo y convexo</title>
+    <desc>Concavo y convexo.</desc>
+  </programme>
+  <programme start="20261005173000 +0000" stop="20261005180000 +0000" channel="DR - Teleunión">
+    <title>Concavo y convexo</title>
+    <desc>Concavo y convexo.</desc>
+  </programme>
+  <programme start="20261005180000 +0000" stop="20261005190000 +0000" channel="Teleunion.dr">
+    <title>El reportero</title>
+    <desc>El reportero.</desc>
+  </programme>
+  <programme start="20261005180000 +0000" stop="20261005190000 +0000" channel="DR - Teleunión">
+    <title>El reportero</title>
+    <desc>El reportero.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005193000 +0000" channel="Teleunion.dr">
+    <title>Noticias Teleunión</title>
+    <desc>Noticias Teleunión.</desc>
+  </programme>
+  <programme start="20261005190000 +0000" stop="20261005193000 +0000" channel="DR - Teleunión">
+    <title>Noticias Teleunión</title>
+    <desc>Noticias Teleunión.</desc>
+  </programme>
+  <programme start="20261005193000 +0000" stop="20261005200000 +0000" channel="Teleunion.dr">
+    <title>Mundo Noticias</title>
+    <desc>Mundo Noticias.</desc>
+  </programme>
+  <programme start="20261005193000 +0000" stop="20261005200000 +0000" channel="DR - Teleunión">
+    <title>Mundo Noticias</title>
+    <desc>Mundo Noticias.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="Teleunion.dr">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261005200000 +0000" stop="20261005210000 +0000" channel="DR - Teleunión">
+    <title>Videos musicales</title>
+    <desc>Videos musicales.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="Teleunion.dr">
+    <title>Entre amigos</title>
+    <desc>Entre amigos.</desc>
+  </programme>
+  <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="DR - Teleunión">
+    <title>Entre amigos</title>
+    <desc>Entre amigos.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="Teleunion.dr">
+    <title>El Bastión Internacional</title>
+    <desc>El Bastión Internacional.</desc>
+  </programme>
+  <programme start="20261005220000 +0000" stop="20261005230000 +0000" channel="DR - Teleunión">
+    <title>El Bastión Internacional</title>
+    <desc>El Bastión Internacional.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="Teleunion.dr">
+    <title>Acontecimiento</title>
+    <desc>Acontecimiento.</desc>
+  </programme>
+  <programme start="20261005230000 +0000" stop="20261006000000 +0000" channel="DR - Teleunión">
+    <title>Acontecimiento</title>
+    <desc>Acontecimiento.</desc>
   </programme>
 </tv>
