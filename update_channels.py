@@ -13,7 +13,7 @@ GUIDE_FILE = ROOT / "guia-espejo.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
-EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia-espejo.xml"
+EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@92faab7/guia-espejo.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id de iptv-org -> (nombre en pantalla, id de la guía)
 # El nombre y el id no son el mismo texto. El id no lleva espacios.
