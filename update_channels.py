@@ -9,9 +9,11 @@ ROOT = Path(__file__).resolve().parent
 MASTER_FILE = ROOT / "lista_maestra.m3u"
 OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
-EPG_URL = "https://iptv-org.github.io/epg/guides.xml"
+LOGO_API = "https://iptv-org.github.io/api/logos.json"
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
+QUALITY_RE = re.compile(r"\s*\(\d{3,4}[pi]\)", re.IGNORECASE)
+STATUS_TAG_RE = re.compile(r"\s*\[(?:Not 24/7|Geo-blocked|Geo blocked)\]", re.IGNORECASE)
 
 # País principal desde tvg-id de iptv-org: Canal.xx@Feed
 # Solo estos países tienen carpeta propia; el resto va a "Otros".
@@ -177,6 +179,19 @@ def parse_channels(path):
     return channels
 
 
+def stream_ok(status, content_type, chunk):
+    """Acepta una lista HLS o video. Rechaza páginas HTML y errores JSON."""
+    if not (200 <= status < 400):
+        return False
+    ctype = (content_type or "").lower()
+    sample = chunk.lstrip()[:24].lower()
+    if "text/html" in ctype or "application/json" in ctype or "text/json" in ctype:
+        return False
+    if sample.startswith((b"<html", b"<!doctype", b"<", b"{", b"[")):
+        return False
+    return True
+
+
 def check_url(channel):
     extinf, url = channel
     headers = {"User-Agent": extinf_attr(extinf, "http-user-agent") or DEFAULT_USER_AGENT}
@@ -186,11 +201,70 @@ def check_url(channel):
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=URL_TIMEOUT) as response:
-            if 200 <= response.status < 400:
+            chunk = response.read(1024)
+            if stream_ok(response.status, response.headers.get("Content-Type", ""), chunk):
                 return channel
     except (urllib.error.URLError, TimeoutError, OSError):
         pass
     return None
+
+
+def player_name(extinf):
+    """Nombre limpio para que OTTPlayer lo compare con su biblioteca de guía."""
+    name = channel_name(extinf)
+    previous = None
+    while name != previous:
+        previous = name
+        name = QUALITY_RE.sub("", name)
+        name = STATUS_TAG_RE.sub("", name)
+    return name.strip() or channel_name(extinf)
+
+
+def load_logos():
+    try:
+        request = urllib.request.Request(LOGO_API, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(request, timeout=30) as response:
+            logos = json_load(response)
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+        return {}
+    grouped = {}
+    for logo in logos:
+        url = logo.get("url") or ""
+        channel = logo.get("channel") or ""
+        if not url or not channel:
+            continue
+        grouped.setdefault(channel, []).append(logo)
+    return grouped
+
+
+def json_load(response):
+    import json
+
+    return json.load(response)
+
+
+def best_logo(logos, extinf):
+    channel_id = extinf_attr(extinf, "tvg-id") or ""
+    base, _, feed = channel_id.partition("@")
+    options = logos.get(base) or []
+    if not options:
+        return None
+    same_feed = [logo for logo in options if feed and logo.get("feed") == feed]
+    generic = [logo for logo in options if not logo.get("feed")]
+    pool = same_feed or generic or options
+    pool.sort(key=lambda logo: logo.get("width") or 0, reverse=True)
+    return pool[0]["url"]
+
+
+def set_logo(extinf, logo_url):
+    if not logo_url:
+        return extinf
+    current = extinf_attr(extinf, "tvg-logo")
+    if current:
+        return extinf
+    if 'tvg-logo="' in extinf:
+        return re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo_url}"', extinf)
+    return extinf.replace("tvg-id=", f'tvg-logo="{logo_url}" tvg-id=', 1)
 
 
 def set_group_title(extinf, category):
@@ -210,12 +284,22 @@ def sort_channels(channels):
     return sorted(channels, key=sort_key)
 
 
-def write_m3u(path, channels):
+def write_m3u(path, channels, *, player=False, logos=None):
+    logos = logos or {}
     with path.open("w", encoding="utf-8") as f:
-        f.write(f'#EXTM3U x-tvg-url="{EPG_URL}"\n')
+        # Sin x-tvg-url: la guía vieja de iptv-org ya no existe (404).
+        # OTTPlayer ata la programación por el nombre del canal.
+        f.write("#EXTM3U\n")
         for extinf, url in channels:
             category = assign_category(extinf, url)
-            f.write(set_group_title(extinf, category) + "\n")
+            extinf = set_group_title(extinf, category)
+            if player:
+                extinf = set_logo(extinf, best_logo(logos, extinf))
+                name = player_name(extinf)
+                extinf = extinf[: extinf.rfind(",") + 1] + name
+            f.write(extinf + "\n")
+            if player:
+                f.write(f"#EXTGRP:{category}\n")
             f.write(url + "\n")
 
 
@@ -233,10 +317,50 @@ def write_summary(path, channels):
             f.write(f"Canal: {channel_name(extinf)} [{code.upper()}]\n")
 
 
+def validate_player_m3u(path):
+    text = path.read_text(encoding="utf-8")
+    if "guides.xml" in text or "x-tvg-url=" in text or "url-tvg=" in text:
+        raise RuntimeError("La lista publicada todavía apunta a una guía inexistente.")
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    if not lines or lines[0] != "#EXTM3U":
+        raise RuntimeError("La lista no empieza con #EXTM3U.")
+    channels = 0
+    index = 1
+    while index < len(lines):
+        extinf = lines[index]
+        if not extinf.startswith("#EXTINF:"):
+            raise RuntimeError(f"Se esperaba #EXTINF y llegó: {extinf[:80]}")
+        group_line = lines[index + 1] if index + 1 < len(lines) else ""
+        url = lines[index + 2] if index + 2 < len(lines) else ""
+        if not group_line.startswith("#EXTGRP:"):
+            raise RuntimeError(f"Falta #EXTGRP en {player_name(extinf)}")
+        if not url.startswith(("http://", "https://")):
+            raise RuntimeError(f"URL inválida en {player_name(extinf)}")
+        name = player_name(extinf)
+        visible = extinf.split(",")[-1].strip()
+        if visible != name or QUALITY_RE.search(visible) or STATUS_TAG_RE.search(visible):
+            raise RuntimeError(f"Nombre no apto para OTTPlayer: {visible}")
+        if 'group-title="' not in extinf or not (extinf_attr(extinf, "tvg-id") or ""):
+            raise RuntimeError(f"Falta grupo o tvg-id en {visible}")
+        if group_line.removeprefix("#EXTGRP:") != (extinf_attr(extinf, "group-title") or ""):
+            raise RuntimeError(f"El grupo no coincide en {visible}")
+        channels += 1
+        index += 3
+    if channels == 0:
+        raise RuntimeError("La lista publicada quedó vacía.")
+    parsed = parse_channels(path)
+    if len(parsed) != channels:
+        raise RuntimeError("El lector de la lista no ve los mismos canales que se escribieron.")
+    print(f"Lista OTTPlayer válida: {channels} canales.")
+    return channels
+
+
 def write_outputs(working_channels):
     sorted_channels = sort_channels(working_channels)
-    write_m3u(OUTPUT_M3U, sorted_channels)
+    logos = load_logos()
+    write_m3u(OUTPUT_M3U, sorted_channels, player=True, logos=logos)
     write_summary(OUTPUT_TXT, sorted_channels)
+    validate_player_m3u(OUTPUT_M3U)
 
 
 def recategorize_lists():
@@ -245,8 +369,9 @@ def recategorize_lists():
 
     channels = sort_channels(parse_channels(MASTER_FILE))
     write_m3u(MASTER_FILE, channels)
-    write_m3u(OUTPUT_M3U, channels)
+    write_m3u(OUTPUT_M3U, channels, player=True, logos=load_logos())
     write_summary(OUTPUT_TXT, channels)
+    validate_player_m3u(OUTPUT_M3U)
 
     counts = Counter(assign_category(extinf, url) for extinf, url in channels)
     print(f"Reclasificados {len(channels)} canales:")
