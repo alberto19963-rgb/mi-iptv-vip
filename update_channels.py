@@ -9,11 +9,11 @@ ROOT = Path(__file__).resolve().parent
 MASTER_FILE = ROOT / "lista_maestra.m3u"
 OUTPUT_M3U = ROOT / "mi_lista_personal.m3u"
 OUTPUT_TXT = ROOT / "canales_disponibles.txt"
-GUIDE_FILE = ROOT / "guia.xml"
+GUIDE_FILE = ROOT / "guia-tv.xml"
 LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # Guía nuestra. raw.githubusercontent.com la sirve como text/plain y el
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
-EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia.xml"
+EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia-tv.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
 # id iptv-org -> id de nuestra guía / id en iptv-epg.org
 DO_GUIDE = {
