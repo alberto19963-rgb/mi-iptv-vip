@@ -15,15 +15,14 @@ LOGO_API = "https://iptv-org.github.io/api/logos.json"
 # celular no la trata como XML. jsDelivr la sirve como application/xml.
 EPG_URL = "https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip@main/guia-tv.xml"
 EPG_SOURCE = "https://iptv-epg.org/files/epg-do.xml.gz"
-# id iptv-org -> id de nuestra guía / id en iptv-epg.org
-# id de iptv-org -> (id exacto en la guía, nombre exacto en la guía)
-# La guía original no usa "Telemicro": usa id Telemicro.dr y nombre "DR - Telemicro".
+# id de iptv-org -> (texto único del canal, id en la fuente)
+# Ese texto queda igual en el nombre, el tvg-id, el tvg-name y el id de la guía.
 DO_GUIDE = {
-    "CDN.do": ("CDN.dr", "DR - CDN"),
-    "TeleAntillas.do": ("TeleAntillas.dr", "DR - Tele Antillas"),
-    "Telemicro.do": ("Telemicro.dr", "DR - Telemicro"),
-    "Telesistema11.do": ("Telesistema11.dr", "DR - Telesistema 11"),
-    "Teleunion.do": ("Teleunion.dr", "DR - Teleunión"),
+    "CDN.do": ("DR - CDN", "CDN.dr"),
+    "TeleAntillas.do": ("DR - Tele Antillas", "TeleAntillas.dr"),
+    "Telemicro.do": ("DR - Telemicro", "Telemicro.dr"),
+    "Telesistema11.do": ("DR - Telesistema 11", "Telesistema11.dr"),
+    "Teleunion.do": ("DR - Teleunión", "Teleunion.dr"),
 }
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
@@ -283,13 +282,14 @@ def set_logo(extinf, logo_url):
 
 
 def guide_match(tvg_id):
-    """Devuelve (id de la guía, nombre de la guía) o None."""
+    """Devuelve (texto, texto): nombre, tvg-id e id de la guía son el mismo."""
     base = (tvg_id or "").split("@")[0]
     if base in DO_GUIDE:
-        return DO_GUIDE[base]
-    for channel_id, display in DO_GUIDE.values():
-        if base in (channel_id, display):
-            return channel_id, display
+        mirror, _source = DO_GUIDE[base]
+        return mirror, mirror
+    for mirror, source in DO_GUIDE.values():
+        if base in (mirror, source):
+            return mirror, mirror
     return None
 
 
@@ -334,7 +334,7 @@ def write_guia():
 
         raw = gzip.decompress(raw)
     text = raw.decode("utf-8", "replace")
-    wanted = {channel_id: channel_id for channel_id, _display in DO_GUIDE.values()}
+    wanted = {source: mirror for mirror, source in DO_GUIDE.values()}
     programmes = []
     for start, stop, channel, body in re.findall(
         r'<programme\s+start="([^"]+)"\s+stop="([^"]+)"\s+channel="([^"]+)"\s*>(.*?)</programme>',
@@ -353,14 +353,13 @@ def write_guia():
         programmes.append((xmltv_to_local(start), xmltv_to_local(stop), ours, title_text, desc_text))
     if not programmes:
         raise RuntimeError("La fuente de guía no trajo programas para los canales de la lista.")
-    names = list(DO_GUIDE.values())
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         "<tv>",
     ]
-    for channel_id, display in names:
-        lines.append(f'  <channel id="{xml_escape(channel_id)}">')
-        lines.append(f"    <display-name>{xml_escape(display)}</display-name>")
+    for mirror, _source in DO_GUIDE.values():
+        lines.append(f'  <channel id="{xml_escape(mirror)}">')
+        lines.append(f"    <display-name>{xml_escape(mirror)}</display-name>")
         lines.append("  </channel>")
     for start, stop, name, title_text, desc_text in programmes:
         lines.append(f'  <programme start="{start}" stop="{stop}" channel="{xml_escape(name)}">')
