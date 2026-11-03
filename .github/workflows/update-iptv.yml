@@ -25,6 +25,8 @@ jobs:
 
       - name: Ejecutar la limpieza de canales muertos
         run: python update_channels.py
+        # Si la red del runner ve casi todo muerto, el script conserva la
+        # lista publicada y sale 0 (no tumba el job ni borra canales).
 
       - name: Subir los cambios a GitHub (Commit y Push)
         run: |

@@ -1,4 +1,5 @@
 import concurrent.futures
+import os
 from pathlib import Path
 import re
 import time
@@ -34,6 +35,13 @@ DO_GUIDE = {
 }
 MAX_WORKERS = 40
 URL_TIMEOUT = 12
+# Reintentos por URL: los runners de GitHub a veces ven timeouts/bloqueos
+# momentáneos; un solo fallo no debe tumbar el canal ni el job diario.
+CHECK_RETRIES = 3
+CHECK_RETRY_SLEEP = 1.5
+# Si la pasada queda por debajo de este % de la lista ya publicada,
+# conservamos los archivos (día malo de red) y el workflow sigue en verde.
+MIN_KEEP_RATIO = 0.45
 QUALITY_RE = re.compile(r"\s*\(\d{3,4}[pi]\)", re.IGNORECASE)
 STATUS_TAG_RE = re.compile(r"\s*\[(?:Not 24/7|Geo-blocked|Geo blocked)\]", re.IGNORECASE)
 
@@ -220,15 +228,24 @@ def check_url(channel):
     referrer = extinf_attr(extinf, "http-referrer") or extinf_attr(extinf, "http-referer")
     if referrer:
         headers["Referer"] = referrer
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=URL_TIMEOUT) as response:
-            chunk = response.read(1024)
-            if stream_ok(response.status, response.headers.get("Content-Type", ""), chunk):
-                return channel
-    except (urllib.error.URLError, TimeoutError, OSError):
-        pass
+    for attempt in range(CHECK_RETRIES):
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=URL_TIMEOUT) as response:
+                chunk = response.read(1024)
+                if stream_ok(response.status, response.headers.get("Content-Type", ""), chunk):
+                    return channel
+        except (urllib.error.URLError, TimeoutError, OSError):
+            pass
+        if attempt + 1 < CHECK_RETRIES:
+            time.sleep(CHECK_RETRY_SLEEP)
     return None
+
+
+def published_channel_count(path: Path = OUTPUT_M3U) -> int:
+    if not path.is_file():
+        return 0
+    return sum(1 for line in path.read_text(encoding="utf-8", errors="replace").splitlines() if line.startswith("#EXTINF"))
 
 
 def player_name(extinf):
@@ -555,15 +572,27 @@ def main():
     channels = parse_channels(MASTER_FILE)
     print(f"Verificando {len(channels)} canales...")
 
+    workers = MAX_WORKERS
+    # En Actions, menos paralelismo = menos bloqueos/falsos muertos.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        workers = min(workers, 16)
+
     start = time.time()
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         working_channels = [channel for channel in executor.map(check_url, channels) if channel is not None]
 
     elapsed = time.time() - start
     print(f"Completado en {elapsed:.2f}s. Canales activos: {len(working_channels)} / {len(channels)}")
 
-    if not working_channels:
-        raise RuntimeError("No se encontró ningún canal activo; no se sobrescriben los archivos.")
+    previous = published_channel_count()
+    floor = max(1, int(previous * MIN_KEEP_RATIO)) if previous else 1
+    if len(working_channels) < floor:
+        print(
+            "AVISO: pasada débil "
+            f"({len(working_channels)} activos; piso {floor} sobre {previous} publicados). "
+            "Se conservan los archivos actuales; no se falla el job."
+        )
+        return
 
     write_outputs(working_channels)
     print("Archivos actualizados correctamente.")
