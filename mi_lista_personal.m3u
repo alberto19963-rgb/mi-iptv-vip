@@ -5,9 +5,6 @@ https://acentotv01.streamprolive.com/hls/live.m3u8
 #EXTINF:-1 tvg-id="AguilaTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3770-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Aguila TV
 #EXTGRP:🇩🇴 República Dominicana
 https://fox.hostlagarto.com:8081/aguilatv/playlist.m3u8
-#EXTINF:-1 tvg-id="AlcarrizosTV.do@SD" tvg-logo="https://i.ibb.co/C3fdPYGs/Alcarrizo.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Alcarrizos TV
-#EXTGRP:🇩🇴 República Dominicana
-https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
 #EXTINF:-1 tvg-id="AlegreTVRD.do@SD" tvg-logo="https://i.imgur.com/O6USO8r.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Alegre TV RD
 #EXTGRP:🇩🇴 República Dominicana
 https://streamunoapp.com:3149/live/alegretvlive.m3u8
@@ -71,9 +68,6 @@ https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
 #EXTINF:-1 tvg-id="ChinolaTV.do@SD" tvg-logo="https://i.imgur.com/ybud4dI.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Chinola TV
 #EXTGRP:🇩🇴 República Dominicana
 https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8
-#EXTINF:-1 tvg-id="CibaenaTV.do@SD" tvg-logo="https://i.imgur.com/iHjdckl.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Cibaeña TV
-#EXTGRP:🇩🇴 República Dominicana
-https://streamunoapp.com:3958/live/cibaenatvlive.m3u8
 #EXTINF:-1 tvg-id="CieloTV.do@SD" tvg-logo="https://i.imgur.com/2PNw6BA.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Cielo TV
 #EXTGRP:🇩🇴 República Dominicana
 https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
@@ -98,6 +92,9 @@ https://edge.essastream.com/canalcocotv/playlist.m3u8
 #EXTINF:-1 tvg-id="CodigoTV.do@HD" tvg-logo="https://imgur.com/DbjywI3.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Codigo TV
 #EXTGRP:🇩🇴 República Dominicana
 https://edge.essastream.com/codigotv/playlist.m3u8
+#EXTINF:-1 tvg-id="ColimdoTV.do@SD" tvg-logo="https://i.imgur.com/ZeUgLCa.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Colimdo TV
+#EXTGRP:🇩🇴 República Dominicana
+https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8
 #EXTINF:-1 tvg-id="ColomeTV.do@HD" tvg-logo="https://colometv.com/assets/images/logo.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Colome TV
 #EXTGRP:🇩🇴 República Dominicana
 https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8
@@ -131,9 +128,6 @@ http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8
 #EXTINF:-1 tvg-id="DigitalVision63.do@SD" tvg-logo="https://i.imgur.com/FQkLIMR.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Digital Vision 63
 #EXTGRP:🇩🇴 República Dominicana
 https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
-#EXTINF:-1 tvg-id="Digital809TV.do@SD" tvg-logo="https://i.imgur.com/NKdV8b1.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Digital809 TV
-#EXTGRP:🇩🇴 República Dominicana
-https://stream.inliveserver.com:19360/8146/8146.m3u8
 #EXTINF:-1 tvg-id="EcosCanal57.do@HD" tvg-logo="https://imgur.com/ccFwraQ.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Ecos Canal 57
 #EXTGRP:🇩🇴 República Dominicana
 https://2-fss-2.streamhoster.com/pl_138/206532-6829872-1/playlist.m3u8
@@ -170,12 +164,12 @@ https://vdopanel.jlahozconsulting.com:3706/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="FuegoTV.do@SD" tvg-logo="https://i.imgur.com/T9vWjeB.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Fuego TV
 #EXTGRP:🇩🇴 República Dominicana
 https://streamunoapp.com:3553/live/cromtvlive.m3u8
-#EXTINF:-1 tvg-id="GalaxiATeVe.do@SD" tvg-logo="https://grupomediosdelnorte.com/iptv/galaxia.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Galaxia TV
-#EXTGRP:🇩🇴 República Dominicana
-https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8
 #EXTINF:-1 tvg-id="GHTelevision.do@SD" tvg-logo="https://i.imgur.com/xhkiiO3.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",GH Television
 #EXTGRP:🇩🇴 República Dominicana
 https://fox.hostlagarto.com:8081/ghtelevision/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="GiTelevision.do@SD" tvg-logo="https://i.imgur.com/br9TNG8.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Gi Television
+#EXTGRP:🇩🇴 República Dominicana
+https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8
 #EXTINF:-1 tvg-id="GlobalSocialTV.do@SD" tvg-logo="https://imgur.com/sGN1NbR.png" http-referrer="https://player.castr.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Global Social TV
 #EXTGRP:🇩🇴 República Dominicana
 https://stream.castr.com/6809124f3f3e7e594c63cf15/live_8e5d0b50206a11f08690576446b3c082/index.fmp4.m3u8
@@ -191,6 +185,9 @@ https://fox.hostlagarto.com:8081/hmtv/index.m3u8
 #EXTINF:-1 tvg-id="ImagenUniversalTV.do@SD" tvg-logo="https://i.imgur.com/DP6HmDV.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Imagen Universal TV
 #EXTGRP:🇩🇴 República Dominicana
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
+#EXTINF:-1 tvg-id="InformeTV.do@HD" tvg-logo="https://imgur.com/TmJaXrO.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Informe TV
+#EXTGRP:🇩🇴 República Dominicana
+https://edge.essastream.com/informetv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="JARABACOATV.do@HD" tvg-logo="https://imgur.com/m9WCrlw.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",JARABACOA TV
 #EXTGRP:🇩🇴 República Dominicana
 https://streaming.jarabacoatv.com/Jarabacoa_tv/playlist.m3u8
@@ -254,15 +251,9 @@ https://5790d294af2dc.streamlock.net/markatv/markatv/playlist.m3u8
 #EXTINF:-1 tvg-id="MarlaVision.do@SD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3738-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Marla Vision
 #EXTGRP:🇩🇴 República Dominicana
 https://soportedvb.click:3877/live/merlavisionlive.m3u8
-#EXTINF:-1 tvg-id="MegaCineTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/2893-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Mega Cine TV
+#EXTINF:-1 tvg-id="MegaVisionTV.do@SD" tvg-logo="https://i.imgur.com/u5ECnZd.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Megavisión TV
 #EXTGRP:🇩🇴 República Dominicana
-https://cnn.hostlagarto.com/megacinetv/playlist.m3u8
-#EXTINF:-1 tvg-id="MITurnoTV.do@SD" tvg-logo="https://imgur.com/uODDaEY.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",MI Turno TV
-#EXTGRP:🇩🇴 República Dominicana
-https://video.udwn.net:19360/miturnotv/miturnotv.m3u8
-#EXTINF:-1 tvg-id="MiavisionTV.do@HD" tvg-logo="https://imgur.com/Bbcrjvs.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Miavision TV
-#EXTGRP:🇩🇴 República Dominicana
-https://edge.essastream.com/miavisiontv/playlist.m3u8
+http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do@SD" tvg-logo="https://i.imgur.com/wMl1fNZ.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Microvision 10
 #EXTGRP:🇩🇴 República Dominicana
 https://streaming.telecablecentral.com.do/live/MicroHD/playlist.m3u8
@@ -317,9 +308,6 @@ https://fox.hostlagarto.com:8081/puntotv/index.m3u8
 #EXTINF:-1 tvg-id="PuntoTVDigital40.do@SD" tvg-logo="https://puntotvdigital.net/wp-content/uploads/2024/02/logo.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Punto TV Digital 40
 #EXTGRP:🇩🇴 República Dominicana
 https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/playlist.m3u8
-#EXTINF:-1 tvg-id="RTelevision.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3039-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",R Television
-#EXTGRP:🇩🇴 República Dominicana
-https://vdopanel.jlahozconsulting.com/p/3142/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="RETV.do@SD" tvg-logo="https://i.imgur.com/HpKQYp3.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",R&E TV
 #EXTGRP:🇩🇴 República Dominicana
 https://cloud2.streaminglivehd.com:1936/8072/8072/playlist.m3u8
@@ -443,9 +431,9 @@ https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8
 #EXTINF:-1 tvg-id="Teletur.do@SD" tvg-logo="https://i.imgur.com/Ig4gR93.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Teletur
 #EXTGRP:🇩🇴 República Dominicana
 https://fox.hostlagarto.com:8081/teleturtv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Telever.do@SD" tvg-logo="https://imgur.com/ejKctXc.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Telever
+#EXTINF:-1 tvg-name="DR - Teleunión" tvg-id="Teleunion.dr" tvg-logo="https://i.imgur.com/vTfxkjW.png" http-referrer="https://teleuniontvrd.com/portal/" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",DR - Teleunión
 #EXTGRP:🇩🇴 República Dominicana
-https://soportedvb.click:3413/live/televerlive.m3u8
+http://server2grupocam.com:1945/teleunion/TU/playlist.m3u8
 #EXTINF:-1 tvg-id="Televida.do@SD" tvg-logo="https://i.imgur.com/S8Zdn41.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Televida
 #EXTGRP:🇩🇴 República Dominicana
 https://cnn.hostlagarto.com/televida/playlist.m3u8
@@ -458,9 +446,9 @@ https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8
 #EXTINF:-1 tvg-id="TopicalMoonRD.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3900-294x165-FFFFFF.jpg" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Topical Moon RD
 #EXTGRP:🇩🇴 República Dominicana
 https://sistemastr.tropicalmoonmedia.com/live/56BE17DB16EB76C9F2DDB8346F4DFA4E/30.m3u8
-#EXTINF:-1 tvg-id="ToraCanal69.do@HD" tvg-logo="https://latoratv69.com.do/wp-content/themes/bootscore/assets/img/logo-tora-tv.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Tora Canal 69
+#EXTINF:-1 tvg-id="TV10SanJuan.do@SD" tvg-logo="https://i.imgur.com/e2BXUdH.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",TV 10 San Juan
 #EXTGRP:🇩🇴 República Dominicana
-https://tv.wracanal10.com:3012/live/latoratvlive.m3u8
+https://59d39900ebfb8.streamlock.net/tv10sanjuan/tv10sanjuan/playlist.m3u8
 #EXTINF:-1 tvg-id="TVHigueyDigital.do@SD" tvg-logo="https://i.imgur.com/ptQyOMi.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",TV Higuey Digital
 #EXTGRP:🇩🇴 República Dominicana
 https://host.streamingnation.live/p/3467/live/tvhigueylive.m3u8
@@ -506,6 +494,9 @@ https://ss2.tvrdomi.com:1936/vision3000/vision3000/playlist.m3u8
 #EXTINF:-1 tvg-id="VisionNDV.do@SD" tvg-logo="https://i.imgur.com/4gj5NMa.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Vision NDV
 #EXTGRP:🇩🇴 República Dominicana
 https://soportedvb.click:3891/live/visionndvlive.m3u8
+#EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",VTV Canal 32
+#EXTGRP:🇩🇴 República Dominicana
+https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
 #EXTINF:-1 tvg-id="XtraTv.do@HD" tvg-logo="https://xtratvrd.com/logo512.png" group-title="🇩🇴 República Dominicana" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Xtra Tv
 #EXTGRP:🇩🇴 República Dominicana
 https://edge.essastream.com/xtratv/index.m3u8
@@ -590,6 +581,9 @@ https://5bf8041cb3fed.streamlock.net/AlcanceTV/AlcanceTV/playlist.m3u8
 #EXTINF:-1 tvg-id="AMXNoticias.mx@SD" tvg-logo="https://i.imgur.com/snIU1UA.jpg" group-title="🇲🇽 México" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",AMX Noticias
 #EXTGRP:🇲🇽 México
 https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
+#EXTINF:-1 tvg-id="BTATV.ve@SD" tvg-logo="https://i.imgur.com/vygOosC.png" group-title="🇻🇪 Venezuela" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",BTA TV
+#EXTGRP:🇻🇪 Venezuela
+https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
 #EXTINF:-1 tvg-id="Canal21Tachira.ve@SD" tvg-logo="https://i.imgur.com/7Tb7CF4.jpg" group-title="🇻🇪 Venezuela" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Canal 21 Táchira
 #EXTGRP:🇻🇪 Venezuela
 https://stmv2.voxtvhd.com.br/canal21/canal21/playlist.m3u8
@@ -716,6 +710,9 @@ https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
 #EXTINF:-1 tvg-id="TVSTurbo.us@SD" tvg-logo="https://i.imgur.com/7zYIbU1.png" group-title="🇺🇸 EE.UU. · 🏆 Deportes" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",TVS Turbo
 #EXTGRP:🇺🇸 EE.UU. · 🏆 Deportes
 https://rpn.bozztv.com/gusa/gusa-tvsturbo/index.m3u8
+#EXTINF:-1 tvg-id="TVSWomenSports.us@SD" tvg-logo="https://i.imgur.com/8hC4PfF.png" group-title="🇺🇸 EE.UU. · 🏆 Deportes" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",TVS Women Sports
+#EXTGRP:🇺🇸 EE.UU. · 🏆 Deportes
+https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
 #EXTINF:-1 tvg-id="Unbeaten.us@SD" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="🇺🇸 EE.UU. · 🏆 Deportes" url-tvg="https://cdn.jsdelivr.net/gh/alberto19963-rgb/mi-iptv-vip/g.xml",Unbeaten Sports Channel
 #EXTGRP:🇺🇸 EE.UU. · 🏆 Deportes
 https://d1t5afz6qed3xk.cloudfront.net/Unbeaten.m3u8
